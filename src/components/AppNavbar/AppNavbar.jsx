@@ -4,8 +4,8 @@ import AppIcon from "components/AppIcon/AppIcon";
 import FeatherIcon from "feather-icons-react";
 import { Nav, Navbar, Offcanvas } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import styles from "./appnavbar.module.scss";
 import { domain_name } from "utils/settings";
+import styles from "./appnavbar.module.scss";
 
 const AppNavbar = () => {
   const [show, setShow] = useState(false);

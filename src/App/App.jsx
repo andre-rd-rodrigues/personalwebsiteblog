@@ -6,6 +6,7 @@ import Footer from "components/Footer/Footer";
 import BlogArticlePage from "pages/ArticlePage/BlogArticlePage";
 import BlogHomepage from "pages/Homepage/BlogHomepage";
 import BlogResultsPage from "pages/ResultsPage/BlogResultsPage";
+import ReactGA from "react-ga";
 import { Routes, Route, useLocation } from "react-router-dom";
 
 const App = () => {
@@ -13,8 +14,12 @@ const App = () => {
 
   //Lifecycle
   useEffect(() => {
+    ReactGA.initialize(process.env.REACT_APP_GA_ID);
+  }, []);
+  useEffect(() => {
     window.scrollTo(0, 0);
-  }, [location.pathname]);
+    ReactGA.pageview(location.pathname + location.search);
+  }, [location.pathname, location.search]);
 
   return (
     <div id="outer-container">
