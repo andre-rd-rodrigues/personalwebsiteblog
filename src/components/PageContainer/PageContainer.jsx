@@ -6,8 +6,8 @@ import styles from "./pagecontainer.module.scss";
 
 const PageContainer = ({
   children,
-  bgColor = "dark",
-  color = "white",
+  bgColor = "grey-yellow",
+  color = "dark",
   className
 }) => {
   return (

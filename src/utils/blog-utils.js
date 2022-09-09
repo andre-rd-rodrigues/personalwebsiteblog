@@ -32,4 +32,5 @@ const getSearchedPost = (search) => {
 const getArticleById = (id) => {
   return blog.articles.filter((item) => item.id === id)[0];
 };
+
 export { getRecentPosts, getPostsByCategory, getSearchedPost, getArticleById };
