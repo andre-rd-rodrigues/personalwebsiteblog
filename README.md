@@ -1,10 +1,5 @@
-# Project name
+# Personal website blog
 
-This is the repository for my personal website 🚀
+This is the repository for my personal website blog 📚
 
-Website: COMING SOON
-
-### Services
-
-Blog creation - Sanity
-Hosting - Netifly
+Website: https://blog.andrerodrigo.com

@@ -11,12 +11,4 @@ const convertTextIntoWords = (text, words) => {
   });
 };
 
-const add_homepage_images = (empty_gallery) => {
-  for (let i = 1; i <= 11; i++) {
-    empty_gallery.push(`/images/homepageGallery/${i}.jpg`);
-  }
-  empty_gallery.push(`/images/homepageGallery/2.jpg`);
-  empty_gallery.push(`/images/homepageGallery/3.jpg`);
-};
-
-export { convertTextIntoWords, add_homepage_images };
+export { convertTextIntoWords };
