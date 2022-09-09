@@ -29,6 +29,10 @@ const blog = {
         "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled.",
       category: "lifestyle",
       date: "12, June 2022",
+      tags: {
+        description: "Lorem is really cool",
+        keywords: ["lorem", "something"]
+      },
       content: (
         <div>
           <h1>Hello</h1>

@@ -28,7 +28,7 @@
   align-items: center;
   transition: 0.4s ease;
   background-image: none;
-  font-size: 1rem;
+  font-size: var(--fs-m);
   letter-spacing: 2px;
 
   &:hover {

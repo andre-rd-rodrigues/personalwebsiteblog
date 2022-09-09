@@ -1,5 +1,5 @@
 import React from "react";
-import AppIcon from "components/AppIcon/AppIcon";
+import { Icon } from "@iconify/react";
 import AppSearchBar from "components/AppSearchBar/AppSearchBar";
 import { blog } from "mocks/data";
 import { push as Menu } from "react-burger-menu";
@@ -12,7 +12,7 @@ import {
 import "./blogsidebar.scss";
 
 function BlogSidebar() {
-  const [searchQuery, setSearchQuery] = useSearchParams({});
+  const [, setSearchQuery] = useSearchParams({});
   const location = useLocation();
   const navigate = useNavigate();
 
@@ -24,8 +24,8 @@ function BlogSidebar() {
   };
   return (
     <Menu
-      customBurgerIcon={<AppIcon icon="sidebar" color="dark" size={25} />}
-      customCrossIcon={<AppIcon icon="x" color="dark" size={25} />}
+      customBurgerIcon={<Icon icon="octicon:sidebar-collapse-24" />}
+      customCrossIcon={<Icon icon="octicon:sidebar-expand-24" />}
       pageWrapId="page-wrap"
       outerContainerId="outer-container"
     >

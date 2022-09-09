@@ -1,10 +1,9 @@
 import React from "react";
-import { MetaTags as MetaTagsPackage } from "react-meta-tags";
-import styles from "./metatags.module.scss";
+import { Helmet } from "react-helmet";
 
 const MetaTags = ({ title, description, keywords }) => {
   return (
-    <MetaTagsPackage className={styles.container}>
+    <Helmet>
       <meta charset="utf-8" />
       <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -19,12 +18,9 @@ const MetaTags = ({ title, description, keywords }) => {
       <meta property="og:description" content={description} />
       <meta property="og:title" content={title} />
       <meta property="og:image" content="assets/images/profile.png" />
-      <meta name="keywords" content={keywords.join()} />
+      <meta name="keywords" content={keywords?.join()} />
       <meta name="description" content={description} />
-      <meta
-        itemProp="name"
-        content="André Rodrigo &bull; Criação de websites, apps e conteúdo digital"
-      />
+      <meta itemProp="name" content={title} />
       <meta name="title" content={title} />
       <meta name="robots" content="index,follow" />
       <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
@@ -34,7 +30,7 @@ const MetaTags = ({ title, description, keywords }) => {
       <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo.png" />
       <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
       <title>{title}</title>
-    </MetaTagsPackage>
+    </Helmet>
   );
 };
 
