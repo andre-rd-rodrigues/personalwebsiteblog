@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import {
   blogHomepageDelayVariant,
   fadeInVariant,
@@ -12,6 +12,10 @@ import { blog } from "mocks/data";
 import styles from "./bloghomepage.module.scss";
 
 function BlogHomepage() {
+  //Lifecycle
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <PageContainer
       color="dark"

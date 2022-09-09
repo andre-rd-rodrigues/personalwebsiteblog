@@ -2,11 +2,11 @@ import React from "react";
 import { useEffect, useState } from "react";
 import Icon from "components/AppIcon/AppIcon";
 import Image from "components/AppImage/AppImage";
+import MetaTags from "components/MetaTags/MetaTags";
 import PageContainer from "components/PageContainer/PageContainer";
 import { useSearchParams } from "react-router-dom";
 import { getArticleById } from "utils/blog-utils";
 import styles from "./blogarticlepage.module.scss";
-import MetaTags from "components/MetaTags/MetaTags";
 
 const BlogArticlePage = () => {
   const [article, setArticle] = useState(undefined);
@@ -17,7 +17,6 @@ const BlogArticlePage = () => {
   //Lifecycle
   useEffect(() => {
     if (articleId) {
-      window.scrollTo(0, 0);
       setArticle(getArticleById(articleId));
     }
   }, []);

@@ -17,6 +17,7 @@ const App = () => {
   useEffect(() => {
     ReactGA.initialize(process.env.REACT_APP_GA_ID);
   }, []);
+
   useEffect(() => {
     window.scrollTo(0, 0);
     ReactGA.pageview(location.pathname + location.search);
