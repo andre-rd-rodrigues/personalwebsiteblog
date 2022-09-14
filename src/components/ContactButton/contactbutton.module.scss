@@ -1,0 +1,15 @@
+@import "assets/styles/mixins";
+
+.container {
+  text-align: center;
+  margin: 40px 0 80px 0;
+}
+.link {
+  @include button($dark);
+  position: relative;
+
+  & svg {
+    transform: translate(-10px, -2px);
+    font-size: 20px;
+  }
+}
