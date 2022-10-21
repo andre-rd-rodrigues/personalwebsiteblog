@@ -27,9 +27,9 @@ const blog = {
       id: "917e4fba-199c-11ed-861d-0242ac120002",
       title: "6 motivos para criar um website",
       description:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled.",
-      category: "lifestyle",
-      date: "12, June 2022",
+        "Estas são as 6 razões para teres um website. Os teus clientes conseguem encontrar o teu negócio mais facilmente · Aumenta a visibilidade e o número de clientes · Aumenta as tuas vendas · Tens mais informação disponível · Publicidade económica com grande alcance.",
+      category: "tecnologia",
+      date: "1, Outubro 2022",
       tags: {
         description: "Lorem is really cool",
         keywords: ["lorem", "something"]

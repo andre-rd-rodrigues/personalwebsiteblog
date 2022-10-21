@@ -4,7 +4,7 @@ import styles from "./applink.module.scss";
 
 const AppLink = ({ label, to, scrollTop }) => {
   const getStyle = () => {
-    if (label.toLowerCase() === "read now")
+    if (label.toLowerCase() === "ler mais")
       return `${styles.appLink} ${styles.readNow}`;
 
     return `${styles.appLink}`;

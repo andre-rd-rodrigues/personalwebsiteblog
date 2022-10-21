@@ -24,7 +24,7 @@ function BlogHomepage() {
     >
       <div className={styles.blogHomepage}>
         <AnimatedHeading>
-          <h1>ideas & thoughts</h1>
+          <h1>Relevante:</h1>
         </AnimatedHeading>
         <motion.div
           variants={blogHomepageDelayVariant}
@@ -32,11 +32,11 @@ function BlogHomepage() {
           whileInView="visible"
         >
           <motion.div variants={fadeInVariant}>
-            <TopArticle artigo={blog.articles[0]} />
+            <TopArticle article={blog.articles[0]} />
           </motion.div>
           <div>
             <motion.h2 variants={fadeInVariant} className="recent_post">
-              Recent posts
+              Artigos recentes:
             </motion.h2>
             <ArticlesGrid articles={blog.articles} />
           </div>

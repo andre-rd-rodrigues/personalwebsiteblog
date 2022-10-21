@@ -9,7 +9,7 @@ const ArticlePreviewBlock = ({ artigo }) => {
   return (
     <motion.div variants={fadeInVariant} className={styles.container}>
       <div className={styles.wrapper}>
-        <Link to={`/artigo?id=${artigo.id}`}>
+        <Link to={`/article?id=${artigo.id}`}>
           <AppImage src={artigo.image_src} className={styles.image} />
           <div className={styles.subtitle}>
             <p>{artigo.category}</p>
@@ -20,7 +20,7 @@ const ArticlePreviewBlock = ({ artigo }) => {
             <p>{artigo.description}</p>
           </div>
           <div className={styles.footer}>
-            <AppLink label="read now" to={`/${artigo.id}`} />
+            <AppLink label="ler mais" to={`/article?id=${artigo.id}`} />
           </div>
         </Link>
       </div>

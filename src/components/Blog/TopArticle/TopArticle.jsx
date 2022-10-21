@@ -3,18 +3,18 @@ import AppImage from "components/AppImage/AppImage";
 import AppLink from "components/AppLink/AppLink";
 import styles from "./toparticle.module.scss";
 
-const TopArticle = ({ artigo }) => {
+const TopArticle = ({ article }) => {
   return (
     <div className={styles.container}>
-      <AppImage src={artigo.image_src} className={styles.image} />
+      <AppImage src={article.image_src} className={styles.image} />
       <div className={styles.date}>
-        <p>Lifestyle</p>
-        <p>12, June 2022</p>
+        <p>{article.category}</p>
+        <p>{article.date}</p>
       </div>
-      <h3>{artigo.title}</h3>
-      <p className="article_description">{artigo.description}</p>
+      <h3>{article.title}</h3>
+      <p className="article_description">{article.description}</p>
       <div className="text-end">
-        <AppLink label="READ NOW" to="/" />
+        <AppLink label="ler mais" to={`/article?id=${article.id}`} />
       </div>
     </div>
   );

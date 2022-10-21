@@ -1,8 +1,8 @@
 import React from "react";
 import { useEffect } from "react";
 import Navbar from "components/AppNavbar/AppNavbar";
-import BlogSidebar from "components/BlogSidebar/BlogSidebar";
 import Footer from "components/Footer/Footer";
+import SideBar from "components/SideBar/SideBar";
 import BlogArticlePage from "pages/ArticlePage/BlogArticlePage";
 import BlogHomepage from "pages/Homepage/BlogHomepage";
 import PageNotFound from "pages/PageNotFound/PageNotFound";
@@ -25,13 +25,13 @@ const App = () => {
 
   return (
     <div id="outer-container">
-      <BlogSidebar />
+      <SideBar />
       <main id="page-wrap">
         <Navbar />
         <Routes>
           <Route path="/" element={<BlogHomepage />} />
-          <Route path="/artigo" element={<BlogArticlePage />} />
-          <Route path="/artigo/search" element={<BlogResultsPage />} />
+          <Route path="/article" element={<BlogArticlePage />} />
+          <Route path="/article/search" element={<BlogResultsPage />} />
           <Route path="*" element={<PageNotFound />} />
         </Routes>
         <Footer />

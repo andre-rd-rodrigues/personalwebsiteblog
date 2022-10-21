@@ -24,6 +24,7 @@ const ArticlesGrid = ({ articles }) => {
     return <AppButton onClick={handleLoadMore} label="load more" />;
   };
 
+  //Lifecycle
   useEffect(() => {
     const paginationCopy = { ...pagination };
 

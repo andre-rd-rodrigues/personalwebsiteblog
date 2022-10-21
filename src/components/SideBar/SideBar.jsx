@@ -1,6 +1,6 @@
 import React from "react";
 import { Icon } from "@iconify/react";
-import AppSearchBar from "components/AppSearchBar/AppSearchBar";
+import SearchBar from "components/AppSearchBar/AppSearchBar";
 import { blog } from "mocks/data";
 import { push as Menu } from "react-burger-menu";
 import {
@@ -11,14 +11,14 @@ import {
 } from "react-router-dom";
 import "./blogsidebar.scss";
 
-function BlogSidebar() {
+function SideBar() {
   const [, setSearchQuery] = useSearchParams({});
   const location = useLocation();
   const navigate = useNavigate();
 
   const handleSearch = (inputSearch) => {
     if (!location.pathname.includes("search")) {
-      return navigate(`/artigo/search?input=${inputSearch}`);
+      return navigate(`/article/search?input=${inputSearch}`);
     }
     return setSearchQuery({ input: inputSearch });
   };
@@ -30,7 +30,7 @@ function BlogSidebar() {
       outerContainerId="outer-container"
     >
       <div className="blog-sidebar-section">
-        <AppSearchBar onSearch={(inputSearch) => handleSearch(inputSearch)} />
+        <SearchBar onSearch={(inputSearch) => handleSearch(inputSearch)} />
       </div>
       <div className="blog-sidebar-section">
         <h5>Categories</h5>
@@ -46,4 +46,4 @@ function BlogSidebar() {
   );
 }
 
-export default BlogSidebar;
+export default SideBar;
