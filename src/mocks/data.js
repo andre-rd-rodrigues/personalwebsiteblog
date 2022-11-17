@@ -17,22 +17,33 @@ const social_media = [
 const blog = {
   //Categories are displayed by this order
   categories: [
-    { display_name: "Recent posts", name: "recent" },
+    { display_name: "Top", name: "top" },
+    { display_name: "Recentes", name: "recent" },
     { display_name: "Lifestyle", name: "lifestyle" },
-    { display_name: "Career & Mentoring", name: "career" },
-    { display_name: "All", name: "all" }
+    { display_name: "Carreira", name: "career" },
+    { display_name: "Todos", name: "all" }
   ],
   articles: [
     {
       id: "917e4fba-199c-11ed-861d-0242ac120002",
       title: "6 motivos para criar um website",
       description:
-        "Estas são as 6 razões para teres um website. Os teus clientes conseguem encontrar o teu negócio mais facilmente · Aumenta a visibilidade e o número de clientes · Aumenta as tuas vendas · Tens mais informação disponível · Publicidade económica com grande alcance.",
+        "Nos últimos anos, a Internet cresceu a um ritmo exponencial e atualmente oferece inúmeros recursos para aumentar o sucesso de qualquer empresa. A presença digital é determinante para o crescimento do negócio, portanto a pergunta é: porque é que o teu, ainda não tem website? Vem conhecer as vantagens de ter um website e aprender como aumentar as tuas vendas.",
       category: "tecnologia",
       date: "1, Outubro 2022",
+      isTopArticle: true,
       tags: {
-        description: "Lorem is really cool",
-        keywords: ["lorem", "something"]
+        description:
+          "Estas são as 6 razões para teres um website. Os teus clientes conseguem encontrar o teu negócio mais facilmente · Aumenta a visibilidade e o número de clientes · Aumenta as tuas vendas · Tens mais informação disponível · Publicidade económica com grande alcance.",
+        keywords: [
+          "como criar um website",
+          "criar um website",
+          "vendas",
+          "encontrar mais clientes",
+          "ganhar mais dinheiro",
+          "vendas online",
+          "empresas"
+        ]
       },
       content: (
         <div>
@@ -207,6 +218,7 @@ const blog = {
 
       category: "lifestyle",
       date: "12, June 2022",
+      isTopArticle: false,
       content: <div>Hello</div>,
       image_src:
         "https://images.unsplash.com/photo-1618221227897-57302c9460b6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=930&q=80",

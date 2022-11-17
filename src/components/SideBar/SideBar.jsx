@@ -22,6 +22,7 @@ function SideBar() {
     }
     return setSearchQuery({ input: inputSearch });
   };
+
   return (
     <Menu
       customBurgerIcon={<Icon icon="octicon:sidebar-collapse-24" />}
@@ -33,11 +34,11 @@ function SideBar() {
         <SearchBar onSearch={(inputSearch) => handleSearch(inputSearch)} />
       </div>
       <div className="blog-sidebar-section">
-        <h5>Categories</h5>
+        <h5>Categorias</h5>
         <ul>
-          {blog.categories.map((item, index) => (
-            <Link key={index} to={`/artigo/search?category=${item.name}`}>
-              <li>{item.display_name}</li>
+          {blog.categories.map((category, index) => (
+            <Link key={index} to={`/article/search?category=${category.name}`}>
+              <li>{category.display_name}</li>
             </Link>
           ))}
         </ul>

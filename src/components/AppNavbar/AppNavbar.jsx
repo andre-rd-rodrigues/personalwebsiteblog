@@ -6,6 +6,7 @@ import { Nav, Navbar, Offcanvas } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { domain_name } from "utils/settings";
 import styles from "./appnavbar.module.scss";
+import { NavHashLink } from "react-router-hash-link";
 
 const AppNavbar = () => {
   const [show, setShow] = useState(false);
@@ -39,9 +40,11 @@ const AppNavbar = () => {
             onSelect={() => setShow(false)}
             className={styles.offcanvasLinks}
           >
+            <NavHashLink to="/#top-article">Top</NavHashLink>
+            <NavHashLink to="/#homepage-recent-articles">Recentes</NavHashLink>
+            <a href="/">Blog</a> <br />
             <a href={domain_name + "/trabalhos"}>Trabalhos</a>
             <br />
-            <a href="/">Blog</a> <br />
             <a href={domain_name + "/sobre"}>Sobre</a> <br />
             <a href={domain_name + "/contactos"}>Contactos</a>
             <br />

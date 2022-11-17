@@ -5,7 +5,7 @@ import Image from "components/AppImage/AppImage";
 import MetaTags from "components/MetaTags/MetaTags";
 import PageContainer from "components/PageContainer/PageContainer";
 import { useSearchParams } from "react-router-dom";
-import { getArticleById } from "utils/blog-utils";
+import { getArticlesById } from "utils/tools";
 import "./blogarticlepage.scss";
 
 const BlogArticlePage = () => {
@@ -17,7 +17,7 @@ const BlogArticlePage = () => {
   //Lifecycle
   useEffect(() => {
     if (articleId) {
-      setArticle(getArticleById(articleId));
+      setArticle(getArticlesById(articleId));
     }
   }, []);
 

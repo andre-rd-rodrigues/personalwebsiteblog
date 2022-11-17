@@ -26,7 +26,7 @@ const containerDelayVariant = {
 };
 
 //Blog
-const blogHomepageDelayVariant = {
+const HomepageDelayVariant = {
   hidden: {
     opacity: 0
   },
@@ -83,6 +83,6 @@ export {
   animatedHeadingChildren,
   animatedHeadingContainer,
   fadeInVariant,
-  blogHomepageDelayVariant,
+  HomepageDelayVariant,
   motion
 };
