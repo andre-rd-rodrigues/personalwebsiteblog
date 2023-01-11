@@ -24,7 +24,7 @@ function Homepage() {
     >
       <div className={styles.Homepage} id="top-article">
         <AnimatedHeading>
-          <h1>Relevante:</h1>
+          <h1>Relevant:</h1>
         </AnimatedHeading>
         <motion.div
           variants={HomepageDelayVariant}
@@ -40,7 +40,7 @@ function Homepage() {
               variants={fadeInVariant}
               className="recent_post"
             >
-              Artigos recentes:
+              Recent articles:
             </motion.h2>
             <ArticlesGrid articles={blog.articles} />
           </div>

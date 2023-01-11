@@ -1,7 +1,5 @@
 @import "assets/styles/mixins";
 
-.container {
-}
 .feather-arrow-left {
   margin-bottom: 25px;
   &:hover {
@@ -46,7 +44,7 @@
 }
 .section-title {
   font-family: Jost, sans-serif;
-  font-size: 2rem;
+  font-size: var(--fs-l-s);
   font-weight: 500;
   margin: 50px 0 20px;
 }

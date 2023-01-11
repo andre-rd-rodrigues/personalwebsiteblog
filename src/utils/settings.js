@@ -1,3 +1,5 @@
 const domain_name = "https://www.andrerodrigo.com";
 
-export { domain_name };
+const READ_MORE = "read more";
+
+export { domain_name, READ_MORE };

@@ -4,9 +4,9 @@ import AppIcon from "components/AppIcon/AppIcon";
 import FeatherIcon from "feather-icons-react";
 import { Nav, Navbar, Offcanvas } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import { NavHashLink } from "react-router-hash-link";
 import { domain_name } from "utils/settings";
 import styles from "./appnavbar.module.scss";
-import { NavHashLink } from "react-router-hash-link";
 
 const AppNavbar = () => {
   const [show, setShow] = useState(false);
@@ -17,7 +17,7 @@ const AppNavbar = () => {
         <div className={styles.logo}>
           <div id="personal_picture" />
           <h1>AR</h1>
-          <p>Blog</p>
+          <p>Curiosity Stream</p>
         </div>
       </Navbar.Brand>
       <Navbar.Toggle
@@ -40,14 +40,11 @@ const AppNavbar = () => {
             onSelect={() => setShow(false)}
             className={styles.offcanvasLinks}
           >
-            <NavHashLink to="/#top-article">Top</NavHashLink>
-            <NavHashLink to="/#homepage-recent-articles">Recentes</NavHashLink>
-            <a href="/">Blog</a> <br />
-            <a href={domain_name + "/trabalhos"}>Trabalhos</a>
-            <br />
-            <a href={domain_name + "/sobre"}>Sobre</a> <br />
-            <a href={domain_name + "/contactos"}>Contactos</a>
-            <br />
+            <NavHashLink to="/#top-article">Homepage</NavHashLink>
+            <NavHashLink to="/#homepage-recent-articles">Recent</NavHashLink>
+            <a href={domain_name + "/trabalhos"}>Projects</a>
+            <a href={domain_name + "/sobre"}>About</a>
+            <a href={domain_name + "/contactos"}>Contacts</a>
           </Nav>
         </Offcanvas.Body>
       </Navbar.Offcanvas>

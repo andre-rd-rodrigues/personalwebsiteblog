@@ -3,6 +3,7 @@ import { fadeInVariant, motion } from "assets/motion/motionVariants";
 import AppImage from "components/AppImage/AppImage";
 import AppLink from "components/AppLink/AppLink";
 import { Link } from "react-router-dom";
+import { READ_MORE } from "utils/settings";
 import styles from "./articlepreviewblock.module.scss";
 
 const ArticlePreviewBlock = ({ artigo }) => {
@@ -20,7 +21,7 @@ const ArticlePreviewBlock = ({ artigo }) => {
             <p>{artigo.description}</p>
           </div>
           <div className={styles.footer}>
-            <AppLink label="ler mais" to={`/article?id=${artigo.id}`} />
+            <AppLink label={READ_MORE} to={`/article?id=${artigo.id}`} />
           </div>
         </Link>
       </div>

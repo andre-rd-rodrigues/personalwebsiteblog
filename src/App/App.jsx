@@ -4,9 +4,9 @@ import Navbar from "components/AppNavbar/AppNavbar";
 import Footer from "components/Footer/Footer";
 import SideBar from "components/SideBar/SideBar";
 import BlogArticlePage from "pages/ArticlePage/BlogArticlePage";
-import BlogHomepage from "pages/Homepage/BlogHomepage";
+import Homepage from "pages/Homepage/Homepage";
 import PageNotFound from "pages/PageNotFound/PageNotFound";
-import BlogResultsPage from "pages/ResultsPage/BlogResultsPage";
+import ResultsPage from "pages/ResultsPage/ResultsPage";
 import ReactGA from "react-ga";
 import { Routes, Route, useLocation } from "react-router-dom";
 
@@ -29,9 +29,9 @@ const App = () => {
       <main id="page-wrap">
         <Navbar />
         <Routes>
-          <Route path="/" element={<BlogHomepage />} />
+          <Route path="/" element={<Homepage />} />
           <Route path="/article" element={<BlogArticlePage />} />
-          <Route path="/article/search" element={<BlogResultsPage />} />
+          <Route path="/article/search" element={<ResultsPage />} />
           <Route path="*" element={<PageNotFound />} />
         </Routes>
         <Footer />

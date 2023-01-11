@@ -54,7 +54,7 @@
 
 //Offcanvas
 .offcanvasLinks {
-  transform: translateY(30px);
+  transform: translate(-100px, 30px);
   margin-left: 40px;
   a {
     @include hover_underline($white);
@@ -70,7 +70,9 @@ div[class="offcanvas offcanvas-end offcanvas-toggling"],
 div[class="offcanvas offcanvas-end offcanvas-toggling show"] {
   background-color: $light-grey !important;
   max-width: 320px;
+
   a {
+    transform: translateX(100px);
     color: $dark;
     opacity: 0.8;
     font-weight: 400;
