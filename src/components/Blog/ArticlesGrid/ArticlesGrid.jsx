@@ -10,7 +10,7 @@ const ArticlesGrid = ({ articles }) => {
   const [pagination, setPagination] = useState({
     articles: undefined,
     total: articles?.length,
-    visible: 4
+    visible: 6
   });
 
   const handleLoadMore = () => {

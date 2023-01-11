@@ -8,10 +8,10 @@ import styles from "./toparticle.module.scss";
 const TopArticle = ({ article }) => {
   return (
     <Row className={styles.container}>
-      <Col>
+      <Col sm={12} lg={6}>
         <AppImage src={article.image_src} className={styles.image} />
       </Col>
-      <Col>
+      <Col sm={12} lg={6}>
         <div className={styles.date}>
           <p>{article.category}</p>
           <p>{article.date}</p>
