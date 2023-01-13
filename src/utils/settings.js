@@ -1,5 +1,5 @@
-const domain_name = "https://www.andrerodrigo.com";
+const DOMAIN_URL = "https://www.andrerodrigo.com";
 
-const READ_MORE = "read more";
+const READ_MORE_LABEL = "read more";
 
-export { domain_name, READ_MORE };
+export { DOMAIN_URL, READ_MORE_LABEL };

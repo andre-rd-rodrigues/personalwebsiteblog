@@ -5,7 +5,7 @@ import FeatherIcon from "feather-icons-react";
 import { Nav, Navbar, Offcanvas } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { NavHashLink } from "react-router-hash-link";
-import { domain_name } from "utils/settings";
+import { DOMAIN_URL } from "utils/settings";
 import styles from "./appnavbar.module.scss";
 
 const AppNavbar = () => {
@@ -15,9 +15,9 @@ const AppNavbar = () => {
     <Navbar expand="lg" fixed="top" className={styles.nav}>
       <Navbar.Brand as={Link} to="/">
         <div className={styles.logo}>
-          <div id="personal_picture" />
+          <div id="brand_logo" />
           <h1>AR</h1>
-          <p>Curiosity Stream</p>
+          <p>Curiosity Gem</p>
         </div>
       </Navbar.Brand>
       <Navbar.Toggle
@@ -42,9 +42,9 @@ const AppNavbar = () => {
           >
             <NavHashLink to="/#top-article">Homepage</NavHashLink>
             <NavHashLink to="/#homepage-recent-articles">Recent</NavHashLink>
-            <a href={domain_name + "/trabalhos"}>Projects</a>
-            <a href={domain_name + "/sobre"}>About</a>
-            <a href={domain_name + "/contactos"}>Contacts</a>
+            <a href={DOMAIN_URL + "/trabalhos"}>Projects</a>
+            <a href={DOMAIN_URL + "/sobre"}>About</a>
+            <a href={DOMAIN_URL + "/contactos"}>Contacts</a>
           </Nav>
         </Offcanvas.Body>
       </Navbar.Offcanvas>

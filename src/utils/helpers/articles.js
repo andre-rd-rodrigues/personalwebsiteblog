@@ -1,4 +1,5 @@
 import { blog } from "mocks/data";
+import { searchObjectTypes } from "utils/types";
 
 const getRecentArticles = () => {};
 
@@ -8,16 +9,14 @@ const getTopArticles = () => {
   return validatedResults(articles);
 };
 
-const getArticlesByCategory = (category) => {
-  const articles = blog.articles.filter(
-    (item) => item.category.toLowerCase() === category.toLowerCase()
-  );
-
-  return validatedResults(articles);
-};
-
+/**
+ *  Function to get articles by search object
+ *  @param {Object} searchObject - The search data object, composed by type and value
+ *  @param {string} searchObject.type - The query type that can be by category or input
+ *  @param {string} searchObject.value - The search value
+ */
 const getArticles = (searchObject) => {
-  if (searchObject.type === "category") {
+  if (searchObject.type === searchObjectTypes.category) {
     if (searchObject.value === "top") return getTopArticles();
     if (searchObject.value === "all") return blog.articles;
     if (searchObject.value === "recent") return blog.articles.slice(0, 3);
@@ -27,23 +26,45 @@ const getArticles = (searchObject) => {
   if (searchObject.type === "input") {
     const articles = blog.articles.filter(
       (item) =>
-        item.title.includes(searchObject.value) ||
+        item.title.toLowerCase().includes(searchObject.value) ||
         item.category.includes(searchObject.value)
     );
     return validatedResults(articles);
   }
 };
 
+/**
+ * Function to get articles by id
+ * @param {string} id article id
+ */
 const getArticlesById = (id) => {
   return blog.articles.filter((item) => item.id === id)[0];
 };
 
-const findArticlesByQuery = (searchQuery) => {
+/**
+ * Function to get articles according to category
+ * @param category category string
+ */
+
+const getArticlesByCategory = (category) => {
+  const articles = blog.articles.filter(
+    (item) => item.category.toLowerCase() === category.toLowerCase()
+  );
+
+  return validatedResults(articles);
+};
+
+/**
+ * Function to get the articles according to query value
+ *  @param {URLSearchParams} searchParams
+ */
+
+const findArticlesByQuery = (searchParams) => {
   let result = {};
 
-  // 1. Check search type - input || category
-  const input = searchQuery.get("input");
-  const category = searchQuery.get("category");
+  // 1. Check search type - input | category
+  const input = searchParams.get("input");
+  const category = searchParams.get("category");
 
   if (!input && !category) return null;
 
@@ -51,6 +72,7 @@ const findArticlesByQuery = (searchQuery) => {
     result.type = "input";
     result.value = input;
   }
+
   if (category) {
     result.type = "category";
     result.value = category;
@@ -60,9 +82,12 @@ const findArticlesByQuery = (searchQuery) => {
   return result;
 };
 
+/**
+ * Function to help validate articles array
+ *  @param {Object[]} articles
+ */
 const validatedResults = (articles) => {
-  console.log(articles);
-  if (articles.length === 0) return null;
+  if (!articles.length) return null;
   return articles;
 };
 

@@ -2,7 +2,7 @@ import React from "react";
 import AppImage from "components/AppImage/AppImage";
 import AppLink from "components/AppLink/AppLink";
 import { Col, Row } from "react-bootstrap";
-import { READ_MORE } from "utils/settings";
+import { READ_MORE_LABEL } from "utils/settings";
 import styles from "./toparticle.module.scss";
 
 const TopArticle = ({ article }) => {
@@ -19,7 +19,7 @@ const TopArticle = ({ article }) => {
         <h3>{article.title}</h3>
         <p className="article_description">{article.description}</p>
         <div className="text-end">
-          <AppLink label={READ_MORE} to={`/article?id=${article.id}`} />
+          <AppLink label={READ_MORE_LABEL} to={`/article?id=${article.id}`} />
         </div>
       </Col>
     </Row>

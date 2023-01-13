@@ -18,9 +18,9 @@
 .logo {
   display: flex;
   align-items: center;
-  div[id="personal_picture"] {
-    background: url("../../assets/images/profile_avatar.jpg") center center
-      no-repeat;
+  div[id="brand_logo"] {
+    background: url("https://images.unsplash.com/photo-1597589827703-f4b68eafa0ce?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1672&q=80")
+      center center no-repeat;
     background-size: cover !important;
     width: 50px;
     height: 50px;

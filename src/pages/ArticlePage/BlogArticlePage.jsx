@@ -5,8 +5,8 @@ import Image from "components/AppImage/AppImage";
 import MetaTags from "components/MetaTags/MetaTags";
 import PageContainer from "components/PageContainer/PageContainer";
 import { useSearchParams } from "react-router-dom";
-import { getArticlesById } from "utils/tools";
 import "./blogarticlepage.scss";
+import { getArticlesById } from "utils";
 
 const BlogArticlePage = () => {
   const [article, setArticle] = useState(undefined);
