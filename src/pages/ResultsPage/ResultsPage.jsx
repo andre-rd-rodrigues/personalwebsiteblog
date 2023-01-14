@@ -3,24 +3,34 @@ import { useState } from "react";
 import { useEffect } from "react";
 import ArticlesGrid from "components/Blog/ArticlesGrid/ArticlesGrid";
 import PageContainer from "components/PageContainer/PageContainer";
-import { useSearchParams } from "react-router-dom";
-import { findArticlesByQuery, getArticles } from "utils";
+import useQuery from "hooks/useQuery";
+import { getArticlesByCategory, getArticlesByInput, SEARCH_TYPE } from "utils";
 import NoResults from "./NoResults";
 import styles from "./resultspage.module.scss";
 
 const ResultsPage = () => {
   const [articles, setArticles] = useState(undefined);
-  const [searchQuery] = useSearchParams();
+  const [type, value] = useQuery();
+
+  const handleArticlesSearch = () => {
+    let articlesSearched;
+
+    if (value && type) {
+      if (type === SEARCH_TYPE.input) {
+        articlesSearched = getArticlesByInput(value);
+      }
+      if (type === SEARCH_TYPE.category) {
+        articlesSearched = getArticlesByCategory(value);
+      }
+
+      setArticles(articlesSearched);
+    }
+  };
 
   //Lifecycle
   useEffect(() => {
-    const querySearchObject = findArticlesByQuery(searchQuery);
-
-    if (querySearchObject) {
-      const searchedArticles = getArticles(querySearchObject);
-      setArticles(searchedArticles);
-    }
-  }, [searchQuery]);
+    handleArticlesSearch();
+  }, [value]);
 
   return (
     <PageContainer
@@ -32,9 +42,9 @@ const ResultsPage = () => {
         <h1>Results:</h1>
 
         {articles ? (
-          <ArticlesGrid key={articles} articles={articles} />
+          <ArticlesGrid articles={articles} />
         ) : (
-          <NoResults searchValue={findArticlesByQuery(searchQuery)?.value} />
+          <NoResults searchValue={value} />
         )}
       </div>
     </PageContainer>

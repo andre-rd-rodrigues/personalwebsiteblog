@@ -24,7 +24,7 @@ function Homepage() {
     >
       <div className={styles.Homepage} id="top-article">
         <AnimatedHeading>
-          <h1>Relevant:</h1>
+          <h2>Relevant:</h2>
         </AnimatedHeading>
         <motion.div
           variants={HomepageDelayVariant}

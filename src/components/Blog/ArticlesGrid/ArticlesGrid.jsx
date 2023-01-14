@@ -43,7 +43,7 @@ const ArticlesGrid = ({ articles }) => {
       <motion.div
         variants={containerVariant}
         initial="hidden"
-        whileInView="visible"
+        animate="visible"
         className={styles.grid}
       >
         {pagination.articlesVisible?.map((article) => (

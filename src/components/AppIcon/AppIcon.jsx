@@ -1,7 +1,7 @@
-import PropTypes from "prop-types";
 import React from "react";
 import colors from "assets/styles/_mixins.scss";
 import FeatherIcon from "feather-icons-react";
+import PropTypes from "prop-types";
 
 const AppIcon = ({
   icon = "",

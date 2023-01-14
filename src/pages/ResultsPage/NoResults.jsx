@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./resultspage.module.scss";
 
-const NoResults = (searchValue) => {
+const NoResults = ({ searchValue }) => {
   return (
     <div className={styles.notFound}>
       <p>

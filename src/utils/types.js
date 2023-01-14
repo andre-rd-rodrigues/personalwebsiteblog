@@ -1,4 +1,4 @@
-const SEARCH_OBJECT = {
+const SEARCH_TYPE = {
   category: "category",
   input: "input"
 };
@@ -12,4 +12,4 @@ const CATEGORIES = {
   all: "all"
 };
 
-export { SEARCH_OBJECT, CATEGORIES };
+export { SEARCH_TYPE, CATEGORIES };

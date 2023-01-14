@@ -16,11 +16,16 @@ function SideBar() {
   const location = useLocation();
   const navigate = useNavigate();
 
-  const handleSearch = (inputSearch) => {
+  const handleSearch = (input) => {
+    const inputTrimed = input.trim();
+
+    if (!inputTrimed.length) return;
+
     if (!location.pathname.includes("search")) {
-      return navigate(`/article/search?input=${inputSearch}`);
+      return navigate(`/article/search?input=${inputTrimed}`);
     }
-    return setSearchQuery({ input: inputSearch });
+
+    return setSearchQuery({ input: inputTrimed });
   };
 
   return (
@@ -31,10 +36,10 @@ function SideBar() {
       outerContainerId="outer-container"
     >
       <div className="blog-sidebar-section">
-        <SearchBar onSearch={(inputSearch) => handleSearch(inputSearch)} />
+        <SearchBar onSearch={(input) => handleSearch(input)} />
       </div>
       <div className="blog-sidebar-section">
-        <h5>Categorias</h5>
+        <h5>Categories</h5>
         <ul>
           {blog.categories.map((category, index) => (
             <Link key={index} to={`/article/search?category=${category.name}`}>
