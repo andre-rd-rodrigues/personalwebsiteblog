@@ -28,7 +28,7 @@ const AppNavbar = () => {
         <FeatherIcon icon="menu" color="white" />
       </Navbar.Toggle>
       <Navbar.Offcanvas
-        show={show}
+        show={`${show}`}
         responsive="lg"
         onHide={() => setShow(false)}
         aria-labelledby="offcanvas-container"

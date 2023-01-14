@@ -1,8 +1,15 @@
+import PropTypes from "prop-types";
 import React from "react";
 import colors from "assets/styles/_mixins.scss";
 import FeatherIcon from "feather-icons-react";
 
-const AppIcon = ({ icon, size = 20, color = "primary", onClick, href }) => {
+const AppIcon = ({
+  icon = "",
+  size = 20,
+  color = "primary",
+  onClick = () => {},
+  href
+}) => {
   return (
     <div
       style={{
@@ -34,6 +41,14 @@ const AppIcon = ({ icon, size = 20, color = "primary", onClick, href }) => {
       )}
     </div>
   );
+};
+
+AppIcon.propTypes = {
+  color: PropTypes.string,
+  href: PropTypes.string,
+  icon: PropTypes.string,
+  onClick: PropTypes.func,
+  size: PropTypes.number
 };
 
 export default AppIcon;

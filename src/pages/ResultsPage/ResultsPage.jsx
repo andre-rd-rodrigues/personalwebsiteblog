@@ -5,6 +5,7 @@ import ArticlesGrid from "components/Blog/ArticlesGrid/ArticlesGrid";
 import PageContainer from "components/PageContainer/PageContainer";
 import { useSearchParams } from "react-router-dom";
 import { findArticlesByQuery, getArticles } from "utils";
+import NoResults from "./NoResults";
 import styles from "./resultspage.module.scss";
 
 const ResultsPage = () => {
@@ -13,10 +14,11 @@ const ResultsPage = () => {
 
   //Lifecycle
   useEffect(() => {
-    const articlesByQuery = findArticlesByQuery(searchQuery);
+    const querySearchObject = findArticlesByQuery(searchQuery);
 
-    if (articlesByQuery) {
-      setArticles(getArticles(articlesByQuery));
+    if (querySearchObject) {
+      const searchedArticles = getArticles(querySearchObject);
+      setArticles(searchedArticles);
     }
   }, [searchQuery]);
 
@@ -30,19 +32,9 @@ const ResultsPage = () => {
         <h1>Results:</h1>
 
         {articles ? (
-          <ArticlesGrid articles={articles} />
+          <ArticlesGrid key={articles} articles={articles} />
         ) : (
-          <div className={styles.notFound}>
-            <p>
-              Sorry, no results found for:{" "}
-              <span>{findArticlesByQuery(searchQuery).value}</span>
-              <br />
-            </p>
-            <p>
-              Try different keywords and make sure all words are spelled
-              correctly.
-            </p>
-          </div>
+          <NoResults searchValue={findArticlesByQuery(searchQuery)?.value} />
         )}
       </div>
     </PageContainer>

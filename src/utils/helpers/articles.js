@@ -1,5 +1,5 @@
 import { blog } from "mocks/data";
-import { searchObjectTypes } from "utils/types";
+import { SEARCH_OBJECT } from "utils/types";
 
 const getRecentArticles = () => {};
 
@@ -16,7 +16,7 @@ const getTopArticles = () => {
  *  @param {string} searchObject.value - The search value
  */
 const getArticles = (searchObject) => {
-  if (searchObject.type === searchObjectTypes.category) {
+  if (searchObject.type === SEARCH_OBJECT.category) {
     if (searchObject.value === "top") return getTopArticles();
     if (searchObject.value === "all") return blog.articles;
     if (searchObject.value === "recent") return blog.articles.slice(0, 3);
@@ -48,14 +48,14 @@ const getArticlesById = (id) => {
 
 const getArticlesByCategory = (category) => {
   const articles = blog.articles.filter(
-    (item) => item.category.toLowerCase() === category.toLowerCase()
+    (article) => article.category.toLowerCase() === category.toLowerCase()
   );
 
   return validatedResults(articles);
 };
 
 /**
- * Function to get the articles according to query value
+ * Function that returns readable object with searched value
  *  @param {URLSearchParams} searchParams
  */
 
@@ -78,7 +78,6 @@ const findArticlesByQuery = (searchParams) => {
     result.value = category;
   }
 
-  // 2. Returns readable object with searched value
   return result;
 };
 

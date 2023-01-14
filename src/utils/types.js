@@ -1,6 +1,15 @@
-const searchObjectTypes = {
+const SEARCH_OBJECT = {
   category: "category",
   input: "input"
 };
 
-export { searchObjectTypes };
+const CATEGORIES = {
+  tech: "technology",
+  games: "gaming",
+  top: "top",
+  recent: "recent",
+  career: "career",
+  all: "all"
+};
+
+export { SEARCH_OBJECT, CATEGORIES };
