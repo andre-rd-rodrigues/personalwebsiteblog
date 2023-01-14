@@ -25,8 +25,8 @@ const BlogArticlePage = () => {
     <>
       <MetaTags
         title={article?.title}
-        description={article?.meta_tags.description}
-        keywords={article?.meta_tags.keywords}
+        description={article?.description}
+        image={article?.image_src}
       />
       <PageContainer color="dark" bgColor="grey-yellow">
         <div className="container">

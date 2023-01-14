@@ -17,6 +17,7 @@ const blog = {
   categories: [
     { display_name: "Top articles", name: CATEGORIES.top },
     { display_name: "Recent", name: CATEGORIES.recent },
+    { display_name: "Lifestyle", name: CATEGORIES.lifestyle },
     { display_name: "Career", name: CATEGORIES.career },
     { display_name: "Technology", name: CATEGORIES.tech },
     { display_name: "Gaming", name: CATEGORIES.games },
@@ -32,18 +33,7 @@ const blog = {
       category: CATEGORIES.tech,
       date: "13, Jan 2023",
       isTopArticle: false,
-      meta_tags: [
-        "home automation",
-        "smart home",
-        "smart thermostat",
-        "smart lighting",
-        "smart appliances",
-        "smart security",
-        "smart home hub",
-        "energy efficiency",
-        "convenience",
-        "security"
-      ],
+
       image_src:
         "https://images.unsplash.com/photo-1558002038-1055907df827?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80",
       content: (
@@ -112,18 +102,7 @@ const blog = {
       category: CATEGORIES.tech,
       date: "3, Jan 2023",
       isTopArticle: true,
-      meta_tags: [
-        "cybersecurity",
-        "cyber threats",
-        "ransomware",
-        "cloud security",
-        "Internet of Things",
-        "IoT vulnerabilities",
-        "supply chain attacks",
-        "artificial intelligence",
-        "machine learning",
-        "cybersecurity best practices"
-      ],
+
       image_src:
         "https://images.unsplash.com/photo-1496096265110-f83ad7f96608?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80",
       content: (
@@ -367,23 +346,7 @@ const blog = {
       category: CATEGORIES.tech,
       date: "8, Jan 2023",
       isTopArticle: false,
-      meta_tags: [
-        "cybersecurity",
-        "traveling abroad",
-        "personal information",
-        "software updates",
-        "virtual private network",
-        "VPN",
-        "two-factor authentication",
-        "2FA",
-        "phishing scams",
-        "public Wi-Fi",
-        "private networks",
-        "firmware",
-        "encryption",
-        "IP address",
-        "smart home devices"
-      ],
+
       image_src:
         "https://images.unsplash.com/photo-1503220317375-aaad61436b1b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80",
       content: (
@@ -507,22 +470,7 @@ const blog = {
       category: CATEGORIES.tech,
       date: "10, Jan 2023",
       isTopArticle: false,
-      meta_tags: [
-        "cybersecurity",
-        "phishing scams",
-        "personal information",
-        "suspicious emails",
-        "fraudulent websites",
-        "two-factor authentication",
-        "2FA",
-        "spam",
-        "unsolicited requests",
-        "sensitive information",
-        "login credentials",
-        "financial details",
-        "spam filters",
-        "antivirus software"
-      ],
+
       content: (
         <div>
           <h2 className="section-title">Look out for suspicious emails</h2>
@@ -575,22 +523,7 @@ const blog = {
       category: CATEGORIES.games,
       date: "1, Dez 2022",
       isTopArticle: false,
-      meta_tags: [
-        "CS:GO",
-        "counter-strike:global offensive",
-        "gaming",
-        "pro tips",
-        "aim training",
-        "map knowledge",
-        "crosshair placement",
-        "communication",
-        "teamwork",
-        "focus",
-        "strategies",
-        "esports",
-        "fps",
-        "competitive gaming"
-      ],
+
       content: (
         <div>
           <p>
@@ -668,6 +601,442 @@ const blog = {
       image_src:
         "https://images.unsplash.com/photo-1637594439872-44d1b1fe0a0b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80",
       writer: "Andre Rodrigues"
+    },
+    {
+      id: "vks209s2a482-532-k924",
+      title:
+        "Breaking the Cycle: Understanding and Mitigating the Effects of Prolonged Screen Time on Mental Health",
+      description:
+        "Discover the negative impact of prolonged screen time on mental health and learn effective strategies to mitigate it, including setting daily limits, taking regular breaks, using blue light filters, practicing good sleep hygiene and staying active.",
+      category: CATEGORIES.lifestyle,
+      date: "14, Jan 2023",
+      isTopArticle: true,
+      image_src:
+        "https://images.unsplash.com/photo-1555963153-11ff60182d08?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1548&q=80",
+      writer: "Andre Rodrigues",
+      content: (
+        <div>
+          <p>
+            In today&apos;s digital age, we are more connected than ever before.
+            With the rise of smartphones, laptops, and other devices, it&apos;s
+            easy to spend hours upon hours staring at screens. From work, to
+            entertainment, to staying in touch with friends and family, screens
+            have become a constant presence in our lives. However, this
+            prolonged screen time can have a significant impact on our mental
+            health.
+          </p>
+          <h2 className="section-title">
+            The Effects of Prolonged Screen Time on Mental Health
+          </h2>
+          <p>
+            Prolonged screen time has been linked to a range of negative mental
+            health effects, including:
+          </p>
+          <ul>
+            <li>Anxiety and depression</li>
+            <li>Insomnia and sleep disturbances</li>
+            <li>Increased stress levels</li>
+            <li>Impaired social skills and relationships</li>
+            <li>Lack of focus and attention</li>
+          </ul>
+          <p>
+            One of the main reasons for these negative effects is that prolonged
+            screen time can disrupt our natural sleep-wake cycle. The blue light
+            emitted by screens suppresses the production of melatonin, a hormone
+            that helps regulate our sleep. This can lead to insomnia and other
+            sleep disturbances, which in turn can contribute to anxiety,
+            depression, and other mental health issues.
+          </p>
+          <h2 className="section-title">
+            Strategies for Mitigating the Effects of Prolonged Screen Time
+          </h2>
+          <p>
+            While it may be difficult to completely eliminate screen time from
+            our lives, there are several strategies we can use to mitigate its
+            negative effects on our mental health:
+          </p>
+          <ul>
+            <li>
+              Set a daily screen time limit: Use the built-in screen time
+              tracking tools on your phone or other devices to set a daily limit
+              for yourself and stick to it.
+            </li>
+            <li>
+              Take regular breaks: Every 20-30 minutes, take a break from your
+              screens and focus on something else for a few minutes. This can
+              help reduce eye strain and improve your focus and attention.
+            </li>
+            <li>
+              Use blue light filters: Many devices now have built-in blue light
+              filters that can help reduce the amount of blue light emitted by
+              screens and make it easier to fall asleep at night.
+            </li>
+            <li>
+              Practice good sleep hygiene: Establish a regular sleep schedule,
+              create a relaxing bedtime routine, and avoid screens for at least
+              an hour before bedtime.
+            </li>
+            <li>
+              Stay active and engage in physical activity: Regular physical
+              activity can help reduce stress and anxiety and improve your
+              overall mental well-being.
+            </li>
+          </ul>
+          <h2 className="section-title">Conclusion</h2>
+          <p>
+            Prolonged screen time is a reality of modern life, but it
+            doesn&apos;t have to come at the cost of our mental health. By
+            setting limits, taking breaks, and using strategies like blue light
+            filters and good sleep hygiene, we can mitigate the negative effects
+            of screen time and maintain our mental well-being.
+          </p>
+        </div>
+      )
+    },
+    {
+      id: "098769s2a482-532-k924",
+      title:
+        "Programming and Burnout: How to Identify, Prevent, and Recover from Stress and Burnout",
+      description:
+        "Programming can be a demanding field that can lead to burnout. Learn how to identify the signs of burnout, prevent it from happening and recover from it with this guide. Strategies include setting realistic goals and priorities, regular breaks, healthy lifestyle, good work-life balance and seeking support.",
+      category: CATEGORIES.lifestyle,
+      date: "19, Nov 2022",
+      isTopArticle: true,
+      image_src:
+        "https://images.unsplash.com/photo-1495427513693-3f40da04b3fd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2071&q=80",
+      writer: "Andre Rodrigues",
+      content: (
+        <div>
+          <p>
+            As a programmer, you are likely passionate about your work and take
+            pride in delivering high-quality code. However, the demands of
+            programming can also be incredibly stressful. Long hours, tight
+            deadlines, and the pressure to constantly learn and stay current can
+            take a toll on your mental and physical well-being, leading to
+            burnout.
+          </p>
+          <h2 className="section-title">What is Burnout?</h2>
+          <p>
+            Burnout is a state of emotional, physical, and mental exhaustion
+            caused by prolonged stress. It is characterized by feelings of
+            cynicism, detachment, and a lack of accomplishment. Burnout can lead
+            to a decrease in productivity, an increase in absenteeism, and even
+            job loss. It&apos;s important to understand that burnout is not just
+            feeling tired or stressed, it&apos;s a chronic condition that
+            requires time and effort to overcome.
+          </p>
+          <h2 className="section-title">Signs of Burnout</h2>
+          <p>
+            If you&apos;re experiencing the following symptoms, it may be a sign
+            that you&apos;re suffering from burnout:
+          </p>
+          <ul>
+            <li>
+              Feeling overwhelmed and unable to cope with the demands of your
+              job
+            </li>
+            <li>Feeling emotionally and physically exhausted</li>
+            <li>Feeling a sense of detachment from your work and colleagues</li>
+            <li>A lack of motivation and a decrease in productivity</li>
+            <li>Feeling a sense of failure and self-doubt</li>
+          </ul>
+          <h2 className="section-title">Preventing Burnout</h2>
+          <p>
+            To prevent burnout, it&apos;s important to take a proactive approach
+            to managing stress. Here are some strategies to help you stay
+            healthy and avoid burnout:
+          </p>
+          <ul>
+            <li>
+              Set realistic goals and priorities: Learn to say &quot;no&quot; to
+              unrealistic expectations and unnecessary tasks.
+            </li>
+            <li>
+              Take regular breaks: Make sure to take breaks throughout the day
+              to refresh your mind and recharge your batteries.
+            </li>
+            <li>
+              Maintain a healthy lifestyle: Eating well, getting enough sleep,
+              and regular exercise are important for maintaining overall
+              well-being.
+            </li>
+            <li>
+              Develop a good work-life balance: Set boundaries between work and
+              personal time and stick to them.
+            </li>
+            <li>
+              Seek support: Talk to friends, family, or a therapist if
+              you&apos;re feeling overwhelmed.
+            </li>
+          </ul>
+          <h2 className="section-title">Recovering from Burnout</h2>
+          <p>
+            If you&apos;re already experiencing burnout, it&apos;s important to
+            take steps to recover. Here are some strategies to help you recover:
+          </p>
+          <ul>
+            <li>
+              Take time off: If possible, take a break from work to give
+              yourself the time and space you need to recover.
+            </li>
+            <li>
+              Practice self-care: Engage in activities that help you relax and
+              reduce stress, such as yoga or meditation.
+            </li>
+            <li>
+              Seek professional help: Consider seeing a therapist or counselor
+              to help you work through the emotional and psychological effects
+              of burnout.
+            </li>
+            <li>
+              Make changes: Reflect on what led to your burnout and consider
+              making changes to your work environment or routine to prevent it
+              from happening again.
+            </li>
+          </ul>
+          <h2 className="section-title">Conclusion</h2>
+          <p>
+            Burnout is a serious issue that can affect programmers and other
+            professionals in the tech industry. It&apos;s important to be aware
+            of the signs of burnout and take steps to prevent it before it
+            becomes a chronic condition. By setting realistic goals and
+            priorities, taking regular breaks, maintaining a healthy lifestyle,
+            developing a good work-life balance and seeking support when needed,
+            you can reduce your risk of burnout and maintain your overall
+            well-being. Remember that recovery takes time, and be kind to
+            yourself in the process.
+          </p>
+        </div>
+      )
+    },
+    {
+      id: "098769s2a482-532-k9249876",
+      title:
+        "Navigating Team Conflicts in Programming: Strategies for Maintaining Mental Well-being",
+      description:
+        "Discover effective strategies for navigating conflicts within a programming team while maintaining mental well-being. Learn the impact of conflicts on mental health and how to overcome it through open communication, active listening, compromise, team building and seeking help when needed.",
+      category: CATEGORIES.career,
+      date: "30, Nov 2022",
+      isTopArticle: true,
+      image_src:
+        "https://images.unsplash.com/photo-1523240795612-9a054b0db644?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80",
+      writer: "Andre Rodrigues",
+      content: (
+        <div>
+          <p>
+            Working on a programming team can be a rewarding experience, but it
+            can also be a source of stress and conflict. Whether it&apos;s
+            disagreements over code, competing priorities, or personality
+            clashes, conflicts within a programming team can take a toll on both
+            productivity and mental well-being.
+          </p>
+          <h2 className="section-title">
+            The Impact of Conflicts on Mental Well-being
+          </h2>
+          <p>
+            Conflicts within a programming team can lead to a range of negative
+            mental health effects, including:
+          </p>
+          <ul>
+            <li>
+              Stress and anxiety: Conflicts within a team can create a sense of
+              uncertainty and unpredictability, leading to feelings of stress
+              and anxiety. This can affect a person&apos;s ability to focus and
+              make decisions, and can also lead to physical symptoms such as
+              headaches and fatigue.
+            </li>
+            <li>
+              Feeling overwhelmed and overworked: Conflicts within a team can
+              lead to an increase in workload and responsibilities, leading to
+              feelings of being overwhelmed and overworked. This can affect a
+              person&apos;s ability to perform their job effectively and can
+              also lead to burnout.
+            </li>
+            <li>
+              Lack of motivation and engagement: Conflicts within a team can
+              lead to a lack of motivation and engagement among team members.
+              This can affect a person&apos;s ability to contribute to the
+              team&apos;s goals and objectives and can also lead to a decrease
+              in productivity.
+            </li>
+            <li>
+              Decreased job satisfaction: Conflicts within a team can lead to
+              decreased job satisfaction among team members. This can affect a
+              person&apos;s overall well-being and can also lead to a higher
+              turnover rate.
+            </li>
+            <li>
+              Feeling isolated and unsupported: Conflicts within a team can lead
+              to feelings of isolation and unsupported among team members. This
+              can affect a person&apos;s ability to seek help and support from
+              their colleagues and can also lead to a lack of trust and respect
+              within the team.
+            </li>
+          </ul>
+          <p>
+            These negative effects can be particularly damaging for those who
+            are already struggling with mental health issues. It&apos;s
+            important to address conflicts within a programming team in order to
+            maintain a healthy work environment and protect the mental
+            well-being of all team members.
+          </p>
+          <h2 className="section-title">
+            Strategies for navigating through conflicts
+          </h2>
+          <p>
+            Here are some strategies for navigating conflicts within a
+            programming team and maintaining mental well-being:
+          </p>
+          <ul>
+            <li>
+              Communicate openly and honestly: Encourage open and honest
+              communication within the team, and make sure that everyone&apos;s
+              voices are heard. This can help prevent conflicts from escalating
+              and make it easier to find a resolution.
+            </li>
+            <li>
+              Practice active listening: Listen actively to others and try to
+              understand their perspectives. This can help build trust and
+              respect within the team, and make it easier to find a resolution.
+            </li>
+            <li>
+              Be willing to compromise: Conflicts often arise when people are
+              unwilling to compromise. Be willing to make concessions and
+              consider the needs and perspectives of others.
+            </li>
+            <li>
+              Encourage team building: Regular team building activities can help
+              build camaraderie and reduce tension within the team. This can
+              also create a safe space where team members can share their
+              concerns and find support.
+            </li>
+            <li>
+              Seek help: If conflicts within the team are causing you distress,
+              don&apos;t hesitate to seek help from a therapist or counselor.
+            </li>
+          </ul>
+          <h2 className="section-title">Conclusion</h2>
+          <p>
+            Navigating conflicts within a programming team can be challenging,
+            but it&apos;s important for the well-being of all team members. By
+            communicating openly and honestly, practicing active listening,
+            being willing to compromise, encouraging team building, and seeking
+            help when needed, you can navigate conflicts and maintain your
+            mental well-being.{" "}
+          </p>
+        </div>
+      )
+    },
+    {
+      id: "098769s2a482-532-kpl64fgh",
+      title:
+        "Overcoming Imposter Syndrome: The Impact on Programmers' Mental Health",
+      description:
+        "Imposter syndrome is a common experience among programmers. Learn about the impact it can have on mental health and strategies for overcoming it, such as challenging negative thoughts, embracing failure, seeking feedback and seeking support.",
+      category: CATEGORIES.career,
+      date: "30, Nov 2022",
+      isTopArticle: true,
+      image_src:
+        "https://images.unsplash.com/photo-1647752598980-df7157e20d8c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80",
+      writer: "Andre Rodrigues",
+      content: (
+        <div>
+          <p>
+            Imposter syndrome, the feeling of being a fraud or not deserving of
+            one&apos;s success, is a common experience among programmers. This
+            can lead to self-doubt, anxiety, and a lack of confidence, which can
+            ultimately impact a programmer&apos;s mental health and work
+            performance.
+          </p>
+          <h2 className="section-title">What is Imposter Syndrome?</h2>
+          <p>
+            Imposter syndrome is the feeling of being a fraud or not deserving
+            of one&apos;s success. It&apos;s a common experience among
+            high-achievers, and it can be especially prevalent in the
+            programming industry where there is a constant pressure to stay
+            current and continuously improve one&apos;s skills. People who
+            suffer from imposter syndrome have a fear of being exposed as a
+            fraud, and they often attribute their successes to luck or external
+            factors, while they blame their failures on themselves.{" "}
+          </p>
+          <h2 className="section-title">
+            Impact of Imposter Syndrome on Programmers&apos; Mental Health
+          </h2>
+          <p>
+            Imposter syndrome can have a significant impact on programmers&apos;
+            mental health. It can lead to:
+          </p>
+          <ul>
+            <li>
+              Self-doubt and lack of confidence: Imposter syndrome can lead to a
+              lack of confidence in one&apos;s abilities and an constant
+              self-doubt, which can affect a programmer&apos;s ability to take
+              risks and innovate.
+            </li>
+            <li>
+              Anxiety and stress: Imposter syndrome can lead to feelings of
+              anxiety and stress, which can affect a programmer&apos;s ability
+              to focus and perform their job effectively.
+            </li>
+            <li>
+              Isolation: Imposter syndrome can lead to feelings of isolation, as
+              people may be afraid to share their insecurities with others for
+              fear of being exposed as a fraud.
+            </li>
+            <li>
+              Decreased job satisfaction: Imposter syndrome can lead to
+              decreased job satisfaction, which can ultimately lead to a higher
+              turnover rate.{" "}
+            </li>
+          </ul>
+          <h2 className="section-title">
+            Strategies for Overcoming Imposter Syndrome
+          </h2>
+          <p>
+            Here are some strategies for overcoming imposter syndrome and
+            improving mental well-being:
+          </p>
+          <ul>
+            <li>
+              Challenge negative thoughts: Be aware of negative thoughts and
+              challenge them by asking yourself if they are truly accurate. Try
+              to reframe them in a positive light.
+            </li>
+            <li>
+              Embrace failure: Failure is a natural part of learning and
+              growing. Embrace it as a learning opportunity and remind yourself
+              that failure is not a reflection of your abilities.
+            </li>
+            <li>
+              Seek feedback: Ask for constructive feedback from colleagues or
+              mentors and use it to improve your skills.
+            </li>
+            <li>
+              Focus on the process, not the outcome: Instead of focusing on the
+              outcome, focus on the process of learning and growing as a
+              programmer.
+            </li>
+            <li>
+              Seek support: Talk to friends, family, or a therapist if
+              you&apos;re feeling overwhelmed or struggling with imposter
+              syndrome.
+            </li>
+          </ul>
+          <h2 className="section-title">Conclusion</h2>
+          <p>
+            Imposter syndrome is a common experience among programmers and it
+            can have a significant impact on mental health. It can lead to
+            self-doubt, anxiety, and a lack of confidence, which can ultimately
+            impact a programmer&apos;s work performance. It is important to be
+            aware of the negative thoughts, embrace failure, seek feedback,
+            focus on the process and seek support if needed. Remember that
+            imposter syndrome is not a reflection of your abilities, but rather
+            a common experience that can be overcome. With the right mindset and
+            support, you can improve your mental well-being and be successful in
+            your role as a programmer.
+          </p>
+        </div>
+      )
     }
   ]
 };

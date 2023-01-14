@@ -6,6 +6,7 @@ const SEARCH_TYPE = {
 const CATEGORIES = {
   tech: "technology",
   games: "gaming",
+  lifestyle: "lifestyle",
   top: "top",
   recent: "recent",
   career: "career",

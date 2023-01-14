@@ -1,7 +1,8 @@
+import PropTypes from "prop-types";
 import React from "react";
 import { Helmet } from "react-helmet";
 
-const MetaTags = ({ title, description, keywords }) => {
+const MetaTags = ({ title, description, imageUrl }) => {
   return (
     <Helmet>
       <meta charset="utf-8" />
@@ -10,21 +11,17 @@ const MetaTags = ({ title, description, keywords }) => {
       <meta name="theme-color" content="#000000" />
       <meta property="og:url" content="https://www.blog.andrerodrigo.com" />
       <meta property="og:type" content="website" />
-      <meta property="og:image" content="%PUBLIC_URL%/preview.jpg" />
-      <meta
-        property="og:image:alt"
-        content="André Rodrigo - Criação de websites, apps e conteúdo digital"
-      />
+      <meta property="og:image" content={imageUrl} />
+      <meta property="og:image:alt" content={title} />
       <meta property="og:description" content={description} />
       <meta property="og:title" content={title} />
-      <meta property="og:image" content="assets/images/profile.png" />
-      <meta name="keywords" content={keywords?.join()} />
+      <meta property="og:image" content={imageUrl} />
       <meta name="description" content={description} />
       <meta itemProp="name" content={title} />
       <meta name="title" content={title} />
       <meta name="robots" content="index,follow" />
       <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
-      <meta name="language" content="Portuguese" />
+      <meta name="language" content="English" />
       <meta name="revisit-after" content="5 days" />
       <meta name="author" content="André Rodrigo" />
       <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo.png" />
@@ -32,6 +29,11 @@ const MetaTags = ({ title, description, keywords }) => {
       <title>{title}</title>
     </Helmet>
   );
+};
+
+MetaTags.propTypes = {
+  description: PropTypes.string,
+  title: PropTypes.string
 };
 
 export default MetaTags;
