@@ -8,26 +8,24 @@ import styles from "./articlesgrid.module.scss";
 const INITIAL_RENDER_LIMIT = 6;
 
 const ArticlesGrid = ({ articles }) => {
-  const [pagination, setPagination] = useState({
+  const [articlesState, setPagination] = useState({
     articlesVisible: articles.slice(0, INITIAL_RENDER_LIMIT),
-    total: articles?.length,
     visible: INITIAL_RENDER_LIMIT
   });
 
-  const isLoadMoreButtonVisible = pagination.total > pagination.visible;
+  const isLoadMoreButtonVisible = articles.total > articlesState.visible;
 
   const handleLoadMoreArticles = () => {
-    const newRenderLimit = pagination.visible + 4;
+    const newRenderLimit = articlesState.visible + 4;
 
     const newVisibleArticles = articles.slice(
-      pagination.visible,
+      articlesState.visible,
       newRenderLimit
     );
 
     if (newVisibleArticles) {
       setPagination((prevState) => {
         return {
-          ...prevState,
           articlesVisible: [
             ...prevState.articlesVisible,
             ...newVisibleArticles
@@ -46,7 +44,7 @@ const ArticlesGrid = ({ articles }) => {
         animate="visible"
         className={styles.grid}
       >
-        {pagination.articlesVisible?.map((article) => (
+        {articlesState.articlesVisible?.map((article) => (
           <ArticleCard key={article.id} article={article} />
         ))}
       </motion.div>

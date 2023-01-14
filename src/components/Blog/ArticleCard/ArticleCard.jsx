@@ -8,11 +8,7 @@ import styles from "./articlecard.module.scss";
 
 const ArticleCard = ({ article }) => {
   return (
-    <motion.div
-      variants={fadeInVariant}
-      whileInView="visible"
-      className={styles.container}
-    >
+    <motion.div variants={fadeInVariant} className={styles.container}>
       <div className={styles.wrapper}>
         <Link to={`/article?id=${article.id}`}>
           <AppImage src={article.image_src} className={styles.image} />
