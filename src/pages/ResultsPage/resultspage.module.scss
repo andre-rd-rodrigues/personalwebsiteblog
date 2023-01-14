@@ -1,9 +1,23 @@
 @import "assets/styles/mixins";
 
-.container {
+.title {
+  display: flex;
+  align-items: baseline;
+  margin-bottom: 68px;
+
   h1 {
+    font-weight: 400;
+    font-family: Jost;
     font-size: var(--fs-l);
-    margin-bottom: 68px;
+    opacity: 0.5;
+  }
+
+  h2 {
+    font-weight: 400;
+    font-family: Jost;
+    font-size: var(--fs-l-s);
+    margin-left: 15px;
+    color: $dark;
   }
 }
 .notFound {

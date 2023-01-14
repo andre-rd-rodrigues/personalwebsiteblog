@@ -39,7 +39,10 @@ const ResultsPage = () => {
       className={styles.container}
     >
       <div className={styles.results}>
-        <h1>Results:</h1>
+        <div className={styles.title}>
+          <h1>Results for:</h1>
+          <h2>{value}</h2>
+        </div>
 
         {articles ? (
           <ArticlesGrid articles={articles} />

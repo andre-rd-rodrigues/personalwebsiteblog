@@ -4,11 +4,12 @@ import { containerVariant, motion } from "assets/motion/motionVariants";
 import AppButton from "components/AppButton/AppButton";
 import ArticleCard from "../ArticleCard/ArticleCard";
 import styles from "./articlesgrid.module.scss";
+import { useEffect } from "react";
 
 const INITIAL_RENDER_LIMIT = 6;
 
 const ArticlesGrid = ({ articles }) => {
-  const [articlesState, setPagination] = useState({
+  const [articlesState, setArticlesState] = useState({
     articlesVisible: articles.slice(0, INITIAL_RENDER_LIMIT),
     visible: INITIAL_RENDER_LIMIT
   });
@@ -24,7 +25,7 @@ const ArticlesGrid = ({ articles }) => {
     );
 
     if (newVisibleArticles) {
-      setPagination((prevState) => {
+      setArticlesState((prevState) => {
         return {
           articlesVisible: [
             ...prevState.articlesVisible,
@@ -35,6 +36,15 @@ const ArticlesGrid = ({ articles }) => {
       });
     }
   };
+
+  useEffect(() => {
+    if (articles) {
+      setArticlesState({
+        articlesVisible: articles.slice(0, INITIAL_RENDER_LIMIT),
+        visible: INITIAL_RENDER_LIMIT
+      });
+    }
+  }, [articles]);
 
   return (
     <div className={styles.container}>

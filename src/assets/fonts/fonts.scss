@@ -8,6 +8,13 @@
 }
 
 @font-face {
+  font-family: "Blacker";
+  src: url(./blacker-italic.ttf) format("woff2");
+  font-style: italic;
+  unicode-range: U+0020-007F;
+}
+
+@font-face {
   font-family: "Moniqa";
   src: url(./moniqa-italic.woff2) format("woff2");
   font-style: italic;
