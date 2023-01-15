@@ -20,7 +20,7 @@ const articles = [
     title:
       "Transform Your Home into a Smart Home: 5 Ways to Automate Your House",
     description:
-      "Are you tired of constantly forgetting to turn off the lights or adjust the thermostat when you leave the house? It might be time to consider automating your home. In this blog post, we&apos;ll give you five ways to transform your home into a smart home, including using smart thermostats, smart lighting, smart appliances, smart security systems, and smart home hubs. Automating your home can make your life easier, save you energy and money, and give you peace of mind. Learn how to get started with home automation today.",
+      "Are you tired of constantly forgetting to turn off the lights or adjust the thermostat when you leave the house? It might be time to consider automating your home. In this blog post, we'll give you five ways to transform your home into a smart home, including using smart thermostats, smart lighting, smart appliances, smart security systems, and smart home hubs. Automating your home can make your life easier, save you energy and money, and give you peace of mind. Learn how to get started with home automation today.",
     category: CATEGORIES_TYPE.tech,
     date: "11/25/2022",
     isTopArticle: false,
@@ -88,7 +88,7 @@ const articles = [
     id: "c5d2a482",
     title: "The Top 5 Cybersecurity Threats of 2022: What You Need to Know",
     description:
-      "Stay ahead of the curve and protect yourself and your business from the latest cybersecurity threats. In this blog post, we&apos;ll outline the top five threats to watch out for in 2022, including ransomware, cloud security breaches, Internet of Things vulnerabilities, supply chain attacks, and artificial intelligence and machine learning attacks. Stay informed and follow best practices to reduce the risk of a cybersecurity incident.",
+      "Stay ahead of the curve and protect yourself and your business from the latest cybersecurity threats. In this blog post, we'll outline the top five threats to watch out for in 2022, including ransomware, cloud security breaches, Internet of Things vulnerabilities, supply chain attacks, and artificial intelligence and machine learning attacks. Stay informed and follow best practices to reduce the risk of a cybersecurity incident.",
     category: CATEGORIES_TYPE.tech,
     date: "01/03/2023",
     isTopArticle: true,
@@ -182,9 +182,9 @@ const articles = [
   {
     id: "c5d2a482-532",
     title:
-      "Protecting Your Personal Information Online: A Beginner&apos;s Guide to Cybersecurity",
+      "Protecting Your Personal Information Online: A Beginner's Guide to Cybersecurity",
     description:
-      "In today&apos;s digital age, it&apos;s crucial to protect your personal information online. In this blog post, we&apos;ll provide a beginner&apos;s guide to cybersecurity and give you tips on how to keep your data safe. Learn how to use strong, unique passwords, be cautious about the information you share online, use two-factor authentication, recognize phishing scams, keep your software and systems up to date, and use secure networks and connections. Follow these best practices to reduce the risk of identity theft and other cyber threats.",
+      "In today's digital age, it's crucial to protect your personal information online. In this blog post, we'll provide a beginner's guide to cybersecurity and give you tips on how to keep your data safe. Learn how to use strong, unique passwords, be cautious about the information you share online, use two-factor authentication, recognize phishing scams, keep your software and systems up to date, and use secure networks and connections. Follow these best practices to reduce the risk of identity theft and other cyber threats.",
     category: CATEGORIES_TYPE.tech,
     date: "2023-01-05",
     isTopArticle: false,
@@ -326,9 +326,9 @@ const articles = [
   {
     id: "d5d6a482-532",
     title:
-      "Don&apos;t Let Your Vacation be Ruined by a Cyber Attack: How to Secure Your Devices Before You Go",
+      "Don't Let Your Vacation be Ruined by a Cyber Attack: How to Secure Your Devices Before You Go",
     description:
-      "In this blog post, we&apos;ll provide tips on how to secure your devices before you go, including updating your software and devices, using a virtual private network (VPN), enabling two-factor authentication (2FA), and being aware of phishing scams. Follow these best practices to help protect your data and enjoy your vacation with peace of mind.",
+      "In this blog post, we'll provide tips on how to secure your devices before you go, including updating your software and devices, using a virtual private network (VPN), enabling two-factor authentication (2FA), and being aware of phishing scams. Follow these best practices to help protect your data and enjoy your vacation with peace of mind.",
     category: CATEGORIES_TYPE.tech,
     date: "2023-01-08",
     isTopArticle: false,
@@ -451,7 +451,7 @@ const articles = [
     id: "d509s2a482-532",
     title: "How to spot and avoid phishing scams?",
     description:
-      "In this article, we&apos;ll provide some tips on how to spot and avoid phishing scams, so you can protect yourself and your personal data. We&apos;ll cover how to identify suspicious emails, be cautious about sharing personal information, and use two-factor authentication to add an extra layer of security to your online accounts.",
+      "In this article, we'll provide some tips on how to spot and avoid phishing scams, so you can protect yourself and your personal data. We'll cover how to identify suspicious emails, be cautious about sharing personal information, and use two-factor authentication to add an extra layer of security to your online accounts.",
     category: CATEGORIES_TYPE.tech,
     date: "2023-01-10",
     isTopArticle: false,
