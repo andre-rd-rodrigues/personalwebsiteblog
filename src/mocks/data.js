@@ -1,4 +1,6 @@
+import GoogleAd from "components/GoogleAd/GoogleAd";
 import { CATEGORIES_TYPE } from "utils";
+import { IN_ARTICLE_SLOT } from "utils/googleAds";
 
 const social_media = [
   { label: "facebook", ref: "https://www.facebook.com/andrerodrigoweb" },
@@ -685,6 +687,7 @@ const articles = [
           depression, and other mental health issues. Fortunately there&apos;re
           effective strategies we can use to prevent this negative impact.
         </p>
+        <GoogleAd slot={IN_ARTICLE_SLOT} />
         <h2 className="section-title">
           Strategies for Mitigating the Effects of Prolonged Screen Time
         </h2>
@@ -1067,7 +1070,7 @@ const articles = [
   {
     id: "098769s2a482-532-kpl64fgh",
     title:
-      "Overcoming Imposter Syndrome: The Impact on Programmers&apos; Mental Health",
+      "Overcoming Imposter Syndrome: The Impact on Programmers Mental Health",
     description:
       "Imposter syndrome is a common experience among programmers. Learn about the impact it can have on mental health and strategies for overcoming it, such as challenging negative thoughts, embracing failure, seeking feedback and seeking support.",
     category: CATEGORIES_TYPE.career,
@@ -1175,7 +1178,7 @@ const articles = [
     )
   },
   {
-    id: "098769s2a482-532-kpl64fgh",
+    id: "098769s2a482-532-2397hsfgh",
     title: "Start Smart: The Essential Guide to Saving and Investing",
     description:
       "Learn how to start your journey towards financial stability with this essential guide to saving and investing. Discover the basics of setting financial goals, creating a budget, understanding different types of investments, and building a strong financial future.",
@@ -1214,6 +1217,7 @@ const articles = [
           that have the potential to grow in value over time. These assets can
           include stocks, bonds, mutual funds, and real estate.
         </p>
+        <GoogleAd slot={IN_ARTICLE_SLOT} />
         <h2>Building a Diversified Portfolio</h2>
         <p>
           When it comes to investing, it&apos;s important to diversify your
@@ -1222,6 +1226,27 @@ const articles = [
           case one particular investment doesn&apos;t perform well. A good rule
           of thumb is to have a mix of stocks and bonds, with a larger
           percentage of bonds as you get closer to retirement.
+        </p>
+        <h2>Seeking Professional Advice</h2>
+        <p>
+          Saving and investing can be a complex and confusing process,
+          especially for beginners. Seeking professional advice from a financial
+          advisor or a financial planner can help you understand the process and
+          make informed decisions. They can also help you create a financial
+          plan that is tailored to your specific needs and goals.
+        </p>
+        <h2>Conclusion</h2>
+        <p>
+          Saving and investing can be a complex and confusing process,
+          especially for beginners, but its essential for building a strong
+          financial future. By setting financial goals, creating a budget,
+          understanding the basics of saving and investing, building a
+          diversified portfolio, and seeking professional advice, you can start
+          your journey towards financial stability. Remember that the key to
+          success is consistency and discipline, it&apos;s important to start
+          small and make it a habit. The earlier you start, the more time your
+          money has to grow. It&apos;s never too late to start, so take the
+          first step today, and start building a strong financial foundation.
         </p>
       </div>
     )

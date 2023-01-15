@@ -1,6 +1,8 @@
 @import "assets/styles/mixins";
 
 .sliderContainer {
+  margin-bottom: 100px;
+
   button[class="slick-arrow slick-prev"]::before {
     color: $dark !important;
     @include fade-in;
