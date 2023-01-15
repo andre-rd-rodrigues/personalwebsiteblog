@@ -1,7 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import { useEffect } from "react";
-import ArticlesGrid from "components/Blog/ArticlesGrid/ArticlesGrid";
+import ArticlesGrid from "components/Articles/ArticlesGrid/ArticlesGrid";
 import PageContainer from "components/PageContainer/PageContainer";
 import useQuery from "hooks/useQuery";
 import { getArticlesByCategory, getArticlesByInput, SEARCH_TYPE } from "utils";

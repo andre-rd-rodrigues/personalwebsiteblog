@@ -14,8 +14,8 @@ const CATEGORIES_TYPE = {
 };
 
 const CATEGORIES = [
-  { name: "Top articles", type: CATEGORIES_TYPE.top },
-  { name: "Recent", type: CATEGORIES_TYPE.recent },
+  { name: "Top picks", type: CATEGORIES_TYPE.top },
+  { name: "Latest", type: CATEGORIES_TYPE.recent },
   { name: "Wellbeing", type: CATEGORIES_TYPE.wellbeing },
   { name: "Career", type: CATEGORIES_TYPE.career },
   { name: "Technology", type: CATEGORIES_TYPE.tech },

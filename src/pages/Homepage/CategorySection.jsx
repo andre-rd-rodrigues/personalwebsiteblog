@@ -1,6 +1,6 @@
 import React from "react";
 import { fadeInVariant, motion } from "assets/motion/motionVariants";
-import ArticlesGrid from "components/Blog/ArticlesGrid/ArticlesGrid";
+import ArticlesGrid from "components/Articles/ArticlesGrid/ArticlesGrid";
 import PropTypes from "prop-types";
 import { CATEGORIES, getArticlesByCategory } from "utils";
 

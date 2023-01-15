@@ -4,7 +4,7 @@
   @include blog_settings;
 }
 
-.Homepage {
+.wrapper {
   p[class="article_description"] {
     text-align: justify;
   }
@@ -12,7 +12,7 @@
 
 //Responsive
 @media only screen and (max-width: $breaking-point-md) {
-  .Homepage {
+  .wrapper {
     margin-top: 40px;
   }
 }

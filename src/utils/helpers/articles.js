@@ -1,4 +1,5 @@
 import { articles } from "mocks/data";
+import { isDateInThisWeek } from "./date";
 
 /**
  *  Function that sorts articles by date and returns the first 5 articles
@@ -11,6 +12,19 @@ const getRecentArticles = () => {
   });
 
   return articlesSorted;
+};
+
+/**
+ *  Function that filters this week articles
+ */
+const getWeeklyArticles = () => {
+  const recentArticles = getRecentArticles();
+
+  const weekArticles = recentArticles.filter((article) =>
+    isDateInThisWeek(new Date(article.date))
+  );
+
+  return weekArticles.length ? weekArticles : recentArticles;
 };
 
 /**
@@ -84,5 +98,6 @@ export {
   getArticlesByCategory,
   getArticlesByInput,
   getArticlesById,
+  getWeeklyArticles,
   getTopArticles
 };
