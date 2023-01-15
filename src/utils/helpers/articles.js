@@ -21,7 +21,7 @@ const getWeeklyArticles = () => {
   const recentArticles = getRecentArticles();
 
   const weekArticles = recentArticles.filter((article) =>
-    isDateInThisWeek(new Date(article.date))
+    isDateInThisWeek(article.date)
   );
 
   return weekArticles.length ? weekArticles : recentArticles;
@@ -31,9 +31,9 @@ const getWeeklyArticles = () => {
  *  Function that filters articles and returns the ones with isTopArticle
  */
 const getTopArticles = () => {
-  const articles = articles.filter((item) => item.isTopArticle);
+  const filteredArticles = articles.filter((item) => item.isTopArticle);
 
-  return validateSearch(articles);
+  return validateSearch(filteredArticles);
 };
 
 /**
@@ -41,12 +41,12 @@ const getTopArticles = () => {
  *  @param {string} input - The input query string
  */
 const getArticlesByInput = (input) => {
-  const articles = articles.filter(
+  const filteredArticles = articles.filter(
     (item) =>
       item.title.toLowerCase().includes(input) || item.category.includes(input)
   );
 
-  return validateSearch(articles);
+  return validateSearch(filteredArticles);
 };
 
 /**

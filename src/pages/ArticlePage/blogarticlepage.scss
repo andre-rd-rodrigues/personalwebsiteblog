@@ -1,5 +1,14 @@
 @import "assets/styles/mixins";
 
+.article-container {
+  h2 {
+    font-family: Jost, sans-serif;
+    font-size: var(--fs-l-s);
+    font-weight: 500;
+    margin: 50px 0 20px;
+  }
+}
+
 .feather-arrow-left {
   margin-bottom: 25px;
   &:hover {
@@ -48,9 +57,17 @@
   font-weight: 500;
   margin: 50px 0 20px;
 }
-.ordered-list {
-  padding-left: 0px;
-  list-style-position: inside;
+.section-points {
+  li {
+    margin-top: 35px;
+    font-weight: 300;
+    font-size: var(--fs-m);
+  }
+}
+.section-list {
+  li {
+    margin-top: 20px;
+  }
 }
 .image-horizontal {
   width: 100%;
@@ -60,7 +77,7 @@
 }
 //Responsive
 @media only screen and (max-width: $breaking-point-md) {
-  .container {
+  .article-container {
     margin-top: 20px;
   }
 }

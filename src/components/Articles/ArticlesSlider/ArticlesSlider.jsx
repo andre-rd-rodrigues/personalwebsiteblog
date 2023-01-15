@@ -1,5 +1,5 @@
-import PropTypes from "prop-types";
 import React from "react";
+import PropTypes from "prop-types";
 import Slider from "react-slick";
 import { SLIDER_SETTINGS } from "utils";
 import ArticleCard from "../ArticleCard/ArticleCard";

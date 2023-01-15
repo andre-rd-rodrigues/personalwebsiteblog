@@ -30,7 +30,7 @@ const BlogArticlePage = () => {
         image={article?.image_src}
       />
       <PageContainer color="dark" bgColor="grey-yellow">
-        <div className="container">
+        <div className="article-container">
           <Icon
             icon="arrow-left"
             size={30}

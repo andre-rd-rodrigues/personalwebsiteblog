@@ -18,7 +18,7 @@ const articles = [
     title:
       "Transform Your Home into a Smart Home: 5 Ways to Automate Your House",
     description:
-      "Are you tired of constantly forgetting to turn off the lights or adjust the thermostat when you leave the house? It might be time to consider automating your home. In this blog post, we'll give you five ways to transform your home into a smart home, including using smart thermostats, smart lighting, smart appliances, smart security systems, and smart home hubs. Automating your home can make your life easier, save you energy and money, and give you peace of mind. Learn how to get started with home automation today.",
+      "Are you tired of constantly forgetting to turn off the lights or adjust the thermostat when you leave the house? It might be time to consider automating your home. In this blog post, we&apos;ll give you five ways to transform your home into a smart home, including using smart thermostats, smart lighting, smart appliances, smart security systems, and smart home hubs. Automating your home can make your life easier, save you energy and money, and give you peace of mind. Learn how to get started with home automation today.",
     category: CATEGORIES_TYPE.tech,
     date: "11/25/2022",
     isTopArticle: false,
@@ -86,7 +86,7 @@ const articles = [
     id: "c5d2a482",
     title: "The Top 5 Cybersecurity Threats of 2022: What You Need to Know",
     description:
-      "Stay ahead of the curve and protect yourself and your business from the latest cybersecurity threats. In this blog post, we'll outline the top five threats to watch out for in 2022, including ransomware, cloud security breaches, Internet of Things vulnerabilities, supply chain attacks, and artificial intelligence and machine learning attacks. Stay informed and follow best practices to reduce the risk of a cybersecurity incident.",
+      "Stay ahead of the curve and protect yourself and your business from the latest cybersecurity threats. In this blog post, we&apos;ll outline the top five threats to watch out for in 2022, including ransomware, cloud security breaches, Internet of Things vulnerabilities, supply chain attacks, and artificial intelligence and machine learning attacks. Stay informed and follow best practices to reduce the risk of a cybersecurity incident.",
     category: CATEGORIES_TYPE.tech,
     date: "01/03/2023",
     isTopArticle: true,
@@ -180,9 +180,9 @@ const articles = [
   {
     id: "c5d2a482-532",
     title:
-      "Protecting Your Personal Information Online: A Beginner's Guide to Cybersecurity",
+      "Protecting Your Personal Information Online: A Beginner&apos;s Guide to Cybersecurity",
     description:
-      "In today's digital age, it's crucial to protect your personal information online. In this blog post, we'll provide a beginner's guide to cybersecurity and give you tips on how to keep your data safe. Learn how to use strong, unique passwords, be cautious about the information you share online, use two-factor authentication, recognize phishing scams, keep your software and systems up to date, and use secure networks and connections. Follow these best practices to reduce the risk of identity theft and other cyber threats.",
+      "In today&apos;s digital age, it&apos;s crucial to protect your personal information online. In this blog post, we&apos;ll provide a beginner&apos;s guide to cybersecurity and give you tips on how to keep your data safe. Learn how to use strong, unique passwords, be cautious about the information you share online, use two-factor authentication, recognize phishing scams, keep your software and systems up to date, and use secure networks and connections. Follow these best practices to reduce the risk of identity theft and other cyber threats.",
     category: CATEGORIES_TYPE.tech,
     date: "2023-01-05",
     isTopArticle: false,
@@ -324,9 +324,9 @@ const articles = [
   {
     id: "d5d6a482-532",
     title:
-      "Don't Let Your Vacation be Ruined by a Cyber Attack: How to Secure Your Devices Before You Go",
+      "Don&apos;t Let Your Vacation be Ruined by a Cyber Attack: How to Secure Your Devices Before You Go",
     description:
-      "In this blog post, we'll provide tips on how to secure your devices before you go, including updating your software and devices, using a virtual private network (VPN), enabling two-factor authentication (2FA), and being aware of phishing scams. Follow these best practices to help protect your data and enjoy your vacation with peace of mind.",
+      "In this blog post, we&apos;ll provide tips on how to secure your devices before you go, including updating your software and devices, using a virtual private network (VPN), enabling two-factor authentication (2FA), and being aware of phishing scams. Follow these best practices to help protect your data and enjoy your vacation with peace of mind.",
     category: CATEGORIES_TYPE.tech,
     date: "2023-01-08",
     isTopArticle: false,
@@ -449,48 +449,105 @@ const articles = [
     id: "d509s2a482-532",
     title: "How to spot and avoid phishing scams?",
     description:
-      "In this article, we'll provide some tips on how to spot and avoid phishing scams, so you can protect yourself and your personal data. We'll cover how to identify suspicious emails, be cautious about sharing personal information, and use two-factor authentication to add an extra layer of security to your online accounts.",
+      "In this article, we&apos;ll provide some tips on how to spot and avoid phishing scams, so you can protect yourself and your personal data. We&apos;ll cover how to identify suspicious emails, be cautious about sharing personal information, and use two-factor authentication to add an extra layer of security to your online accounts.",
     category: CATEGORIES_TYPE.tech,
     date: "2023-01-10",
     isTopArticle: false,
 
     content: (
       <div>
-        <h2 className="section-title">Look out for suspicious emails</h2>
         <p>
-          Phishing scams often use emails to trick you into giving away your
-          personal information. These emails may appear to be from legitimate
-          sources, such as banks, government agencies, or well-known companies,
-          but they are actually designed to steal your information. To spot
-          suspicious emails, look out for the following red flags:
+          Phishing scams are a common tactic used by cybercriminals to trick
+          people into giving away their personal information or money. These
+          scams can take many forms, from fake emails and text messages to phone
+          calls and social media messages. They are designed to look legitimate,
+          and can be difficult to spot. In this article, we will discuss how to
+          spot and avoid phishing scams.
         </p>
-
-        <ul>
-          <li>Unfamiliar sender or recipient</li>
-          <li>Misspellings or poor grammar</li>
-          <li>Urgent or threatening language</li>
-          <li>Incorrect branding or logos</li>
-          <li>Links or attachments from unfamiliar sources</li>
-        </ul>
+        <h2 className="section-title">Be suspicious of unsolicited messages</h2>
         <p>
-          If you receive an email that seems suspicious, do not click on any
-          links or download any attachments. Instead, delete the email and
-          report it as spam, or contact the supposed sender directly to verify
-          its authenticity.
+          Be wary of unsolicited emails, text messages, phone calls or social
+          media messages, especially if they ask for personal information or
+          money. Legitimate companies will typically not ask for sensitive
+          information through these channels.
+        </p>
+        <h2 className="section-title">Check the sender&apos;s email address</h2>
+        <p>
+          Scammers often use fake email addresses that look similar to
+          legitimate ones. Check the sender&apos;s email address carefully and
+          look for small changes such as a different domain name or spelling
+          errors.
+        </p>
+        <h2 className="section-title">Look for spelling and grammar errors</h2>
+        <p>
+          Scammers often use poor grammar and spelling in their messages. If an
+          email or message contains numerous errors, it&apos;s likely to be a
+          scam.
+        </p>
+        <h2 className="section-title"> Be cautious of urgent requests</h2>
+        <p>
+          Scammers often try to create a sense of urgency in their messages to
+          get you to act quickly. Be cautious of emails or messages that ask you
+          to take immediate action or threaten consequences if you don&apos;t.
+        </p>
+        <h2 className="section-title">
+          Don&apos;t click on links or download attachments
+        </h2>
+        <p>
+          Scammers often use links and attachments to spread malware or steal
+          personal information. Don&apos;t click on links or download
+          attachments from unsolicited emails or messages.
+        </p>
+        <h2 className="section-title">
+          Verify the authenticity of the website
+        </h2>
+        <p>
+          If you receive an email or message that directs you to a website,
+          check the website&apos;s URL carefully. Legitimate websites will
+          typically have a padlock icon in the browser and the URL will begin
+          with &quot;https&quot; instead of &quot;http&quot;.
+        </p>
+        <h2 className="section-title">Be wary of phone calls</h2>
+        <p>
+          Scammers may also use phone calls to try to trick you into giving away
+          your personal information or money. Be cautious of phone calls from
+          unfamiliar numbers, especially if they ask for sensitive information.
         </p>
 
         <h2 className="section-title">
-          Be cautious about sharing personal information
+          Don&apos;t reply or give out personal information
         </h2>
         <p>
-          Phishing scams may try to trick you into sharing your personal
-          information, such as your name, address, phone number, or financial
-          details. To avoid falling victim to these scams, be cautious about
-          sharing personal information online, especially with unfamiliar
-          sources. Never provide personal information in response to an
-          unsolicited request, and be especially wary of emails or websites that
-          ask for sensitive information, such as login credentials or financial
-          details.
+          If you receive a phishing email or message, don&apos;t reply or give
+          out any personal information. Instead, report the message to the
+          appropriate authorities and delete it.
+        </p>
+
+        <h2 className="section-title">
+          Keep your computer and software updated
+        </h2>
+        <p>
+          If you receive a phishing email or message, don&apos;t reply or give
+          out any personal information. Instead, report the message to the
+          appropriate authorities and delete it.
+        </p>
+        <h2 className="section-title">Conclusion</h2>
+        <p>
+          When it comes to phishing scams, it&apos;s important to never reply to
+          the message or give out any personal information. Scammers use
+          phishing emails and messages to trick you into giving sensitive
+          personal information. phishing scams are a common tactic used by
+          cybercriminals to steal personal information or money and these scams
+          can be difficult to spot, but by being aware of the tactics used by
+          scammers and following the tips outlined in this article, you can
+          protect yourself from phishing attacks. Remember to be suspicious of
+          unsolicited messages, check the sender&apos;s email address, look for
+          spelling and grammar errors, be cautious of urgent requests,
+          don&apos;t click on links or download attachments, verify the
+          authenticity of the website, be wary of phone calls and above all,
+          don&apos;t reply or give out personal information. Keep in mind that
+          if something seems suspicious, trust your gut and don&apos;t take any
+          chances. It&apos;s always better to be safe than sorry.
         </p>
       </div>
     ),
@@ -502,7 +559,7 @@ const articles = [
     id: "d509s2a482-532-k924",
     title: "Become a Pro: Secrets to Dominating in CS:GO",
     description:
-      "Learn how to become a pro in Counter-Strike: Global Offensive (CS:GO) with our insider tips and strategies. From aiming and map knowledge to communication and focus, we cover all the essentials you need to dominate the competition. Improve your gameplay and take your CS:GO skills to the next level with our comprehensive guide. Don't miss out on the secrets to mastering the game.",
+      "Learn how to become a pro in Counter-Strike: Global Offensive (CS:GO) with our insider tips and strategies. From aiming and map knowledge to communication and focus, we cover all the essentials you need to dominate the competition. Improve your gameplay and take your CS:GO skills to the next level with our comprehensive guide. Don&apos;t miss out on the secrets to mastering the game.",
     category: CATEGORIES_TYPE.games,
     date: "2022-12-01",
     isTopArticle: false,
@@ -612,7 +669,7 @@ const articles = [
           Prolonged screen time has been linked to a range of negative mental
           health effects, including:
         </p>
-        <ul>
+        <ul className="section-list">
           <li>Anxiety and depression</li>
           <li>Insomnia and sleep disturbances</li>
           <li>Increased stress levels</li>
@@ -625,7 +682,8 @@ const articles = [
           emitted by screens suppresses the production of melatonin, a hormone
           that helps regulate our sleep. This can lead to insomnia and other
           sleep disturbances, which in turn can contribute to anxiety,
-          depression, and other mental health issues.
+          depression, and other mental health issues. Fortunately there&apos;re
+          effective strategies we can use to prevent this negative impact.
         </p>
         <h2 className="section-title">
           Strategies for Mitigating the Effects of Prolonged Screen Time
@@ -635,31 +693,31 @@ const articles = [
           lives, there are several strategies we can use to mitigate its
           negative effects on our mental health:
         </p>
-        <ul>
+        <ul className="section-points">
           <li>
-            Set a daily screen time limit: Use the built-in screen time tracking
-            tools on your phone or other devices to set a daily limit for
-            yourself and stick to it.
+            <h5>Set a daily screen time limit</h5> Use the built-in screen time
+            tracking tools on your phone or other devices to set a daily limit
+            for yourself and stick to it.
           </li>
           <li>
-            Take regular breaks: Every 20-30 minutes, take a break from your
-            screens and focus on something else for a few minutes. This can help
-            reduce eye strain and improve your focus and attention.
+            <h5>Take regular breaks</h5> Every 20-30 minutes, take a break from
+            your screens and focus on something else for a few minutes. This can
+            help reduce eye strain and improve your focus and attention.
           </li>
           <li>
-            Use blue light filters: Many devices now have built-in blue light
-            filters that can help reduce the amount of blue light emitted by
-            screens and make it easier to fall asleep at night.
+            <h5>Use blue light filters</h5> Many devices now have built-in blue
+            light filters that can help reduce the amount of blue light emitted
+            by screens and make it easier to fall asleep at night.
           </li>
           <li>
-            Practice good sleep hygiene: Establish a regular sleep schedule,
-            create a relaxing bedtime routine, and avoid screens for at least an
-            hour before bedtime.
+            <h5>Practice good sleep hygiene</h5> Establish a regular sleep
+            schedule, create a relaxing bedtime routine, and avoid screens for
+            at least an hour before bedtime.
           </li>
           <li>
-            Stay active and engage in physical activity: Regular physical
-            activity can help reduce stress and anxiety and improve your overall
-            mental well-being.
+            <h5>Stay active and engage in physical activity</h5> Regular
+            physical activity can help reduce stress and anxiety and improve
+            your overall mental well-being.
           </li>
         </ul>
         <h2 className="section-title">Conclusion</h2>
@@ -710,7 +768,7 @@ const articles = [
           If you&apos;re experiencing the following symptoms, it may be a sign
           that you&apos;re suffering from burnout:
         </p>
-        <ul>
+        <ul className="section-list">
           <li>
             Feeling overwhelmed and unable to cope with the demands of your job
           </li>
@@ -721,57 +779,115 @@ const articles = [
         </ul>
         <h2 className="section-title">Preventing Burnout</h2>
         <p>
-          To prevent burnout, it&apos;s important to take a proactive approach
-          to managing stress. Here are some strategies to help you stay healthy
-          and avoid burnout:
+          Preventing burnout is essential for maintaining a healthy work-life
+          balance and achieving long-term success. Its basically a process of
+          taking little steps to maintain one&apos;s physical and emotional
+          well-being, in order to avoid the negative effects of prolonged
+          stress, such as exhaustion, cynicism, and a lack of accomplishment.
+          <br /> In order to prevent a burnout, it&apos;s important to take a
+          proactive approach to managing stress, so here are some strategies to
+          help you stay healthy:
         </p>
-        <ul>
+        <ol className="section-points">
           <li>
-            Set realistic goals and priorities: Learn to say &quot;no&quot; to
-            unrealistic expectations and unnecessary tasks.
+            <h5>Set realistic goals and priorities</h5>
+            <p>
+              Learn to say &quot;no&quot; to unrealistic expectations and
+              unnecessary tasks. When goals are unrealistic, they can cause
+              unnecessary stress and lead to feelings of disappointment and
+              failure. Setting realistic goals and priorities involves taking a
+              step back and assessing what is truly achievable and important for
+              you.
+            </p>
           </li>
           <li>
-            Take regular breaks: Make sure to take breaks throughout the day to
-            refresh your mind and recharge your batteries.
+            <h5>Take regular breaks</h5>
+            <p>
+              Make sure to take breaks throughout the day to refresh your mind
+              and recharge your batteries. When we are constantly working and
+              not taking breaks, it can lead to feelings of exhaustion, stress,
+              and burnout.
+            </p>
           </li>
           <li>
-            Maintain a healthy lifestyle: Eating well, getting enough sleep, and
-            regular exercise are important for maintaining overall well-being.
+            <h5>Maintain a healthy lifestyle</h5>
+            <p>
+              Eating well, getting enough sleep, and regular exercise are
+              important for maintaining overall well-being. When we neglect our
+              physical and mental well-being, it can lead to feelings of
+              exhaustion, stress, and burnout
+            </p>
           </li>
           <li>
-            Develop a good work-life balance: Set boundaries between work and
-            personal time and stick to them.
+            <h5>Develop a good work-life balance</h5>
+            <p>
+              Set boundaries between work and personal time and stick to them.
+              When we spend all our time working, it can lead to feelings of
+              exhaustion, stress, and burnout, you need your personal space and
+              time to feel recharged at ultimately happy.
+            </p>
           </li>
           <li>
-            Seek support: Talk to friends, family, or a therapist if you&apos;re
-            feeling overwhelmed.
+            <h5>Seek support</h5>
+            <p>
+              Sometimes we all need help and guidance to overcome difficult
+              situations and emotions. Share your thoughts and feelings with
+              people you trust. Having someone to talk to can help to alleviate
+              feelings of stress and isolation. <br />
+              Joining a group of people who are going through similar
+              experiences can provide a sense of community and support. <br />
+              Sometimes, seeking professional help is necessary. A therapist can
+              provide support, guidance and tools to help you cope with stress
+              and prevent burnout.
+            </p>
           </li>
-        </ul>
+        </ol>
         <h2 className="section-title">Recovering from Burnout</h2>
         <p>
-          If you&apos;re already experiencing burnout, it&apos;s important to
-          take steps to recover. Here are some strategies to help you recover:
+          Recovering from burnout is a process that requires patience, self-care
+          and a commitment to making changes. It is important to understand that
+          burnout is not something that can be &aquot;fixed&aquot; overnight,
+          and that it may take time to fully recover.
+          <br />
+          Here are some tips for recovering from burnout:
         </p>
-        <ul>
+        <ol className="section-points">
           <li>
-            Take time off: If possible, take a break from work to give yourself
-            the time and space you need to recover.
+            <h5>Take time off</h5>If possible, take a break from work to give
+            yourself the time and space you need to recover. Taking a break from
+            work or other responsibilities can help to reduce feelings of stress
+            and exhaustion.
           </li>
           <li>
-            Practice self-care: Engage in activities that help you relax and
-            reduce stress, such as yoga or meditation.
+            <h5>Practice self-care</h5> Engaging in activities that promote
+            physical and emotional well-being, such as exercise, sleep, and
+            relaxation, can help to reduce feelings of stress and improve
+            overall health.
           </li>
           <li>
-            Seek professional help: Consider seeing a therapist or counselor to
-            help you work through the emotional and psychological effects of
-            burnout.
+            <h5>Reflect on your priorities and goals</h5>Reflect on what led to
+            your burnout and reassess your priorities and goals, making sure
+            they are realistic and aligned with your values.
           </li>
           <li>
-            Make changes: Reflect on what led to your burnout and consider
-            making changes to your work environment or routine to prevent it
-            from happening again.
+            <h5>Seek professional help</h5> Consider seeing a therapist to help
+            you work through the emotional and psychological effects. A
+            mental-health professional can provide you support, guidance and
+            tools to help you cope with stress and more importantly prevent you
+            from getting back to a burnout.
           </li>
-        </ul>
+          <li>
+            <h5>Make changes</h5> Reflect on what led to your burnout and
+            consider making changes to your work environment or routine to
+            prevent it from happening again.
+          </li>
+          <li>
+            <h5>Gradually return to work</h5> When you feel ready, begin to
+            return to work or other responsibilities. If possible, start with
+            shorter hours or less demanding tasks, and gradually increase your
+            workload over time.
+          </li>
+        </ol>
         <h2 className="section-title">Conclusion</h2>
         <p>
           Burnout is a serious issue that can affect programmers and other
@@ -780,8 +896,13 @@ const articles = [
           chronic condition. By setting realistic goals and priorities, taking
           regular breaks, maintaining a healthy lifestyle, developing a good
           work-life balance and seeking support when needed, you can reduce your
-          risk of burnout and maintain your overall well-being. Remember that
-          recovery takes time, and be kind to yourself in the process.
+          risk of burnout and maintain your overall well-being.
+          <br />
+          Remember that recovering from burnout takes time, and it&apos;s
+          important to be patient with yourself. It&apos;s also important to
+          understand that it&apos;s not a one-time event, you will have to
+          continue working on maintaining a healthy work-life balance, and
+          taking care of yourself to prevent it from happening again.
         </p>
       </div>
     )
@@ -801,105 +922,144 @@ const articles = [
     content: (
       <div>
         <p>
-          Working on a programming team can be a rewarding experience, but it
-          can also be a source of stress and conflict. Whether it&apos;s
-          disagreements over code, competing priorities, or personality clashes,
-          conflicts within a programming team can take a toll on both
-          productivity and mental well-being.
+          Team conflicts are an inevitable part of working in a team, especially
+          in the field of programming where tight deadlines, competing
+          priorities, and different working styles can lead to disagreements and
+          tension. Navigating these conflicts while maintaining a positive
+          mental well-being can be challenging, but it is essential for the
+          success of the team and the individual team members. In this article,
+          we will discuss some strategies for navigating team conflicts in
+          programming while maintaining mental well-being. We will cover topics
+          such as effective communication, active listening, and setting
+          boundaries, as well as how to address conflicts in a healthy and
+          productive way.
         </p>
         <h2 className="section-title">
-          The Impact of Conflicts on Mental Well-being
+          The Impact of Conflicts on Mental Health
         </h2>
         <p>
-          Conflicts within a programming team can lead to a range of negative
-          mental health effects, including:
+          Conflicts that are not well addressed can lead to a range of negative
+          effects, including:
         </p>
-        <ul>
+        <ul className="section-points">
           <li>
-            Stress and anxiety: Conflicts within a team can create a sense of
-            uncertainty and unpredictability, leading to feelings of stress and
-            anxiety. This can affect a person&apos;s ability to focus and make
-            decisions, and can also lead to physical symptoms such as headaches
-            and fatigue.
+            <h5>Stress and anxiety</h5> A sense of uncertainty and
+            unpredictability, leading to feelings of stress and anxiety. This
+            can affect a person&apos;s ability to focus and make decisions, and
+            can also lead to physical symptoms such as headaches and fatigue.
           </li>
           <li>
-            Feeling overwhelmed and overworked: Conflicts within a team can lead
-            to an increase in workload and responsibilities, leading to feelings
-            of being overwhelmed and overworked. This can affect a person&apos;s
+            <h5>Feeling overwhelmed and overworked</h5>
+            Increase in workload and responsibilities, leading to feelings of
+            being overwhelmed and overworked. This can affect a person&apos;s
             ability to perform their job effectively and can also lead to
             burnout.
           </li>
           <li>
-            Lack of motivation and engagement: Conflicts within a team can lead
-            to a lack of motivation and engagement among team members. This can
+            <h5>Lack of motivation and engagement</h5>
+            Lack of motivation and engagement among team members. This can
             affect a person&apos;s ability to contribute to the team&apos;s
             goals and objectives and can also lead to a decrease in
             productivity.
           </li>
           <li>
-            Decreased job satisfaction: Conflicts within a team can lead to
-            decreased job satisfaction among team members. This can affect a
-            person&apos;s overall well-being and can also lead to a higher
-            turnover rate.
+            <h5>Decreased job satisfaction</h5> Decreased job satisfaction among
+            team members. This can affect a person&apos;s overall well-being and
+            can also lead to a higher turnover rate.
           </li>
           <li>
-            Feeling isolated and unsupported: Conflicts within a team can lead
-            to feelings of isolation and unsupported among team members. This
-            can affect a person&apos;s ability to seek help and support from
-            their colleagues and can also lead to a lack of trust and respect
-            within the team.
+            <h5>Feeling isolated and unsupported</h5>
+            Feelings of isolation and unsupported among team members. This can
+            affect a person&apos;s ability to seek help and support from their
+            colleagues and can also lead to a lack of trust and respect within
+            the team.
           </li>
         </ul>
         <p>
           These negative effects can be particularly damaging for those who are
-          already struggling with mental health issues. It&apos;s important to
-          address conflicts within a programming team in order to maintain a
-          healthy work environment and protect the mental well-being of all team
-          members.
+          already struggling with mental health issues. Thats why soft skills
+          are so important in order to maintain a healthy work environment and
+          protect the mental well-being of all team members.
         </p>
         <h2 className="section-title">
           Strategies for navigating through conflicts
         </h2>
         <p>
-          Here are some strategies for navigating conflicts within a programming
-          team and maintaining mental well-being:
+          Navigating conflicts in a team can be challenging, but there are
+          several strategies that can help to address conflicts in a healthy and
+          productive way:
         </p>
-        <ul>
+        <ul className="section-points">
           <li>
-            Communicate openly and honestly: Encourage open and honest
-            communication within the team, and make sure that everyone&apos;s
-            voices are heard. This can help prevent conflicts from escalating
-            and make it easier to find a resolution.
+            <h5>Communicate openly and honestly</h5> If you&apos;re in a
+            managment position, encourage open and honest communication within
+            the team, and make sure that everyone&apos;s voices are heard. This
+            can help prevent conflicts from escalating and make it easier to
+            find a resolution.
+            <br /> If not, speak out! But remember to be polite and assertive,
+            good communication is key to resolving conflicts
           </li>
+
           <li>
-            Practice active listening: Listen actively to others and try to
+            <h5>Active listening</h5> Listen actively to others and try to
             understand their perspectives. This can help build trust and respect
-            within the team, and make it easier to find a resolution.
+            within the team, and make it easier to find a resolution. Also
+            you&apos;ll be more aware of the other&apos;s needs, so that you can
+            better argument and adapt your solution.
+          </li>
+
+          <li>
+            <h5>Embrace differences</h5> Conflicts can arise due to differences
+            in opinions and work styles. It&apos;s important to remember that
+            everyone has different perspectives and what may be an issue for one
+            person, may not be for another. Embrace the diversity and find a
+            solution that works for everyone.
+          </li>
+
+          <li>
+            <h5>Set boundaries</h5> It&apos;s important to set boundaries on how
+            much time and energy you are willing to invest in resolving
+            conflicts. It&apos;s also important to remember that it&apos;s okay
+            to walk away from a conflict if it becomes detrimental to your
+            mental well-being.
+          </li>
+
+          <li>
+            <h5>Follow up and evaluate</h5> Once a conflict is resolved,
+            it&apos;s important to follow up and evaluate the outcome. This will
+            help to ensure that the conflict doesn&apos;t reoccur and that any
+            lessons learned can be applied in the future.
+          </li>
+
+          <li>
+            <h5>Look for common ground</h5> Try to find a solution that meets
+            the needs of all parties involved. This may involve compromise, but
+            it is important to remember that everyone has something to gain and
+            something to lose in a conflict.
           </li>
           <li>
-            Be willing to compromise: Conflicts often arise when people are
-            unwilling to compromise. Be willing to make concessions and consider
-            the needs and perspectives of others.
-          </li>
-          <li>
-            Encourage team building: Regular team building activities can help
-            build camaraderie and reduce tension within the team. This can also
-            create a safe space where team members can share their concerns and
-            find support.
-          </li>
-          <li>
-            Seek help: If conflicts within the team are causing you distress,
-            don&apos;t hesitate to seek help from a therapist or counselor.
+            <h5>Seek guidance</h5> If conflicts within the team are causing you
+            distress, don&apos;t hesitate to seek help from a therapist or
+            counselor.
           </li>
         </ul>
         <h2 className="section-title">Conclusion</h2>
         <p>
-          Navigating conflicts within a programming team can be challenging, but
-          it&apos;s important for the well-being of all team members. By
-          communicating openly and honestly, practicing active listening, being
-          willing to compromise, encouraging team building, and seeking help
-          when needed, you can navigate conflicts and maintain your mental
-          well-being.{" "}
+          It&apos;s important to remember that conflicts are a normal part of
+          working in a team, and they can be an opportunity for growth and
+          learning. team conflicts are an inevitable part of working in a team,
+          especially in the field of programming. However, by following
+          strategies such as effective communication, identifying the root
+          cause, keeping emotions in check, seeking help when needed, embracing
+          differences, setting boundaries, looking for common ground, and
+          following up and evaluating, team members can navigate conflicts in a
+          healthy and productive way. Additionally, it is important to remember
+          that conflicts can be an opportunity for growth and learning.
+          It&apos;s crucial to prioritize mental well-being and to set
+          boundaries for time and energy invested in resolving conflicts. By
+          implementing these strategies, team members can maintain positive
+          mental well-being while successfully addressing conflicts within the
+          team.
         </p>
       </div>
     )
@@ -907,7 +1067,7 @@ const articles = [
   {
     id: "098769s2a482-532-kpl64fgh",
     title:
-      "Overcoming Imposter Syndrome: The Impact on Programmers' Mental Health",
+      "Overcoming Imposter Syndrome: The Impact on Programmers&apos; Mental Health",
     description:
       "Imposter syndrome is a common experience among programmers. Learn about the impact it can have on mental health and strategies for overcoming it, such as challenging negative thoughts, embracing failure, seeking feedback and seeking support.",
     category: CATEGORIES_TYPE.career,
@@ -1013,6 +1173,58 @@ const articles = [
         </p>
       </div>
     )
+  },
+  {
+    id: "098769s2a482-532-kpl64fgh",
+    title: "Start Smart: The Essential Guide to Saving and Investing",
+    description:
+      "Learn how to start your journey towards financial stability with this essential guide to saving and investing. Discover the basics of setting financial goals, creating a budget, understanding different types of investments, and building a strong financial future.",
+    category: CATEGORIES_TYPE.finance,
+    date: "2023-01-15",
+    isTopArticle: true,
+    image_src:
+      "https://images.unsplash.com/photo-1633158829875-e5316a358c6f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80",
+    writer: "Andre Rodrigues",
+    content: (
+      <div>
+        <p>
+          Saving and investing are essential components of building a strong
+          financial future. However, for many people, the thought of saving and
+          investing can be overwhelming and confusing. In this guide, we&apos;ll
+          break down the basics of saving and investing, so you can start your
+          journey towards financial stability.
+        </p>
+        <h2>Setting Financial Goals and Creating a Budget</h2>
+        <p>
+          The first step in saving and investing is setting financial goals and
+          creating a budget. This will help you understand where your money is
+          going and where you want it to go. Start by setting short-term and
+          long-term goals, such as saving for a down payment on a house, or
+          saving for retirement. Then, create a budget that will help you
+          achieve those goals. Be sure to include all of your income and
+          expenses, and make sure that your expenses are less than your income.
+        </p>
+        <h2>Understanding the Basics of Saving and Investing</h2>
+        <p>
+          Once you have your goals and budget in place, it&apos;s time to start
+          saving and investing. When it comes to saving, it&apos;s important to
+          have an emergency fund in place. This fund should have enough money to
+          cover at least three to six months of living expenses in case of an
+          emergency. Investing is the process of putting your money into assets
+          that have the potential to grow in value over time. These assets can
+          include stocks, bonds, mutual funds, and real estate.
+        </p>
+        <h2>Building a Diversified Portfolio</h2>
+        <p>
+          When it comes to investing, it&apos;s important to diversify your
+          portfolio. This means investing in a variety of different assets to
+          spread out the risk. A diversified portfolio can help protect you in
+          case one particular investment doesn&apos;t perform well. A good rule
+          of thumb is to have a mix of stocks and bonds, with a larger
+          percentage of bonds as you get closer to retirement.
+        </p>
+      </div>
+    )
   }
 ];
 
@@ -1043,8 +1255,8 @@ const translator = {
           "Desde que tornei a minha paixão numa carreira, estou continuamente a desenvolver e a entregar projetos há cerca de 4 anos. A minha atenção aos detalhes, visão criativa do mundo e natureza meticulosa são os principais contributos da minha identidade para o desenvolvimento e criação de soluções personalizadas ao projeto. Ao longo da minha carreira, desenvolvi soluções para diversos sectores, desde pequenos negócios a trabalhadores independentes dedico-me "
         ],
         en: [
-          " Since turning my passion into a career, I&apos;ve been continuously creating and delivering projects for almost 4 years. My eye for detail, creative view of the world, and meticulous nature help me make a difference and deliver unique and personalized solutions. I've created and delivered solutions for various types of projects, from small businesses to independent workers, I'm here to help you bring your website vision to life so you can free up your time to do what you do best - running your awesome business, of course!",
-          "When I'm not busy making website dreams come true, you can find me relaxing at home in Lisbon, with my partner or unique friends, laughing with silly jokes, taking a walk, making something fun, or eating an amazing croissant accompained by jazz oldies."
+          " Since turning my passion into a career, I&apos;ve been continuously creating and delivering projects for almost 4 years. My eye for detail, creative view of the world, and meticulous nature help me make a difference and deliver unique and personalized solutions. I&apos;ve created and delivered solutions for various types of projects, from small businesses to independent workers, I&apos;m here to help you bring your website vision to life so you can free up your time to do what you do best - running your awesome business, of course!",
+          "When I&apos;m not busy making website dreams come true, you can find me relaxing at home in Lisbon, with my partner or unique friends, laughing with silly jokes, taking a walk, making something fun, or eating an amazing croissant accompained by jazz oldies."
         ]
       },
 
@@ -1070,7 +1282,7 @@ const translator = {
       },
       question: {
         pt: ["Gostaria de ver o seu feedback aqui?", "Vamos conversar"],
-        en: ["Would you like to be next?", "Let's talk!"]
+        en: ["Would you like to be next?", "Let&apos;s talk!"]
       }
     },
     work_category_page: {
