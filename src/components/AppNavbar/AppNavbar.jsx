@@ -2,21 +2,19 @@ import React from "react";
 import { useState } from "react";
 import AppIcon from "components/AppIcon/AppIcon";
 import FeatherIcon from "feather-icons-react";
+import { blog } from "mocks/data";
 import { Nav, Navbar, Offcanvas } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import { CATEGORIES } from "utils";
 import styles from "./appnavbar.module.scss";
-import { blog } from "mocks/data";
-import { CATEGORIES_TYPE } from "utils";
 
 const AppNavbar = () => {
   const [show, setShow] = useState(false);
 
-  const navLinks = blog.categories.map(({ type, name }, index) => {
+  const navLinks = CATEGORIES.map(({ type, name }, index) => {
     // Remove categories: All, Recent and Top
     const isInvalidCategory =
-      type === CATEGORIES_TYPE.all ||
-      type === CATEGORIES_TYPE.recent ||
-      type === CATEGORIES_TYPE.top;
+      type === "all" || type === "recent" || type === "top";
 
     if (!isInvalidCategory) {
       return (

@@ -1,11 +1,10 @@
-import { blog } from "mocks/data";
-import { ARTICLES_VISIBLE_LIMIT } from "utils/settings";
+import { articles } from "mocks/data";
 
 /**
  *  Function that sorts articles by date and returns the first 5 articles
  */
 const getRecentArticles = () => {
-  const articlesSorted = [...blog.articles];
+  const articlesSorted = [...articles];
 
   articlesSorted.sort((a, b) => {
     return new Date(b.date) - new Date(a.date);
@@ -18,7 +17,7 @@ const getRecentArticles = () => {
  *  Function that filters articles and returns the ones with isTopArticle
  */
 const getTopArticles = () => {
-  const articles = blog.articles.filter((item) => item.isTopArticle);
+  const articles = articles.filter((item) => item.isTopArticle);
 
   return validateSearch(articles);
 };
@@ -28,7 +27,7 @@ const getTopArticles = () => {
  *  @param {string} input - The input query string
  */
 const getArticlesByInput = (input) => {
-  const articles = blog.articles.filter(
+  const articles = articles.filter(
     (item) =>
       item.title.toLowerCase().includes(input) || item.category.includes(input)
   );
@@ -41,7 +40,7 @@ const getArticlesByInput = (input) => {
  * @param {string} id article id
  */
 const getArticlesById = (id) => {
-  return blog.articles.filter((item) => item.id === id)[0];
+  return articles.filter((item) => item.id === id)[0];
 };
 
 /**
@@ -55,17 +54,17 @@ const getArticlesByCategory = (category) => {
       return getTopArticles();
 
     case "all":
-      return blog.articles;
+      return articles;
 
     case "recent":
-      return blog.articles.slice(0, 3);
+      return getRecentArticles();
 
     default: {
-      const articles = blog.articles.filter(
+      const filteredArticles = articles.filter(
         (article) => article.category.toLowerCase() === category.toLowerCase()
       );
 
-      return validateSearch(articles);
+      return validateSearch(filteredArticles);
     }
   }
 };

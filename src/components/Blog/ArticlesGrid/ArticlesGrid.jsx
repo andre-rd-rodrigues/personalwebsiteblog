@@ -1,11 +1,11 @@
 import React from "react";
 import { useState } from "react";
+import { useEffect } from "react";
 import { containerVariant, motion } from "assets/motion/motionVariants";
 import AppButton from "components/AppButton/AppButton";
 import { ARTICLES_VISIBLE_LIMIT } from "utils";
 import ArticleCard from "../ArticleCard/ArticleCard";
 import styles from "./articlesgrid.module.scss";
-import { useEffect } from "react";
 
 const ArticlesGrid = ({ articles }) => {
   const [articlesState, setArticlesState] = useState({

@@ -1,7 +1,6 @@
 import React from "react";
 import { Icon } from "@iconify/react";
 import SearchBar from "components/AppSearchBar/AppSearchBar";
-import { blog } from "mocks/data";
 import { push as Menu } from "react-burger-menu";
 import {
   Link,
@@ -10,6 +9,7 @@ import {
   useSearchParams
 } from "react-router-dom";
 import "./blogsidebar.scss";
+import { CATEGORIES } from "utils";
 
 function SideBar() {
   const [, setSearchQuery] = useSearchParams({});
@@ -41,7 +41,7 @@ function SideBar() {
       <div className="blog-sidebar-section">
         <h5>Categories</h5>
         <ul>
-          {blog.categories.map((category, index) => (
+          {CATEGORIES.map((category, index) => (
             <Link key={index} to={`/article/search?category=${category.type}`}>
               <li>{category.name}</li>
             </Link>
