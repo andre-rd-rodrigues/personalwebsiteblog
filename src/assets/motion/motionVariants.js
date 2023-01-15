@@ -7,7 +7,7 @@ const containerVariant = {
   visible: {
     opacity: 1,
     transition: {
-      staggerChildren: 0.4
+      staggerChildren: 0.2
     }
   }
 };
@@ -33,7 +33,7 @@ const HomepageDelayVariant = {
   visible: {
     opacity: 1,
     transition: {
-      delayChildren: 1.5,
+      delayChildren: 0.5,
       staggerChildren: 0.5
     }
   }

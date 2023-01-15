@@ -1,4 +1,4 @@
-import { CATEGORIES } from "utils";
+import { CATEGORIES_TYPE } from "utils";
 
 const social_media = [
   { label: "facebook", ref: "https://www.facebook.com/andrerodrigoweb" },
@@ -15,13 +15,13 @@ const social_media = [
 const blog = {
   //Categories are displayed by this order
   categories: [
-    { display_name: "Top articles", name: CATEGORIES.top },
-    { display_name: "Recent", name: CATEGORIES.recent },
-    { display_name: "Lifestyle", name: CATEGORIES.lifestyle },
-    { display_name: "Career", name: CATEGORIES.career },
-    { display_name: "Technology", name: CATEGORIES.tech },
-    { display_name: "Gaming", name: CATEGORIES.games },
-    { display_name: "All", name: CATEGORIES.all }
+    { name: "Top articles", type: CATEGORIES_TYPE.top },
+    { name: "Recent", type: CATEGORIES_TYPE.recent },
+    { name: "Wellbeing", type: CATEGORIES_TYPE.wellbeing },
+    { name: "Career", type: CATEGORIES_TYPE.career },
+    { name: "Technology", type: CATEGORIES_TYPE.tech },
+    { name: "Gaming", type: CATEGORIES_TYPE.games },
+    { name: "All", type: CATEGORIES_TYPE.all }
   ],
   articles: [
     {
@@ -30,10 +30,9 @@ const blog = {
         "Transform Your Home into a Smart Home: 5 Ways to Automate Your House",
       description:
         "Are you tired of constantly forgetting to turn off the lights or adjust the thermostat when you leave the house? It might be time to consider automating your home. In this blog post, we'll give you five ways to transform your home into a smart home, including using smart thermostats, smart lighting, smart appliances, smart security systems, and smart home hubs. Automating your home can make your life easier, save you energy and money, and give you peace of mind. Learn how to get started with home automation today.",
-      category: CATEGORIES.tech,
-      date: "13, Jan 2023",
+      category: CATEGORIES_TYPE.tech,
+      date: "11/25/2022",
       isTopArticle: false,
-
       image_src:
         "https://images.unsplash.com/photo-1558002038-1055907df827?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80",
       content: (
@@ -99,8 +98,8 @@ const blog = {
       title: "The Top 5 Cybersecurity Threats of 2022: What You Need to Know",
       description:
         "Stay ahead of the curve and protect yourself and your business from the latest cybersecurity threats. In this blog post, we'll outline the top five threats to watch out for in 2022, including ransomware, cloud security breaches, Internet of Things vulnerabilities, supply chain attacks, and artificial intelligence and machine learning attacks. Stay informed and follow best practices to reduce the risk of a cybersecurity incident.",
-      category: CATEGORIES.tech,
-      date: "3, Jan 2023",
+      category: CATEGORIES_TYPE.tech,
+      date: "01/03/2023",
       isTopArticle: true,
 
       image_src:
@@ -197,8 +196,8 @@ const blog = {
         "Protecting Your Personal Information Online: A Beginner's Guide to Cybersecurity",
       description:
         "In today's digital age, it's crucial to protect your personal information online. In this blog post, we'll provide a beginner's guide to cybersecurity and give you tips on how to keep your data safe. Learn how to use strong, unique passwords, be cautious about the information you share online, use two-factor authentication, recognize phishing scams, keep your software and systems up to date, and use secure networks and connections. Follow these best practices to reduce the risk of identity theft and other cyber threats.",
-      category: CATEGORIES.tech,
-      date: "5, Jan 2023",
+      category: CATEGORIES_TYPE.tech,
+      date: "2023-01-05",
       isTopArticle: false,
       meta_tags: [
         "cybersecurity",
@@ -343,8 +342,8 @@ const blog = {
         "Don't Let Your Vacation be Ruined by a Cyber Attack: How to Secure Your Devices Before You Go",
       description:
         "In this blog post, we'll provide tips on how to secure your devices before you go, including updating your software and devices, using a virtual private network (VPN), enabling two-factor authentication (2FA), and being aware of phishing scams. Follow these best practices to help protect your data and enjoy your vacation with peace of mind.",
-      category: CATEGORIES.tech,
-      date: "8, Jan 2023",
+      category: CATEGORIES_TYPE.tech,
+      date: "2023-01-08",
       isTopArticle: false,
 
       image_src:
@@ -467,8 +466,8 @@ const blog = {
       title: "How to spot and avoid phishing scams?",
       description:
         "In this article, we'll provide some tips on how to spot and avoid phishing scams, so you can protect yourself and your personal data. We'll cover how to identify suspicious emails, be cautious about sharing personal information, and use two-factor authentication to add an extra layer of security to your online accounts.",
-      category: CATEGORIES.tech,
-      date: "10, Jan 2023",
+      category: CATEGORIES_TYPE.tech,
+      date: "2023-01-10",
       isTopArticle: false,
 
       content: (
@@ -520,8 +519,8 @@ const blog = {
       title: "Become a Pro: Secrets to Dominating in CS:GO",
       description:
         "Learn how to become a pro in Counter-Strike: Global Offensive (CS:GO) with our insider tips and strategies. From aiming and map knowledge to communication and focus, we cover all the essentials you need to dominate the competition. Improve your gameplay and take your CS:GO skills to the next level with our comprehensive guide. Don't miss out on the secrets to mastering the game.",
-      category: CATEGORIES.games,
-      date: "1, Dez 2022",
+      category: CATEGORIES_TYPE.games,
+      date: "2022-12-01",
       isTopArticle: false,
 
       content: (
@@ -608,8 +607,8 @@ const blog = {
         "Breaking the Cycle: Understanding and Mitigating the Effects of Prolonged Screen Time on Mental Health",
       description:
         "Discover the negative impact of prolonged screen time on mental health and learn effective strategies to mitigate it, including setting daily limits, taking regular breaks, using blue light filters, practicing good sleep hygiene and staying active.",
-      category: CATEGORIES.lifestyle,
-      date: "14, Jan 2023",
+      category: CATEGORIES_TYPE.wellbeing,
+      date: "2022-12-14",
       isTopArticle: true,
       image_src:
         "https://images.unsplash.com/photo-1555963153-11ff60182d08?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1548&q=80",
@@ -699,8 +698,8 @@ const blog = {
         "Programming and Burnout: How to Identify, Prevent, and Recover from Stress and Burnout",
       description:
         "Programming can be a demanding field that can lead to burnout. Learn how to identify the signs of burnout, prevent it from happening and recover from it with this guide. Strategies include setting realistic goals and priorities, regular breaks, healthy lifestyle, good work-life balance and seeking support.",
-      category: CATEGORIES.lifestyle,
-      date: "19, Nov 2022",
+      category: CATEGORIES_TYPE.wellbeing,
+      date: "2022-11-19",
       isTopArticle: true,
       image_src:
         "https://images.unsplash.com/photo-1495427513693-3f40da04b3fd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2071&q=80",
@@ -815,8 +814,8 @@ const blog = {
         "Navigating Team Conflicts in Programming: Strategies for Maintaining Mental Well-being",
       description:
         "Discover effective strategies for navigating conflicts within a programming team while maintaining mental well-being. Learn the impact of conflicts on mental health and how to overcome it through open communication, active listening, compromise, team building and seeking help when needed.",
-      category: CATEGORIES.career,
-      date: "30, Nov 2022",
+      category: CATEGORIES_TYPE.career,
+      date: "2022-11-20",
       isTopArticle: true,
       image_src:
         "https://images.unsplash.com/photo-1523240795612-9a054b0db644?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80",
@@ -933,8 +932,8 @@ const blog = {
         "Overcoming Imposter Syndrome: The Impact on Programmers' Mental Health",
       description:
         "Imposter syndrome is a common experience among programmers. Learn about the impact it can have on mental health and strategies for overcoming it, such as challenging negative thoughts, embracing failure, seeking feedback and seeking support.",
-      category: CATEGORIES.career,
-      date: "30, Nov 2022",
+      category: CATEGORIES_TYPE.career,
+      date: "2023-01-13",
       isTopArticle: true,
       image_src:
         "https://images.unsplash.com/photo-1647752598980-df7157e20d8c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80",

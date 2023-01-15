@@ -4,12 +4,28 @@ import AppIcon from "components/AppIcon/AppIcon";
 import FeatherIcon from "feather-icons-react";
 import { Nav, Navbar, Offcanvas } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import { NavHashLink } from "react-router-hash-link";
-import { DOMAIN_URL } from "utils/settings";
 import styles from "./appnavbar.module.scss";
+import { blog } from "mocks/data";
+import { CATEGORIES_TYPE } from "utils";
 
 const AppNavbar = () => {
   const [show, setShow] = useState(false);
+
+  const navLinks = blog.categories.map(({ type, name }, index) => {
+    // Remove categories: All, Recent and Top
+    const isInvalidCategory =
+      type === CATEGORIES_TYPE.all ||
+      type === CATEGORIES_TYPE.recent ||
+      type === CATEGORIES_TYPE.top;
+
+    if (!isInvalidCategory) {
+      return (
+        <Link key={index} to={`/article/search?category=${type}`}>
+          <li>{name}</li>
+        </Link>
+      );
+    }
+  });
 
   return (
     <Navbar expand="lg" fixed="top" className={styles.nav}>
@@ -40,11 +56,7 @@ const AppNavbar = () => {
             onSelect={() => setShow(false)}
             className={styles.offcanvasLinks}
           >
-            <NavHashLink to="/#top-article">Homepage</NavHashLink>
-            <NavHashLink to="/#homepage-recent-articles">Recent</NavHashLink>
-            <a href={DOMAIN_URL + "/trabalhos"}>Projects</a>
-            <a href={DOMAIN_URL + "/sobre"}>About</a>
-            <a href={DOMAIN_URL + "/contactos"}>Contacts</a>
+            {navLinks}
           </Nav>
         </Offcanvas.Body>
       </Navbar.Offcanvas>

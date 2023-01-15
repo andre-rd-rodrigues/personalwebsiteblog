@@ -1,8 +1,22 @@
 import { blog } from "mocks/data";
-import { SEARCH_TYPE } from "utils/types";
+import { ARTICLES_VISIBLE_LIMIT } from "utils/settings";
 
-const getRecentArticles = () => {};
+/**
+ *  Function that sorts articles by date and returns the first 5 articles
+ */
+const getRecentArticles = () => {
+  const articlesSorted = [...blog.articles];
 
+  articlesSorted.sort((a, b) => {
+    return new Date(b.date) - new Date(a.date);
+  });
+
+  return articlesSorted;
+};
+
+/**
+ *  Function that filters articles and returns the ones with isTopArticle
+ */
 const getTopArticles = () => {
   const articles = blog.articles.filter((item) => item.isTopArticle);
 

@@ -2,6 +2,7 @@ import React from "react";
 import AppImage from "components/AppImage/AppImage";
 import AppLink from "components/AppLink/AppLink";
 import { Col, Row } from "react-bootstrap";
+import { convertDate } from "utils/helpers/date";
 import { READ_MORE_LABEL } from "utils/settings";
 import styles from "./toparticle.module.scss";
 
@@ -14,7 +15,7 @@ const TopArticle = ({ article }) => {
       <Col sm={12} lg={6}>
         <div className={styles.date}>
           <p>{article.category}</p>
-          <p>{article.date}</p>
+          <p>{convertDate(article.date)}</p>
         </div>
         <h3>{article.title}</h3>
         <p className="article_description">{article.description}</p>

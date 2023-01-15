@@ -4,6 +4,7 @@ import AppImage from "components/AppImage/AppImage";
 import AppLink from "components/AppLink/AppLink";
 import { Link } from "react-router-dom";
 import { READ_MORE_LABEL } from "utils";
+import { convertDate } from "utils/helpers/date";
 import styles from "./articlecard.module.scss";
 
 const ArticleCard = ({ article }) => {
@@ -14,7 +15,7 @@ const ArticleCard = ({ article }) => {
           <AppImage src={article.image_src} className={styles.image} />
           <div className={styles.subtitle}>
             <p>{article.category}</p>
-            <p>{article.date}</p>
+            <p>{convertDate(article.date)}</p>
           </div>
           <div className={styles.body}>
             <h5>{article.title}</h5>

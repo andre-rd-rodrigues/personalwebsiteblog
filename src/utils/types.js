@@ -3,14 +3,14 @@ const SEARCH_TYPE = {
   input: "input"
 };
 
-const CATEGORIES = {
+const CATEGORIES_TYPE = {
   tech: "technology",
   games: "gaming",
-  lifestyle: "lifestyle",
+  wellbeing: "wellbeing",
   top: "top",
   recent: "recent",
   career: "career",
   all: "all"
 };
 
-export { SEARCH_TYPE, CATEGORIES };
+export { SEARCH_TYPE, CATEGORIES_TYPE };

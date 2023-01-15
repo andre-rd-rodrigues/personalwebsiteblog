@@ -2,19 +2,17 @@ import React from "react";
 import { useState } from "react";
 import { containerVariant, motion } from "assets/motion/motionVariants";
 import AppButton from "components/AppButton/AppButton";
+import { ARTICLES_VISIBLE_LIMIT } from "utils";
 import ArticleCard from "../ArticleCard/ArticleCard";
 import styles from "./articlesgrid.module.scss";
-import { useEffect } from "react";
-
-const INITIAL_RENDER_LIMIT = 6;
 
 const ArticlesGrid = ({ articles }) => {
-  const [articlesState, setArticlesState] = useState({
-    articlesVisible: articles.slice(0, INITIAL_RENDER_LIMIT),
-    visible: INITIAL_RENDER_LIMIT
+  const [articlesState, setPagination] = useState({
+    articlesVisible: articles.slice(0, ARTICLES_VISIBLE_LIMIT),
+    visible: ARTICLES_VISIBLE_LIMIT
   });
 
-  const isLoadMoreButtonVisible = articles.total > articlesState.visible;
+  const isLoadMoreButtonVisible = articles.length > articlesState.visible;
 
   const handleLoadMoreArticles = () => {
     const newRenderLimit = articlesState.visible + 4;
@@ -25,7 +23,7 @@ const ArticlesGrid = ({ articles }) => {
     );
 
     if (newVisibleArticles) {
-      setArticlesState((prevState) => {
+      setPagination((prevState) => {
         return {
           articlesVisible: [
             ...prevState.articlesVisible,
@@ -36,15 +34,6 @@ const ArticlesGrid = ({ articles }) => {
       });
     }
   };
-
-  useEffect(() => {
-    if (articles) {
-      setArticlesState({
-        articlesVisible: articles.slice(0, INITIAL_RENDER_LIMIT),
-        visible: INITIAL_RENDER_LIMIT
-      });
-    }
-  }, [articles]);
 
   return (
     <div className={styles.container}>

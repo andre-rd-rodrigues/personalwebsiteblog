@@ -7,6 +7,7 @@ import PageContainer from "components/PageContainer/PageContainer";
 import { useSearchParams } from "react-router-dom";
 import "./blogarticlepage.scss";
 import { getArticlesById } from "utils";
+import { convertDate } from "utils/helpers/date";
 
 const BlogArticlePage = () => {
   const [article, setArticle] = useState(undefined);
@@ -41,7 +42,8 @@ const BlogArticlePage = () => {
             <div>
               <h1 className="title">{article?.title}</h1>
               <div className="subtitle">
-                <p>{article?.date}</p> <span>|</span> <p>{article?.category}</p>
+                <p>{convertDate(article?.date)}</p> <span>|</span>{" "}
+                <p>{article?.category}</p>
               </div>
             </div>
             <Image className="header-image" src={article?.image_src} />
