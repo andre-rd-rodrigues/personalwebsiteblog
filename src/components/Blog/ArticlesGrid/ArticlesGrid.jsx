@@ -5,9 +5,10 @@ import AppButton from "components/AppButton/AppButton";
 import { ARTICLES_VISIBLE_LIMIT } from "utils";
 import ArticleCard from "../ArticleCard/ArticleCard";
 import styles from "./articlesgrid.module.scss";
+import { useEffect } from "react";
 
 const ArticlesGrid = ({ articles }) => {
-  const [articlesState, setPagination] = useState({
+  const [articlesState, setArticlesState] = useState({
     articlesVisible: articles.slice(0, ARTICLES_VISIBLE_LIMIT),
     visible: ARTICLES_VISIBLE_LIMIT
   });
@@ -23,7 +24,7 @@ const ArticlesGrid = ({ articles }) => {
     );
 
     if (newVisibleArticles) {
-      setPagination((prevState) => {
+      setArticlesState((prevState) => {
         return {
           articlesVisible: [
             ...prevState.articlesVisible,
@@ -34,6 +35,15 @@ const ArticlesGrid = ({ articles }) => {
       });
     }
   };
+
+  useEffect(() => {
+    if (articles) {
+      setArticlesState({
+        articlesVisible: articles.slice(0, ARTICLES_VISIBLE_LIMIT),
+        visible: ARTICLES_VISIBLE_LIMIT
+      });
+    }
+  }, [articles]);
 
   return (
     <div className={styles.container}>
