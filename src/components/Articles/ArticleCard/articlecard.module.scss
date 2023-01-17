@@ -52,3 +52,14 @@
 .footer {
   text-align: end;
 }
+
+//Responsive
+@media only screen and (max-width: $breaking-point-md) {
+  .container {
+    &:hover {
+      & .wrapper {
+        transform: scale(1);
+      }
+    }
+  }
+}

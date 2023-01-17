@@ -80,7 +80,11 @@
 }
 //Responsive
 @media only screen and (max-width: $breaking-point-md) {
-  .article-container {
-    margin-top: 20px;
+  .subtitle {
+    margin-bottom: 10px;
+  }
+
+  .body-container {
+    margin-top: 40px;
   }
 }

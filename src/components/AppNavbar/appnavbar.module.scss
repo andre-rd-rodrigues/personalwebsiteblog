@@ -130,3 +130,12 @@ div[class="offcanvas-header"] {
     }
   }
 }
+
+//Responsive
+@media only screen and (max-width: $breaking-point-sm) {
+  div[class="offcanvas offcanvas-end show"],
+  div[class="offcanvas offcanvas-end offcanvas-toggling"],
+  div[class="offcanvas offcanvas-end offcanvas-toggling show"] {
+    width: 250px;
+  }
+}
