@@ -9,12 +9,16 @@ const CategorySection = ({ categoryType }) => {
   const title = CATEGORIES.find(({ type }) => type === categoryType).name;
 
   return (
-    <div style={{ marginBottom: "100px" }}>
-      <motion.h2 variants={fadeInVariant} className="recent_post">
-        {title}:
-      </motion.h2>
+    <motion.div
+      variants={fadeInVariant}
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true }}
+      style={{ marginBottom: "100px" }}
+    >
+      <motion.h2 className="recent_post">{title}:</motion.h2>
       <ArticlesGrid articles={getArticlesByCategory(categoryType)} />
-    </div>
+    </motion.div>
   );
 };
 

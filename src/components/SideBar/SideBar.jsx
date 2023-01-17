@@ -1,33 +1,12 @@
 import React from "react";
 import { Icon } from "@iconify/react";
 import SearchBar from "components/AppSearchBar/AppSearchBar";
-import { push as Menu } from "react-burger-menu";
-import {
-  Link,
-  useLocation,
-  useNavigate,
-  useSearchParams
-} from "react-router-dom";
+import { slide as Menu } from "react-burger-menu";
+import { Link } from "react-router-dom";
 import "./blogsidebar.scss";
 import { CATEGORIES } from "utils";
 
 function SideBar() {
-  const [, setSearchQuery] = useSearchParams({});
-  const location = useLocation();
-  const navigate = useNavigate();
-
-  const handleSearch = (input) => {
-    const inputTrimed = input.trim();
-
-    if (!inputTrimed.length) return;
-
-    if (!location.pathname.includes("search")) {
-      return navigate(`/article/search?input=${inputTrimed}`);
-    }
-
-    return setSearchQuery({ input: inputTrimed });
-  };
-
   return (
     <Menu
       customBurgerIcon={<Icon icon="octicon:sidebar-collapse-24" />}
@@ -36,7 +15,7 @@ function SideBar() {
       outerContainerId="outer-container"
     >
       <div className="blog-sidebar-section">
-        <SearchBar onSearch={(input) => handleSearch(input)} />
+        <SearchBar />
       </div>
       <div className="blog-sidebar-section">
         <h5>Categories</h5>

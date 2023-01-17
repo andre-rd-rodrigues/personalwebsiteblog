@@ -4,6 +4,8 @@
   top: 0px;
   padding: 15px var(--padding-y) !important;
   background-color: $dark;
+  z-index: 9 !important;
+
   h1,
   p,
   a {
@@ -18,6 +20,7 @@
 .logo {
   display: flex;
   align-items: center;
+  margin-left: 70px;
   div[id="brand_logo"] {
     background: url("https://images.unsplash.com/photo-1597589827703-f4b68eafa0ce?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1672&q=80")
       center center no-repeat;
@@ -55,7 +58,7 @@
 //Offcanvas
 .offcanvasLinks {
   transform: translate(-100px, 30px);
-  margin-left: 0px;
+  margin-left: -200px;
   a {
     @include hover_underline($white);
   }
@@ -96,8 +99,31 @@ div[class="offcanvas-header"] {
   justify-content: end;
 }
 
+.search {
+  color: $white;
+  transform: translate(15px, 9px);
+  svg {
+    stroke-width: 2 !important;
+  }
+
+  input {
+    width: 0;
+    color: $white;
+    background-color: transparent;
+    transition: width 0.4s ease-in-out;
+
+    &:focus {
+      width: 150px;
+      border-bottom: 1px solid $white;
+    }
+    &::placeholder {
+      opacity: 0;
+    }
+  }
+}
+
 //Responsive
-@media only screen and (max-width: $breaking-point-sm) {
+@media only screen and (max-width: $breaking-point-xl) {
   .logo {
     p {
       display: none;

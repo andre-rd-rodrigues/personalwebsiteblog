@@ -9,8 +9,9 @@
   width: 36px;
   height: 30px;
   left: var(--padding-y);
-  top: 120px;
-  background-color: $grey-yellow;
+  top: 35px;
+  z-index: 10;
+  color: $white;
 }
 .bm-burger-bars {
   background: $white;
