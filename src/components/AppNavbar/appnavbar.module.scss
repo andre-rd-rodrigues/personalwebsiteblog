@@ -74,7 +74,7 @@ div[class="offcanvas offcanvas-end offcanvas-toggling show"] {
   background-color: $light-grey !important;
   max-width: 320px;
 
-  a {
+  a > li {
     transform: translateX(100px);
     color: $dark;
     opacity: 0.8;

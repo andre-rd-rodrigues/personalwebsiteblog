@@ -1,12 +1,12 @@
 import React from "react";
 import { useState } from "react";
 import AppIcon from "components/AppIcon/AppIcon";
+import SearchBar from "components/AppSearchBar/AppSearchBar";
 import FeatherIcon from "feather-icons-react";
 import { Nav, Navbar, Offcanvas } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { CATEGORIES } from "utils";
 import styles from "./appnavbar.module.scss";
-import SearchBar from "components/AppSearchBar/AppSearchBar";
 
 const AppNavbar = () => {
   const [show, setShow] = useState(false);

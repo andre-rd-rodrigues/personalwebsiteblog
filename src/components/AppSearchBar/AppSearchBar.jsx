@@ -1,8 +1,8 @@
 import React from "react";
 import { useState } from "react";
 import AppIcon from "components/AppIcon/AppIcon";
-import styles from "./appsearchbar.module.scss";
 import { useLocation, useNavigate, useSearchParams } from "react-router-dom";
+import styles from "./appsearchbar.module.scss";
 
 const AppSearchBar = ({ className = "" }) => {
   const [searchValue, setSearchValue] = useState("");

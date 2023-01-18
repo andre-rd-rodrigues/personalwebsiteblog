@@ -12,6 +12,9 @@
     font-size: var(--fs-m-s);
     text-align: justify;
   }
+  h5 {
+    text-align: start;
+  }
   &:hover {
     & .wrapper {
       display: inline-block;
