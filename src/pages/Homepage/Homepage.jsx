@@ -19,13 +19,6 @@ function Homepage() {
     >
       <div className={styles.wrapper}>
         <CategorySection categoryType={CATEGORIES_TYPE.recent} />
-
-        {/* Weekly */}
-        <AnimatedHeading>
-          <h2>This week:</h2>
-        </AnimatedHeading>
-        <ArticlesSlider weeklyArticles={getWeeklyArticles()} />
-
         <CategorySection categoryType={CATEGORIES_TYPE.tech} />
         <CategorySection categoryType={CATEGORIES_TYPE.wellbeing} />
       </div>

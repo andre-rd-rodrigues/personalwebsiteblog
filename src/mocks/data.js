@@ -1,4 +1,6 @@
+import ContactMe from "components/ContactMe/ContactMe";
 import GoogleAd from "components/GoogleAd/GoogleAd";
+import { Link } from "react-router-dom";
 import { CATEGORIES_TYPE } from "utils";
 import { IN_ARTICLE_SLOT } from "utils/googleAds";
 
@@ -15,12 +17,13 @@ const social_media = [
 ];
 
 const articles = [
+  // Tech
   {
     id: "c5d2a482-199c-11ed-861d-0242ac120002",
     title:
       "Transform Your Home into a Smart Home: 5 Ways to Automate Your House",
     description:
-      "Are you tired of constantly forgetting to turn off the lights or adjust the thermostat when you leave the house? It might be time to consider automating your home. In this blog post, we'll give you five ways to transform your home into a smart home, including using smart thermostats, smart lighting, smart appliances, smart security systems, and smart home hubs. Automating your home can make your life easier, save you energy and money, and give you peace of mind. Learn how to get started with home automation today.",
+      "Are you tired of constantly forgetting to turn off the lights or adjust the thermostat when you leave the house? It might be time to consider automating your home. In this blog post, we&apos;ll give you five ways to transform your home into a smart home, including using smart thermostats, smart lighting, smart appliances, smart security systems, and smart home hubs. Automating your home can make your life easier, save you energy and money, and give you peace of mind. Learn how to get started with home automation today.",
     category: CATEGORIES_TYPE.tech,
     date: "11/25/2022",
     isTopArticle: false,
@@ -557,91 +560,768 @@ const articles = [
       "https://images.unsplash.com/photo-1563115298-e9585e7943d4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1471&q=80",
     writer: "Andre Rodrigues"
   },
-  {
-    id: "d509s2a482-532-k924",
-    title: "Become a Pro: Secrets to Dominating in CS:GO",
-    description:
-      "Learn how to become a pro in Counter-Strike: Global Offensive (CS:GO) with our insider tips and strategies. From aiming and map knowledge to communication and focus, we cover all the essentials you need to dominate the competition. Improve your gameplay and take your CS:GO skills to the next level with our comprehensive guide. Don&apos;t miss out on the secrets to mastering the game.",
-    category: CATEGORIES_TYPE.games,
-    date: "2022-12-01",
-    isTopArticle: false,
 
+  // Career
+  {
+    id: "098769s2a482-532-k9249876",
+    title:
+      "Navigating Team Conflicts in Programming: Strategies for Maintaining Mental Well-being",
+    description:
+      "Discover effective strategies for navigating conflicts within a programming team while maintaining mental well-being. Learn the impact of conflicts on mental health and how to overcome it through open communication, active listening, compromise, team building and seeking help when needed.",
+    category: CATEGORIES_TYPE.career,
+    date: "2022-11-20",
+    isTopArticle: true,
+    image_src:
+      "https://images.unsplash.com/photo-1523240795612-9a054b0db644?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80",
+    writer: "Andre Rodrigues",
     content: (
       <div>
         <p>
-          Counter-Strike: Global Offensive (CS:GO) is a popular and competitive
-          first-person shooter game that requires a high level of skill and
-          strategy to master. Whether you&apos;re a casual player or aspiring to
-          become a professional, there are many ways to improve your game and
-          dominate the competition.
+          Team conflicts are an inevitable part of working in a team, especially
+          in the field of programming where tight deadlines, competing
+          priorities, and different working styles can lead to disagreements and
+          tension. Navigating these conflicts while maintaining a positive
+          mental well-being can be challenging, but it is essential for the
+          success of the team and the individual team members. In this article,
+          we will discuss some strategies for navigating team conflicts in
+          programming while maintaining mental well-being. We will cover topics
+          such as effective communication, active listening, and setting
+          boundaries, as well as how to address conflicts in a healthy and
+          productive way.
         </p>
-        <h2 className="section-title">Practice your aim</h2>
+        <h2 className="section-title">
+          The Impact of Conflicts on Mental Health
+        </h2>
         <p>
-          One of the most important aspects of CS:GO is your aim. Being able to
-          hit your targets quickly and accurately is crucial for success in the
-          game. To improve your aim, consider using aim training maps and
-          software that are specifically designed to help you hone your skills.
-          Additionally, playing deathmatch and aim maps can help you build
-          muscle memory and get used to different movement and recoil patterns.
+          Conflicts that are not well addressed can lead to a range of negative
+          effects, including:
         </p>
-        <h2 className="section-title">Learn the maps</h2>
+        <ul className="section-points">
+          <li>
+            <h5>Stress and anxiety</h5> A sense of uncertainty and
+            unpredictability, leading to feelings of stress and anxiety. This
+            can affect a person&apos;s ability to focus and make decisions, and
+            can also lead to physical symptoms such as headaches and fatigue.
+          </li>
+          <li>
+            <h5>Feeling overwhelmed and overworked</h5>
+            Increase in workload and responsibilities, leading to feelings of
+            being overwhelmed and overworked. This can affect a person&apos;s
+            ability to perform their job effectively and can also lead to
+            burnout.
+          </li>
+          <li>
+            <h5>Lack of motivation and engagement</h5>
+            Lack of motivation and engagement among team members. This can
+            affect a person&apos;s ability to contribute to the team&apos;s
+            goals and objectives and can also lead to a decrease in
+            productivity.
+          </li>
+          <li>
+            <h5>Decreased job satisfaction</h5> Decreased job satisfaction among
+            team members. This can affect a person&apos;s overall well-being and
+            can also lead to a higher turnover rate.
+          </li>
+          <li>
+            <h5>Feeling isolated and unsupported</h5>
+            Feelings of isolation and unsupported among team members. This can
+            affect a person&apos;s ability to seek help and support from their
+            colleagues and can also lead to a lack of trust and respect within
+            the team.
+          </li>
+        </ul>
         <p>
-          Knowing the layout and common choke points of the maps you play on can
-          give you a significant advantage over your opponents. Practice each
-          map individually, learning the common strategies and angles used by
-          both the Terrorist and Counter-Terrorist teams. Pay attention to where
-          the bomb sites are located, where enemies are likely to come from and
-          where you can take cover. The more you know about a map, the better
-          your chances of predicting and countering enemy movements.{" "}
+          These negative effects can be particularly damaging for those who are
+          already struggling with mental health issues. Thats why soft skills
+          are so important in order to maintain a healthy work environment and
+          protect the mental well-being of all team members.
         </p>
-        <h2 className="section-title">Improve your crosshair placement</h2>
+        <h2 className="section-title">
+          Strategies for navigating through conflicts
+        </h2>
         <p>
-          An essential aspect of your aim is your crosshair placement. The
-          position of your crosshair can affect the speed and accuracy of your
-          shots, so it&apos;s important to get it right. To improve your
-          crosshair placement, practice aiming at head level while moving,
-          strafing, and jumping. This will help you learn how to quickly and
-          accurately place your crosshair where you need it to be, improving
-          your chances of making headshots and taking out enemies quickly.{" "}
+          Navigating conflicts in a team can be challenging, but there are
+          several strategies that can help to address conflicts in a healthy and
+          productive way:
         </p>
-        <h2 className="section-title">Stay focused and communicate</h2>
-        <p>
-          CS:GO is a fast-paced game that requires you to be constantly aware of
-          your surroundings. Stay focused and keep your mind on the task at
-          hand. Additionally, communication is crucial in the game, whether
-          you&apos;re playing solo or with a team. Keep your microphone open and
-          communicate with your teammates, relaying information about enemy
-          locations, weapon upgrades, and strategy. Clear and concise
-          communication can make a big difference in the outcome of a match.
-        </p>
-        <h2 className="section-title">Keep learning</h2>
-        <p>
-          CS:GO is a complex and constantly evolving game, so there&apos;s
-          always something new to learn. Watch professional players and take
-          note of their strategies, pay attention to updates to the game and
-          keep an open mind to new tactics and techniques. Practice makes
-          perfect, so the more you play and learn, the better you&apos;ll
-          become.{" "}
-        </p>
+        <ul className="section-points">
+          <li>
+            <h5>Communicate openly and honestly</h5> If you&apos;re in a
+            managment position, encourage open and honest communication within
+            the team, and make sure that everyone&apos;s voices are heard. This
+            can help prevent conflicts from escalating and make it easier to
+            find a resolution.
+            <br /> If not, speak out! But remember to be polite and assertive,
+            good communication is key to resolving conflicts
+          </li>
+
+          <li>
+            <h5>Active listening</h5> Listen actively to others and try to
+            understand their perspectives. This can help build trust and respect
+            within the team, and make it easier to find a resolution. Also
+            you&apos;ll be more aware of the other&apos;s needs, so that you can
+            better argument and adapt your solution.
+          </li>
+
+          <li>
+            <h5>Embrace differences</h5> Conflicts can arise due to differences
+            in opinions and work styles. It&apos;s important to remember that
+            everyone has different perspectives and what may be an issue for one
+            person, may not be for another. Embrace the diversity and find a
+            solution that works for everyone.
+          </li>
+
+          <li>
+            <h5>Set boundaries</h5> It&apos;s important to set boundaries on how
+            much time and energy you are willing to invest in resolving
+            conflicts. It&apos;s also important to remember that it&apos;s okay
+            to walk away from a conflict if it becomes detrimental to your
+            mental well-being.
+          </li>
+
+          <li>
+            <h5>Follow up and evaluate</h5> Once a conflict is resolved,
+            it&apos;s important to follow up and evaluate the outcome. This will
+            help to ensure that the conflict doesn&apos;t reoccur and that any
+            lessons learned can be applied in the future.
+          </li>
+
+          <li>
+            <h5>Look for common ground</h5> Try to find a solution that meets
+            the needs of all parties involved. This may involve compromise, but
+            it is important to remember that everyone has something to gain and
+            something to lose in a conflict.
+          </li>
+          <li>
+            <h5>Seek guidance</h5> If conflicts within the team are causing you
+            distress, don&apos;t hesitate to seek help from a therapist or
+            counselor.
+          </li>
+        </ul>
         <h2 className="section-title">Conclusion</h2>
         <p>
-          In conclusion, becoming a pro at CS:GO requires a combination of
-          practice, knowledge, and strategy. Improving your aim, learning the
-          maps, and perfecting your crosshair placement are key to dominating
-          the game. Additionally, staying focused and communicating effectively
-          with your team can give you a significant advantage over your
-          opponents. The more you play and learn about the game, the better you
-          will become. Remember that CS:GO is a constantly evolving game and
-          that you should always be open to learning new tactics and strategies.
-          With dedication and hard work, you can take your CS:GO game to the
-          next level and become a pro.
+          It&apos;s important to remember that conflicts are a normal part of
+          working in a team, and they can be an opportunity for growth and
+          learning. team conflicts are an inevitable part of working in a team,
+          especially in the field of programming. However, by following
+          strategies such as effective communication, identifying the root
+          cause, keeping emotions in check, seeking help when needed, embracing
+          differences, setting boundaries, looking for common ground, and
+          following up and evaluating, team members can navigate conflicts in a
+          healthy and productive way. Additionally, it is important to remember
+          that conflicts can be an opportunity for growth and learning.
+          It&apos;s crucial to prioritize mental well-being and to set
+          boundaries for time and energy invested in resolving conflicts. By
+          implementing these strategies, team members can maintain positive
+          mental well-being while successfully addressing conflicts within the
+          team.
         </p>
       </div>
-    ),
-    image_src:
-      "https://images.unsplash.com/photo-1637594439872-44d1b1fe0a0b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80",
-    writer: "Andre Rodrigues"
+    )
   },
+  {
+    id: "098769s2a482-532-kpl64fgh",
+    title:
+      "Overcoming Imposter Syndrome: The Impact on Programmers Mental Health",
+    description:
+      "Imposter syndrome is a common experience among programmers. Learn about the impact it can have on mental health and strategies for overcoming it, such as challenging negative thoughts, embracing failure, seeking feedback and seeking support.",
+    category: CATEGORIES_TYPE.career,
+    date: "2023-01-13",
+    isTopArticle: true,
+    image_src:
+      "https://images.unsplash.com/photo-1647752598980-df7157e20d8c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80",
+    writer: "Andre Rodrigues",
+    content: (
+      <div>
+        <p>
+          Imposter syndrome, the feeling of being a fraud or not deserving of
+          one&apos;s success, is a common experience among programmers. This can
+          lead to self-doubt, anxiety, and a lack of confidence, which can
+          ultimately impact a programmer&apos;s mental health and work
+          performance.
+        </p>
+        <h2 className="section-title">What is Imposter Syndrome?</h2>
+        <p>
+          Imposter syndrome is the feeling of being a fraud or not deserving of
+          one&apos;s success. It&apos;s a common experience among
+          high-achievers, and it can be especially prevalent in the programming
+          industry where there is a constant pressure to stay current and
+          continuously improve one&apos;s skills. People who suffer from
+          imposter syndrome have a fear of being exposed as a fraud, and they
+          often attribute their successes to luck or external factors, while
+          they blame their failures on themselves.{" "}
+        </p>
+        <h2 className="section-title">
+          Impact of Imposter Syndrome on Programmers&apos; Mental Health
+        </h2>
+        <p>
+          Imposter syndrome can have a significant impact on programmers&apos;
+          mental health. It can lead to:
+        </p>
+        <ul>
+          <li>
+            Self-doubt and lack of confidence: Imposter syndrome can lead to a
+            lack of confidence in one&apos;s abilities and an constant
+            self-doubt, which can affect a programmer&apos;s ability to take
+            risks and innovate.
+          </li>
+          <li>
+            Anxiety and stress: Imposter syndrome can lead to feelings of
+            anxiety and stress, which can affect a programmer&apos;s ability to
+            focus and perform their job effectively.
+          </li>
+          <li>
+            Isolation: Imposter syndrome can lead to feelings of isolation, as
+            people may be afraid to share their insecurities with others for
+            fear of being exposed as a fraud.
+          </li>
+          <li>
+            Decreased job satisfaction: Imposter syndrome can lead to decreased
+            job satisfaction, which can ultimately lead to a higher turnover
+            rate.{" "}
+          </li>
+        </ul>
+        <h2 className="section-title">
+          Strategies for Overcoming Imposter Syndrome
+        </h2>
+        <p>
+          Here are some strategies for overcoming imposter syndrome and
+          improving mental well-being:
+        </p>
+        <ul>
+          <li>
+            Challenge negative thoughts: Be aware of negative thoughts and
+            challenge them by asking yourself if they are truly accurate. Try to
+            reframe them in a positive light.
+          </li>
+          <li>
+            Embrace failure: Failure is a natural part of learning and growing.
+            Embrace it as a learning opportunity and remind yourself that
+            failure is not a reflection of your abilities.
+          </li>
+          <li>
+            Seek feedback: Ask for constructive feedback from colleagues or
+            mentors and use it to improve your skills.
+          </li>
+          <li>
+            Focus on the process, not the outcome: Instead of focusing on the
+            outcome, focus on the process of learning and growing as a
+            programmer.
+          </li>
+          <li>
+            Seek support: Talk to friends, family, or a therapist if you&apos;re
+            feeling overwhelmed or struggling with imposter syndrome.
+          </li>
+        </ul>
+        <h2 className="section-title">Conclusion</h2>
+        <p>
+          Imposter syndrome is a common experience among programmers and it can
+          have a significant impact on mental health. It can lead to self-doubt,
+          anxiety, and a lack of confidence, which can ultimately impact a
+          programmer&apos;s work performance. It is important to be aware of the
+          negative thoughts, embrace failure, seek feedback, focus on the
+          process and seek support if needed. Remember that imposter syndrome is
+          not a reflection of your abilities, but rather a common experience
+          that can be overcome. With the right mindset and support, you can
+          improve your mental well-being and be successful in your role as a
+          programmer.
+        </p>
+      </div>
+    )
+  },
+  {
+    id: "098769s2dadasda482-532-2397hsfgh",
+    title: "New Horizons: A Guide to Start a Career in Programming",
+    description:
+      "Are you considering a career change into programming? Discover the path to a successful career in programming with this comprehensive guide, perfect for aspiring programmers and those looking to advance their current programming skills.",
+    category: CATEGORIES_TYPE.career,
+    date: "2023-01-18",
+    isTopArticle: true,
+    image_src:
+      "https://images.unsplash.com/photo-1494783367193-149034c05e8f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
+    writer: "Andre Rodrigues",
+    content: (
+      <div>
+        <p>
+          Are you considering a career change into programming? It can be a
+          daunting task, but with the right preparation and mindset, you can
+          make the transition smoothly. In this guide, we&apos;ll explore the
+          steps that so many of us took, myself included, to build successful a
+          career in programming, even if you have no prior experience.
+        </p>
+        <h2>Assess your skills and interests</h2>
+        <p>
+          By the time I considered changing my career from Clinical Psychology
+          to Web Development, I had no idea if programming was the right path
+          for me. I was feeling very insecure and thinking about leaving my
+          career behind and embracing a completely different new field, made me
+          goosebumps. I&apos;ve dedicated 4 years of my life to a field that,
+          although I was passionate about, has disappointed me on so many ways
+          that I needed a urgent change. <br />
+          Back then I already knew what was important for me to stay happy and
+          motivated: having fun while working; having a job where creativity
+          plays an essential role; and be well payed. So I started doing my
+          research online, based on my main interests (art and problem-solving),
+          analyzing market opportunities, and that&apos;s when I found front-end
+          development, which I&apos;m working on to this day.
+          <br /> Before making a career change, it&apos;s important to assess
+          your skills and interests. Consider what you enjoy doing and what
+          you&apos;re good at and be aware that programming requires a certain
+          level of logic and problem-solving, so it&apos;s important to have an
+          interest in these areas. It&apos;s also important to have good
+          attention to detail and the ability to learn new things quickly. If
+          you&apos;re passionate about constant learning and approaching
+          problems in new innovative ways, then programming might the right
+          choice.
+        </p>
+        <h2>Start gradually and learn the basics</h2>
+        <p>
+          Once you&apos;ve decided what field of programming you&apos;ll like to
+          learn, the next step is to learn the very basics of the languages used
+          to that specific area. In my case, web development, I started with
+          HTML, CSS and JavaScript, and then worked my way up too Docker, Node,
+          Python and so on.
+          <br />
+          There are many online resources available, such as Freecodecamp,
+          Codecademy, Udemy, Coursera, edX and others, that offer free or
+          low-cost courses in programming. Check this article about{" "}
+          <Link to={`/article?id=0998fghj124da482-532-2397hsfgh`}>
+            &quote;Start Your Journey to Becoming a Web Developer: Free Online
+            Resources to Learn From&quote;
+          </Link>
+          , if you are interested in following a structured study plan at your
+          own pace. <br />
+          You can also find many free resources online such as tutorials, blogs,
+          and documentation, so you can complement the main courses. If you are
+          like me, with absolutely no knowledge of programming, In my
+          experience, it&apos;s better to start with a basic programming
+          language like HTML, and CSS and evolve to a more logical and
+          cross-disciplinary one like Python or JavaScript and work your way up.
+          Practice as much as you can, if possible everyday, and don&apos;t be
+          afraid to make mistakes, remember that that&apos;s the only way to
+          improve.
+        </p>
+        <h2>Build a portfolio</h2>
+        <p>
+          Once you&apos;ve dominated the basics of programming, having a
+          good-looking portfolio will definitely help you landing you a job. A
+          portfolio is a collection of your work that showcases your skills and
+          experience in a certain area. It can include projects you&apos;ve
+          worked on, code samples, and even any relevant certifications. Having
+          a portfolio will make it easier to apply for jobs and demonstrate your
+          skills to potential employers.
+          <br />
+          Here&apos;s an example:{" "}
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href=" https://andre-rd-rodrigues.github.io/portfolio"
+          >
+            my own portfolio
+          </a>{" "}
+          from when I started. Then I evolved to a more professional website,
+          it&apos;s not entirely a portfolio but I hope it can get you inspired:{" "}
+          <a target="_blank" rel="noreferrer" href="https://andrerodrigo.com">
+            www.andrerodrigo.com
+          </a>
+          .
+        </p>
+        <h2>Network and gain experience</h2>
+        <p>
+          Now that you&apos;ve master the basics and build a portfolio, its time
+          to gain some experience! Networking and gaining experience are
+          critical to building a career in programming. To achieve it, you can
+          attend meetups and conferences, and connect with other programmers on
+          LinkedIn or other social media platforms. I started joining all
+          conferences I could and asked dozens of connections on Linkedin. I was
+          asking all kinds of questions and suggestions to improve and land my
+          first job in programming. This will not only help you learn more about
+          the industry and the latest trends, but it will also allow you to meet
+          potential employers and collaborators. If it&apos;s suitable for you,
+          you can even consider interning or volunteering for a company to gain
+          practical experience and make valuable industry connections, although
+          this is not required.
+        </p>
+        <h2>Keep learning and improving your skills</h2>
+        <p>
+          The field of programming is constantly evolving, whats trendy this
+          year, can change in the next so it&apos;s important to keep learning
+          and be updated. Keep up to date with the latest technologies,
+          programming languages, and industry trends by following chanels like
+          Medium, HackerRank, DEV or FreeCodeCamp. Consider taking additional
+          online courses or getting certified in specific programming languages
+          or technologies and be confident that this will make you a more
+          attractive candidate to potential employers.
+        </p>
+        <h2>Be persistent and don&apos;t give up</h2>
+        <p>
+          Making a career change into programming can be challenging and it may
+          take time, but it&apos;s worth it in the end. Remember to be patient
+          and persistent, if you&apos;re passionate about it don&apos;t give up,
+          even if you face rejection or setbacks. Until I landed my first job, I
+          got 10 rejections or no response at all. 1 year later I was working in
+          one of the biggest televison and streaming company in the world, with
+          no previous experience!
+          <br /> Remember to stay positive and always keep learning. With the
+          right preparation and mindset, you can build a successful career in
+          programming.
+        </p>
+        <h2>Conclusion</h2>
+        <p>
+          A career change into programming can be a big step, but with hard
+          work, determination and the right resources, it is definitely
+          achievable. By assessing your skills and interests, learning the
+          basics, building a portfolio, networking and gaining experience,
+          keeping your skills updated and being persistent, you will be able to
+          make the transition smoothly and successfully. Take the first step
+          today, and start exploring the new horizons of the programming world.{" "}
+          <br />
+        </p>
+        <ContactMe />
+      </div>
+    )
+  },
+  {
+    id: "0998fghj124da482-532-2397hsfgh",
+    title:
+      "Start Your Journey to Becoming a Web Developer: Free Online Resources to Learn From",
+    description:
+      "Explore the world of web development and start your journey to becoming a professional with this comprehensive guide to the best free online resources. From coding tutorials and exercises to web development communities, you'll find everything you need to advance your skills and build a strong foundation in web development. Learn from the best and launch your career with our curated list of free online resources.",
+    category: CATEGORIES_TYPE.career,
+    date: "2023-01-19",
+    isTopArticle: true,
+    image_src:
+      "https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1472&q=80",
+    writer: "Andre Rodrigues",
+    content: (
+      <div>
+        <p>
+          Web development is a rapidly growing field that offers a wide range of
+          career opportunities. Whether you&apos;re a complete beginner or
+          looking to expand your skills, there are plenty of free online
+          resources that can help you learn web development and start your
+          journey to becoming a professional. I&apos;ll share with you the ones
+          I took that helped me land my first job as a Front-end Developer.
+        </p>
+        <h2>Define Your Web Development Roadmap</h2>
+        <p>
+          Starting to learn web development can be overwhelming, with so many
+          technologies and tools to choose from. To make the most of your time
+          and resources, it&aspo;s important to structure your learning path and
+          define a clear roadmap for your development journey.
+          <br />
+          Specifically for web development you can follow this amazing
+          interactive roadmap:
+          <a href="https://roadmap.sh/" target="_">
+            https://roadmap.sh/
+          </a>
+          . It helped me keeping track of my evolution and setting up the next
+          topics to learn. It was so effective that I still to this day follow
+          the{" "}
+          <a href="https://roadmap.sh/frontend/" target="_">
+            Front-end developer roadmap
+          </a>{" "}
+          to strengthen my skills and keep improving.
+          <br />
+          If you want to learn on how to properly structure your learning path,
+          check this article:
+          <Link to="/article?id=0998fghj124da482-532-2398kasd35">
+            Defining Your Web Development Roadmap: How to Structure Your
+            Learning Path
+          </Link>
+        </p>
+
+        <h2>Coding tutorials and exercises</h2>
+        <p>
+          Once you&apos;ve your roadmap ready and set, a great place to start
+          learning web development is with coding tutorials and exercises. This
+          is where the fun part beguins! I&apos;ve studied in{" "}
+          <a href="https://www.freecodecamp.org/" target="_">
+            FreeCodeCamp
+          </a>{" "}
+          its basically a non-profit organization that provides a free,
+          self-paced curriculum for learning web development. The curriculum is
+          designed to take someone who has no prior experience with coding and
+          turn them into a professional web developer. It covers a wide range of
+          topics, including HTML, CSS, JavaScript, and various web development
+          frameworks and libraries.
+          <br />
+          Allthough I&aspo;m a big advocate of FreeCodeCamp, there&aspo;re so
+          many resources out there. You can even complement your learnings with
+          multiple sources. Websites like{" "}
+          <a href="https://www.codecademy.com/" target="_">
+            Codecademy
+          </a>{" "}
+          and{" "}
+          <a href="https://www.w3schools.com/" target="_">
+            W3Schools
+          </a>{" "}
+          offer a wide range of interactive tutorials and exercises that can
+          teach you the basics of web development, including HTML, CSS, and
+          JavaScript. These tutorials are designed for beginners and are a great
+          way to get started with coding and web development.
+        </p>
+
+        <h2>Video tutorials</h2>
+        <p>
+          Another great way to learn web development is through video tutorials.
+          Websites like YouTube and Udemy offer a wide range of free and paid
+          video tutorials on web development. Look for tutorials that focus on
+          the specific skills you want to learn and that have good reviews from
+          other users. Additionally, some websites like{" "}
+          <a href="https://www.coursera.org/" target="_">
+            Coursera
+          </a>{" "}
+          and{" "}
+          <a href="https://www.edx.org/" target="_">
+            edX
+          </a>{" "}
+          offer free web development courses from reputable universities.
+        </p>
+        <h2>Web development communities</h2>
+
+        <p>
+          Joining a web development community can be a great way to learn from
+          other developers and get help with any questions or problems you may
+          have. Websites like{" "}
+          <a href=" https://stackoverflow.com/" target="_">
+            Stack Overflow
+          </a>{" "}
+          and{" "}
+          <a href=" https://github.com/" target="_">
+            GitHub
+          </a>{" "}
+          are great places to connect with other web developers and get help
+          with your code. You can&apos;t imagine how many times you&apos;ll end
+          up there asking for solutions, or helping others. Additionally,
+          participating in coding challenges and hackathons like HackerRank and
+          CodeSignal can help you improve your skills and gain experience.
+        </p>
+        <h2>Open-source projects</h2>
+        <p>
+          Participating in open-source projects is a great way to gain
+          real-world experience and learn from experienced developers. Websites
+          like{" "}
+          <a href=" https://github.com/" target="_">
+            GitHub
+          </a>{" "}
+          and{" "}
+          <a href=" https://sourceforge.net/" target="_">
+            SourceForge
+          </a>{" "}
+          host a wide range of open-source projects that you can contribute to.
+          I never tried this, but this can be a great way to get hands-on
+          experience and build a portfolio of work to show potential employers.{" "}
+        </p>
+        <h2>Conclusion</h2>
+        <p>
+          Learning web development can be challenging, but there are plenty of
+          free online resources that can help you get started and advance your
+          skills. By using the resources outlined above, you can start your
+          journey to becoming a web developer and launch a successful career in
+          this exciting field. Remember, to keep learning and practicing, and
+          you will be on your way to becoming a pro.
+        </p>
+        <p>
+          Always keep in mind that it takes time and effort to become proficient
+          in any skill, including web development. The key to success is to keep
+          learning and practicing, and to stay motivated and persistent. The
+          more you learn and practice, the better you will become, and the more
+          you will be able to accomplish.{" "}
+        </p>
+        <ContactMe />
+      </div>
+    )
+  },
+  {
+    id: "0998fghj124da482-532-2398kasd35",
+    title:
+      "Defining Your Web Development Roadmap: How to Structure Your Learning Path",
+    description:
+      "Learn how to structure your web development learning path and achieve your goals with our comprehensive guide. From determining your goals and researching the industry to creating a learning plan and practicing, our article covers all the essential steps to help you define your web development roadmap and become a successful web developer. Discover the secrets to mastering web development and reach your full potential with our expert advice.",
+    category: CATEGORIES_TYPE.career,
+    date: "2023-01-20",
+    isTopArticle: true,
+    image_src:
+      "https://images.unsplash.com/photo-1498637841888-108c6b723fcb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1633&q=80",
+    writer: "Andre Rodrigues",
+    content: (
+      <div>
+        <p>
+          Starting to learn web development can be overwhelming, with so many
+          technologies and tools to choose from. To make the most of your time
+          and resources, it&apos;s important to structure your learning path and
+          define a clear roadmap for your development journey.
+        </p>
+        <h2>Determine your goals</h2>
+        <p>
+          The first step in creating a roadmap is to determine your goals. What
+          do you want to achieve with your web development skills? Are you
+          looking to build a career in web development, or are you just looking
+          to build a personal project? Do you prefer web design, front-end or
+          back-end? Knowing your interests and goals will help you to focus on
+          the most important technologies and skills that you need to learn
+          next.
+        </p>
+        <h2>Research the industry</h2>
+        <p>
+          Once you know your goals, research the industry to find out what
+          technologies and skills are most in demand. Look at job listings for
+          web development positions and see what skills are required.
+          Additionally, it&apos;s a good idea to research the latest
+          technologies and trends in the industry, so you can stay up-to-date
+          with the latest developments.{" "}
+        </p>
+        <h2>Create a learning plan</h2>
+        <p>
+          With your goals and research in mind, create a learning plan that
+          includes a mix of resources, such as tutorials, exercises, video
+          lectures, and projects. Prioritize the most important technologies and
+          skills that you need to learn, and set achievable milestones for
+          yourself. It&apos;s also good idea to set a schedule and stick to it,
+          so you can make steady progress. Specifically for web development you
+          can follow this amazing interactive roadmap:
+          <a href="https://roadmap.sh/" target="_">
+            Web Development Roadmap
+          </a>
+          <br /> Check this article to learn some of the best free online
+          resources out there:{" "}
+          <Link to="/article?id=0998fghj124da482-532-2397hsfgh">
+            Start Your Journey to Becoming a Web Developer: Free Online
+            Resources to Learn From
+          </Link>
+          .
+        </p>
+        <h2>Practice, practice and practice</h2>
+        <p>
+          Learning web development requires a lot of practice, it&apos;s
+          important to put what you learn into practice as soon as possible. The
+          more you practice the concepts, the more they will stick and the
+          easier it will be to understand more advanced topics. Try to build
+          something on your own, It could be a simple website or a small web
+          application. This will help you to understand how everything works
+          together and it will give you a sense of accomplishment.
+          <br />
+          For front-end you can improve your skills with challenges like{" "}
+          <a href="https://www.frontendmentor.io/" target="_">
+            Frontend Mentor
+          </a>
+          , or{" "}
+          <a
+            href="
+          https://www.codingame.com/"
+            target="_"
+          >
+            Coding game
+          </a>{" "}
+          for praticing algorithms in a fun way, and also{" "}
+          <a
+            href="
+          https://www.codewars.com/"
+            target="_"
+          >
+            Codewars
+          </a>
+          .
+        </p>
+        <h2>Stay motivated and persistent</h2>
+        <p>
+          Learning web development can be challenging, and it&apos;s important
+          to stay motivated and persistent. Don&apos;t be discouraged if you
+          encounter difficulties or if you don&apos;t understand something right
+          away. Keep in mind that everyone starts from the beginning, and that
+          it takes time and effort to become proficient in any skill. Remember
+          to take breaks, stay focused and stay motivated and you will
+          definitely get the results you want.
+        </p>
+        <p>
+          In conclusion, creating a roadmap for your web development journey is
+          essential to make the most of your time and resources. By determining
+          your goals, researching the industry, creating a learning plan,
+          practicing, and staying motivated and persistent, you can set yourself
+          up for success and achieve your goals as a web developer.
+        </p>
+        <ContactMe />
+      </div>
+    )
+  },
+
+  // Finance
+  {
+    id: "098769s2a482-532-2397hsfgh",
+    title: "Start Smart: The Essential Guide to Saving and Investing",
+    description:
+      "Learn how to start your journey towards financial stability with this essential guide to saving and investing. Discover the basics of setting financial goals, creating a budget, understanding different types of investments, and building a strong financial future.",
+    category: CATEGORIES_TYPE.finance,
+    date: "2023-01-15",
+    isTopArticle: true,
+    image_src:
+      "https://images.unsplash.com/photo-1633158829875-e5316a358c6f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80",
+    writer: "Andre Rodrigues",
+    content: (
+      <div>
+        <p>
+          Saving and investing are essential components of building a strong
+          financial future. However, for many people, the thought of saving and
+          investing can be overwhelming and confusing. In this guide, we&apos;ll
+          break down the basics of saving and investing, so you can start your
+          journey towards financial stability.
+        </p>
+        <h2>Setting Financial Goals and Creating a Budget</h2>
+        <p>
+          The first step in saving and investing is setting financial goals and
+          creating a budget. This will help you understand where your money is
+          going and where you want it to go. Start by setting short-term and
+          long-term goals, such as saving for a down payment on a house, or
+          saving for retirement. Then, create a budget that will help you
+          achieve those goals. Be sure to include all of your income and
+          expenses, and make sure that your expenses are less than your income.
+        </p>
+        <h2>Understanding the Basics of Saving and Investing</h2>
+        <p>
+          Once you have your goals and budget in place, it&apos;s time to start
+          saving and investing. When it comes to saving, it&apos;s important to
+          have an emergency fund in place. This fund should have enough money to
+          cover at least three to six months of living expenses in case of an
+          emergency. Investing is the process of putting your money into assets
+          that have the potential to grow in value over time. These assets can
+          include stocks, bonds, mutual funds, and real estate.
+        </p>
+        <h2>Building a Diversified Portfolio</h2>
+        <p>
+          When it comes to investing, it&apos;s important to diversify your
+          portfolio. This means investing in a variety of different assets to
+          spread out the risk. A diversified portfolio can help protect you in
+          case one particular investment doesn&apos;t perform well. A good rule
+          of thumb is to have a mix of stocks and bonds, with a larger
+          percentage of bonds as you get closer to retirement.
+        </p>
+        <h2>Seeking Professional Advice</h2>
+        <p>
+          Saving and investing can be a complex and confusing process,
+          especially for beginners. Seeking professional advice from a financial
+          advisor or a financial planner can help you understand the process and
+          make informed decisions. They can also help you create a financial
+          plan that is tailored to your specific needs and goals.
+        </p>
+        <h2>Conclusion</h2>
+        <p>
+          Saving and investing can be a complex and confusing process,
+          especially for beginners, but its essential for building a strong
+          financial future. By setting financial goals, creating a budget,
+          understanding the basics of saving and investing, building a
+          diversified portfolio, and seeking professional advice, you can start
+          your journey towards financial stability. Remember that the key to
+          success is consistency and discipline, it&apos;s important to start
+          small and make it a habit. The earlier you start, the more time your
+          money has to grow. It&apos;s never too late to start, so take the
+          first step today, and start building a strong financial foundation.
+        </p>
+      </div>
+    )
+  },
+
+  // Well-being
   {
     id: "vks209s2a482-532-k924",
     title:
@@ -911,420 +1591,212 @@ const articles = [
     )
   },
   {
-    id: "098769s2a482-532-k9249876",
+    id: "098769s2a482-532-k924da998gh3is23",
     title:
-      "Navigating Team Conflicts in Programming: Strategies for Maintaining Mental Well-being",
+      "Stressed Out? Learn How to Effectively Manage Stress with These Simple Techniques",
     description:
-      "Discover effective strategies for navigating conflicts within a programming team while maintaining mental well-being. Learn the impact of conflicts on mental health and how to overcome it through open communication, active listening, compromise, team building and seeking help when needed.",
-    category: CATEGORIES_TYPE.career,
-    date: "2022-11-20",
+      "Feeling stressed out? Learn how to effectively manage stress with these simple, yet effective techniques. From laughing it off and writing it down to taking a walk and listening to music, our article covers a range of stress management techniques that will have you feeling like a stress-busting ninja in no time. Discover the secrets to managing stress and improve your well-being with our expert advice and engaging approach.",
+    category: CATEGORIES_TYPE.wellbeing,
+    date: "2023-01-20",
     isTopArticle: true,
     image_src:
-      "https://images.unsplash.com/photo-1523240795612-9a054b0db644?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80",
+      "https://images.unsplash.com/photo-1607827448452-6fda561309d0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1453&q=80",
     writer: "Andre Rodrigues",
     content: (
       <div>
         <p>
-          Team conflicts are an inevitable part of working in a team, especially
-          in the field of programming where tight deadlines, competing
-          priorities, and different working styles can lead to disagreements and
-          tension. Navigating these conflicts while maintaining a positive
-          mental well-being can be challenging, but it is essential for the
-          success of the team and the individual team members. In this article,
-          we will discuss some strategies for navigating team conflicts in
-          programming while maintaining mental well-being. We will cover topics
-          such as effective communication, active listening, and setting
-          boundaries, as well as how to address conflicts in a healthy and
-          productive way.
+          Feeling overwhelmed by the stresses of life? You&apos;re not alone! We
+          all experience stress from time to time, and it&apos;s important to
+          know how to manage it effectively. But let&apos;s face it, reading
+          through a dry list of stress management techniques can be about as
+          exciting as watching paint dry. So, I&apos;ve decided to liven things
+          up and present you with a list of simple, yet effective techniques
+          that will have you feeling like a stress-busting ninja in no time!
         </p>
-        <h2 className="section-title">
-          The Impact of Conflicts on Mental Health
-        </h2>
+        <h2>Laugh it off!</h2>
         <p>
-          Conflicts that are not well addressed can lead to a range of negative
-          effects, including:
+          Laughter is the best medicine, and it&apos;s true! Laughing has been
+          shown to reduce stress by releasing endorphins, which are the
+          body&apos;s natural feel-good chemicals. So, next time you&apos;re
+          feeling stressed, try watching a funny video or going to a comedy
+          show. It might seem silly, but it works!
+          <br />
+          But, who needs YouTube when you have friends and family? Call up your
+          funny friend, the one who always makes you laugh and tell them to
+          bring their A-game. Or, if you&apos;re feeling adventurous, try to
+          make someone laugh. It could be a stranger, a co-worker, or even
+          yourself. Just try not to get kicked out of the office for doing
+          stand-up during a meeting.
+          <br />
+          And if you&apos;re feeling a little more daring, why not try to make
+          yourself laugh? We&apos;re not talking about forcing fake laughter
+          here, but instead, try to see the humor in the situation. In short,
+          don&apos;t take life too seriously, find something to laugh about and
+          let the good vibes flow. Laughing is a powerful stress-reliever,
+          it&apos;s free, and it&apos;s available 24/7. So, don&apos;t be shy,
+          unleash your inner comedian and laugh it off!
         </p>
-        <ul className="section-points">
-          <li>
-            <h5>Stress and anxiety</h5> A sense of uncertainty and
-            unpredictability, leading to feelings of stress and anxiety. This
-            can affect a person&apos;s ability to focus and make decisions, and
-            can also lead to physical symptoms such as headaches and fatigue.
-          </li>
-          <li>
-            <h5>Feeling overwhelmed and overworked</h5>
-            Increase in workload and responsibilities, leading to feelings of
-            being overwhelmed and overworked. This can affect a person&apos;s
-            ability to perform their job effectively and can also lead to
-            burnout.
-          </li>
-          <li>
-            <h5>Lack of motivation and engagement</h5>
-            Lack of motivation and engagement among team members. This can
-            affect a person&apos;s ability to contribute to the team&apos;s
-            goals and objectives and can also lead to a decrease in
-            productivity.
-          </li>
-          <li>
-            <h5>Decreased job satisfaction</h5> Decreased job satisfaction among
-            team members. This can affect a person&apos;s overall well-being and
-            can also lead to a higher turnover rate.
-          </li>
-          <li>
-            <h5>Feeling isolated and unsupported</h5>
-            Feelings of isolation and unsupported among team members. This can
-            affect a person&apos;s ability to seek help and support from their
-            colleagues and can also lead to a lack of trust and respect within
-            the team.
-          </li>
-        </ul>
+        <h2>Write it down</h2>
         <p>
-          These negative effects can be particularly damaging for those who are
-          already struggling with mental health issues. Thats why soft skills
-          are so important in order to maintain a healthy work environment and
-          protect the mental well-being of all team members.
+          Many of us hold onto stress because we bottle it up inside. One way to
+          release that bottled up stress is to write it down. It can be a
+          journal entry, a letter to yourself, or even a tweet. Just put it into
+          words and get it out of your head. Trust me, it&apos;s therapeutic.
+          <br />
+          But, let&apos;s be real, journaling can be a little boring. So, we
+          suggest spicing things up with a little creative writing. Imagine your
+          stress as a monster, and then write a story about how you defeated it.
+          Or, write a letter to your stress, telling it exactly how you feel.
+          The possibilities are endless. But, whatever you do, just make sure to
+          keep it fun and creative.
         </p>
-        <h2 className="section-title">
-          Strategies for navigating through conflicts
-        </h2>
+        <h2>Sweat it out</h2>
         <p>
-          Navigating conflicts in a team can be challenging, but there are
-          several strategies that can help to address conflicts in a healthy and
-          productive way:
+          Exercise is one of the most effective ways to reduce stress. Not only
+          does it release endorphins (those feel-good chemicals we talked about
+          earlier), but it also helps to clear your mind and improve your
+          overall mood. Plus, you&apos;ll be getting in shape and impressing
+          everyone at the beach. But, who are we kidding? We know the real
+          reason you&apos;re going to start exercising is so you can eat that
+          extra slice of pizza guilt-free. <br />
+          Now, we know what you&apos;re thinking: &quot;But I hate
+          exercise.&quot; I hear you, trust me. But the good news is, you
+          don&apos;t have to run a marathon or lift weights to reap the
+          benefits. Even a simple walk or yoga session can do wonders for your
+          stress levels. So, put on those sneakers (or that yoga mat) and get
+          moving, your body and your meantal health will thank you.
         </p>
-        <ul className="section-points">
-          <li>
-            <h5>Communicate openly and honestly</h5> If you&apos;re in a
-            managment position, encourage open and honest communication within
-            the team, and make sure that everyone&apos;s voices are heard. This
-            can help prevent conflicts from escalating and make it easier to
-            find a resolution.
-            <br /> If not, speak out! But remember to be polite and assertive,
-            good communication is key to resolving conflicts
-          </li>
 
-          <li>
-            <h5>Active listening</h5> Listen actively to others and try to
-            understand their perspectives. This can help build trust and respect
-            within the team, and make it easier to find a resolution. Also
-            you&apos;ll be more aware of the other&apos;s needs, so that you can
-            better argument and adapt your solution.
-          </li>
-
-          <li>
-            <h5>Embrace differences</h5> Conflicts can arise due to differences
-            in opinions and work styles. It&apos;s important to remember that
-            everyone has different perspectives and what may be an issue for one
-            person, may not be for another. Embrace the diversity and find a
-            solution that works for everyone.
-          </li>
-
-          <li>
-            <h5>Set boundaries</h5> It&apos;s important to set boundaries on how
-            much time and energy you are willing to invest in resolving
-            conflicts. It&apos;s also important to remember that it&apos;s okay
-            to walk away from a conflict if it becomes detrimental to your
-            mental well-being.
-          </li>
-
-          <li>
-            <h5>Follow up and evaluate</h5> Once a conflict is resolved,
-            it&apos;s important to follow up and evaluate the outcome. This will
-            help to ensure that the conflict doesn&apos;t reoccur and that any
-            lessons learned can be applied in the future.
-          </li>
-
-          <li>
-            <h5>Look for common ground</h5> Try to find a solution that meets
-            the needs of all parties involved. This may involve compromise, but
-            it is important to remember that everyone has something to gain and
-            something to lose in a conflict.
-          </li>
-          <li>
-            <h5>Seek guidance</h5> If conflicts within the team are causing you
-            distress, don&apos;t hesitate to seek help from a therapist or
-            counselor.
-          </li>
-        </ul>
-        <h2 className="section-title">Conclusion</h2>
+        <h2>Take a walk</h2>
         <p>
-          It&apos;s important to remember that conflicts are a normal part of
-          working in a team, and they can be an opportunity for growth and
-          learning. team conflicts are an inevitable part of working in a team,
-          especially in the field of programming. However, by following
-          strategies such as effective communication, identifying the root
-          cause, keeping emotions in check, seeking help when needed, embracing
-          differences, setting boundaries, looking for common ground, and
-          following up and evaluating, team members can navigate conflicts in a
-          healthy and productive way. Additionally, it is important to remember
-          that conflicts can be an opportunity for growth and learning.
-          It&apos;s crucial to prioritize mental well-being and to set
-          boundaries for time and energy invested in resolving conflicts. By
-          implementing these strategies, team members can maintain positive
-          mental well-being while successfully addressing conflicts within the
-          team.
+          Sometimes all you need is a change of scenery. Going for a walk, even
+          if it&apos;s just around the block, can help clear your head and
+          reduce stress. Plus, you get to enjoy some fresh air and sunshine.
+          Bonus!
+          <br />
+          Or, if you&apos;re feeling adventurous, try a walking meditation. This
+          is a great way to clear your mind and focus on the present moment. You
+          can listen to a guided meditation or simply focus on your breath and
+          the sensation of your feet hitting the ground. Just make sure to watch
+          out for obstacles like squirrels, cracks in the pavement, or other
+          pedestrians.
+          <br />
+          Whatever you choose to do, just remember to enjoy the walk and not to
+          rush it. Take your time and soak in the scenery, you might be
+          surprised by how much a simple walk can change your mood and reduce
+          your stress.
+        </p>
+        <h2>Listen to music</h2>
+        <p>
+          Music has a powerful ability to affect our mood. Next time you&apos;re
+          feeling stressed, put on your favorite tunes and let the music wash
+          over you. It can be a great way to relax and unwind, and certain types
+          of music, such as classical or nature sounds, have been shown to have
+          a calming effect on the mind and body.
+        </p>
+        <h2>Pratice your passions</h2>
+        <p>
+          It can be anything from gardening, to painting, whatever that makes
+          you feel alive and happy, you should find time to do it. Investing in
+          your self should be just as important as investing in your career and
+          family.
+          <br />
+          These are just a few examples of simple stress management techniques
+          that can have a big impact on your well-being. Remember, it&apos;s
+          important to find what works for you and make it a part of your daily
+          routine. And don&apos;t forget to have fun with it, you are in control
+          of your stress and your happiness.
         </p>
       </div>
     )
   },
+
+  // Gaming
   {
-    id: "098769s2a482-532-kpl64fgh",
-    title:
-      "Overcoming Imposter Syndrome: The Impact on Programmers Mental Health",
+    id: "d509s2a482-532-k924",
+    title: "Become a Pro: Secrets to Dominating in CS:GO",
     description:
-      "Imposter syndrome is a common experience among programmers. Learn about the impact it can have on mental health and strategies for overcoming it, such as challenging negative thoughts, embracing failure, seeking feedback and seeking support.",
-    category: CATEGORIES_TYPE.career,
-    date: "2023-01-13",
-    isTopArticle: true,
-    image_src:
-      "https://images.unsplash.com/photo-1647752598980-df7157e20d8c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80",
-    writer: "Andre Rodrigues",
+      "Learn how to become a pro in Counter-Strike: Global Offensive (CS:GO) with our insider tips and strategies. From aiming and map knowledge to communication and focus, we cover all the essentials you need to dominate the competition. Improve your gameplay and take your CS:GO skills to the next level with our comprehensive guide. Don&apos;t miss out on the secrets to mastering the game.",
+    category: CATEGORIES_TYPE.games,
+    date: "2022-12-01",
+    isTopArticle: false,
+
     content: (
       <div>
         <p>
-          Imposter syndrome, the feeling of being a fraud or not deserving of
-          one&apos;s success, is a common experience among programmers. This can
-          lead to self-doubt, anxiety, and a lack of confidence, which can
-          ultimately impact a programmer&apos;s mental health and work
-          performance.
+          Counter-Strike: Global Offensive (CS:GO) is a popular and competitive
+          first-person shooter game that requires a high level of skill and
+          strategy to master. Whether you&apos;re a casual player or aspiring to
+          become a professional, there are many ways to improve your game and
+          dominate the competition.
         </p>
-        <h2 className="section-title">What is Imposter Syndrome?</h2>
+        <h2 className="section-title">Practice your aim</h2>
         <p>
-          Imposter syndrome is the feeling of being a fraud or not deserving of
-          one&apos;s success. It&apos;s a common experience among
-          high-achievers, and it can be especially prevalent in the programming
-          industry where there is a constant pressure to stay current and
-          continuously improve one&apos;s skills. People who suffer from
-          imposter syndrome have a fear of being exposed as a fraud, and they
-          often attribute their successes to luck or external factors, while
-          they blame their failures on themselves.{" "}
+          One of the most important aspects of CS:GO is your aim. Being able to
+          hit your targets quickly and accurately is crucial for success in the
+          game. To improve your aim, consider using aim training maps and
+          software that are specifically designed to help you hone your skills.
+          Additionally, playing deathmatch and aim maps can help you build
+          muscle memory and get used to different movement and recoil patterns.
         </p>
-        <h2 className="section-title">
-          Impact of Imposter Syndrome on Programmers&apos; Mental Health
-        </h2>
+        <h2 className="section-title">Learn the maps</h2>
         <p>
-          Imposter syndrome can have a significant impact on programmers&apos;
-          mental health. It can lead to:
+          Knowing the layout and common choke points of the maps you play on can
+          give you a significant advantage over your opponents. Practice each
+          map individually, learning the common strategies and angles used by
+          both the Terrorist and Counter-Terrorist teams. Pay attention to where
+          the bomb sites are located, where enemies are likely to come from and
+          where you can take cover. The more you know about a map, the better
+          your chances of predicting and countering enemy movements.{" "}
         </p>
-        <ul>
-          <li>
-            Self-doubt and lack of confidence: Imposter syndrome can lead to a
-            lack of confidence in one&apos;s abilities and an constant
-            self-doubt, which can affect a programmer&apos;s ability to take
-            risks and innovate.
-          </li>
-          <li>
-            Anxiety and stress: Imposter syndrome can lead to feelings of
-            anxiety and stress, which can affect a programmer&apos;s ability to
-            focus and perform their job effectively.
-          </li>
-          <li>
-            Isolation: Imposter syndrome can lead to feelings of isolation, as
-            people may be afraid to share their insecurities with others for
-            fear of being exposed as a fraud.
-          </li>
-          <li>
-            Decreased job satisfaction: Imposter syndrome can lead to decreased
-            job satisfaction, which can ultimately lead to a higher turnover
-            rate.{" "}
-          </li>
-        </ul>
-        <h2 className="section-title">
-          Strategies for Overcoming Imposter Syndrome
-        </h2>
+        <h2 className="section-title">Improve your crosshair placement</h2>
         <p>
-          Here are some strategies for overcoming imposter syndrome and
-          improving mental well-being:
+          An essential aspect of your aim is your crosshair placement. The
+          position of your crosshair can affect the speed and accuracy of your
+          shots, so it&apos;s important to get it right. To improve your
+          crosshair placement, practice aiming at head level while moving,
+          strafing, and jumping. This will help you learn how to quickly and
+          accurately place your crosshair where you need it to be, improving
+          your chances of making headshots and taking out enemies quickly.{" "}
         </p>
-        <ul>
-          <li>
-            Challenge negative thoughts: Be aware of negative thoughts and
-            challenge them by asking yourself if they are truly accurate. Try to
-            reframe them in a positive light.
-          </li>
-          <li>
-            Embrace failure: Failure is a natural part of learning and growing.
-            Embrace it as a learning opportunity and remind yourself that
-            failure is not a reflection of your abilities.
-          </li>
-          <li>
-            Seek feedback: Ask for constructive feedback from colleagues or
-            mentors and use it to improve your skills.
-          </li>
-          <li>
-            Focus on the process, not the outcome: Instead of focusing on the
-            outcome, focus on the process of learning and growing as a
-            programmer.
-          </li>
-          <li>
-            Seek support: Talk to friends, family, or a therapist if you&apos;re
-            feeling overwhelmed or struggling with imposter syndrome.
-          </li>
-        </ul>
+        <h2 className="section-title">Stay focused and communicate</h2>
+        <p>
+          CS:GO is a fast-paced game that requires you to be constantly aware of
+          your surroundings. Stay focused and keep your mind on the task at
+          hand. Additionally, communication is crucial in the game, whether
+          you&apos;re playing solo or with a team. Keep your microphone open and
+          communicate with your teammates, relaying information about enemy
+          locations, weapon upgrades, and strategy. Clear and concise
+          communication can make a big difference in the outcome of a match.
+        </p>
+        <h2 className="section-title">Keep learning</h2>
+        <p>
+          CS:GO is a complex and constantly evolving game, so there&apos;s
+          always something new to learn. Watch professional players and take
+          note of their strategies, pay attention to updates to the game and
+          keep an open mind to new tactics and techniques. Practice makes
+          perfect, so the more you play and learn, the better you&apos;ll
+          become.{" "}
+        </p>
         <h2 className="section-title">Conclusion</h2>
         <p>
-          Imposter syndrome is a common experience among programmers and it can
-          have a significant impact on mental health. It can lead to self-doubt,
-          anxiety, and a lack of confidence, which can ultimately impact a
-          programmer&apos;s work performance. It is important to be aware of the
-          negative thoughts, embrace failure, seek feedback, focus on the
-          process and seek support if needed. Remember that imposter syndrome is
-          not a reflection of your abilities, but rather a common experience
-          that can be overcome. With the right mindset and support, you can
-          improve your mental well-being and be successful in your role as a
-          programmer.
+          In conclusion, becoming a pro at CS:GO requires a combination of
+          practice, knowledge, and strategy. Improving your aim, learning the
+          maps, and perfecting your crosshair placement are key to dominating
+          the game. Additionally, staying focused and communicating effectively
+          with your team can give you a significant advantage over your
+          opponents. The more you play and learn about the game, the better you
+          will become. Remember that CS:GO is a constantly evolving game and
+          that you should always be open to learning new tactics and strategies.
+          With dedication and hard work, you can take your CS:GO game to the
+          next level and become a pro.
         </p>
       </div>
-    )
-  },
-  {
-    id: "098769s2a482-532-2397hsfgh",
-    title: "Start Smart: The Essential Guide to Saving and Investing",
-    description:
-      "Learn how to start your journey towards financial stability with this essential guide to saving and investing. Discover the basics of setting financial goals, creating a budget, understanding different types of investments, and building a strong financial future.",
-    category: CATEGORIES_TYPE.finance,
-    date: "2023-01-15",
-    isTopArticle: true,
+    ),
     image_src:
-      "https://images.unsplash.com/photo-1633158829875-e5316a358c6f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80",
-    writer: "Andre Rodrigues",
-    content: (
-      <div>
-        <p>
-          Saving and investing are essential components of building a strong
-          financial future. However, for many people, the thought of saving and
-          investing can be overwhelming and confusing. In this guide, we&apos;ll
-          break down the basics of saving and investing, so you can start your
-          journey towards financial stability.
-        </p>
-        <h2>Setting Financial Goals and Creating a Budget</h2>
-        <p>
-          The first step in saving and investing is setting financial goals and
-          creating a budget. This will help you understand where your money is
-          going and where you want it to go. Start by setting short-term and
-          long-term goals, such as saving for a down payment on a house, or
-          saving for retirement. Then, create a budget that will help you
-          achieve those goals. Be sure to include all of your income and
-          expenses, and make sure that your expenses are less than your income.
-        </p>
-        <h2>Understanding the Basics of Saving and Investing</h2>
-        <p>
-          Once you have your goals and budget in place, it&apos;s time to start
-          saving and investing. When it comes to saving, it&apos;s important to
-          have an emergency fund in place. This fund should have enough money to
-          cover at least three to six months of living expenses in case of an
-          emergency. Investing is the process of putting your money into assets
-          that have the potential to grow in value over time. These assets can
-          include stocks, bonds, mutual funds, and real estate.
-        </p>
-        <GoogleAd slot={IN_ARTICLE_SLOT} />
-        <h2>Building a Diversified Portfolio</h2>
-        <p>
-          When it comes to investing, it&apos;s important to diversify your
-          portfolio. This means investing in a variety of different assets to
-          spread out the risk. A diversified portfolio can help protect you in
-          case one particular investment doesn&apos;t perform well. A good rule
-          of thumb is to have a mix of stocks and bonds, with a larger
-          percentage of bonds as you get closer to retirement.
-        </p>
-        <h2>Seeking Professional Advice</h2>
-        <p>
-          Saving and investing can be a complex and confusing process,
-          especially for beginners. Seeking professional advice from a financial
-          advisor or a financial planner can help you understand the process and
-          make informed decisions. They can also help you create a financial
-          plan that is tailored to your specific needs and goals.
-        </p>
-        <h2>Conclusion</h2>
-        <p>
-          Saving and investing can be a complex and confusing process,
-          especially for beginners, but its essential for building a strong
-          financial future. By setting financial goals, creating a budget,
-          understanding the basics of saving and investing, building a
-          diversified portfolio, and seeking professional advice, you can start
-          your journey towards financial stability. Remember that the key to
-          success is consistency and discipline, it&apos;s important to start
-          small and make it a habit. The earlier you start, the more time your
-          money has to grow. It&apos;s never too late to start, so take the
-          first step today, and start building a strong financial foundation.
-        </p>
-      </div>
-    )
+      "https://images.unsplash.com/photo-1637594439872-44d1b1fe0a0b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80",
+    writer: "Andre Rodrigues"
   }
 ];
 
-const translator = {
-  language: "pt",
-  components: {
-    homepage: {
-      heading: {
-        pt: [""],
-        en: [""]
-      },
-      subtitle: {
-        pt: [""],
-        en: [""]
-      },
-      action_button: {
-        pt: [""],
-        en: [""]
-      }
-    },
-    about: {
-      heading: {
-        pt: ["André Rodrigo é um programador criativo residente em Portugal."],
-        en: ["André Rodrigo is a creative web developer from Portugal"]
-      },
-      introduction: {
-        pt: [
-          "Desde que tornei a minha paixão numa carreira, estou continuamente a desenvolver e a entregar projetos há cerca de 4 anos. A minha atenção aos detalhes, visão criativa do mundo e natureza meticulosa são os principais contributos da minha identidade para o desenvolvimento e criação de soluções personalizadas ao projeto. Ao longo da minha carreira, desenvolvi soluções para diversos sectores, desde pequenos negócios a trabalhadores independentes dedico-me "
-        ],
-        en: [
-          " Since turning my passion into a career, I&apos;ve been continuously creating and delivering projects for almost 4 years. My eye for detail, creative view of the world, and meticulous nature help me make a difference and deliver unique and personalized solutions. I&apos;ve created and delivered solutions for various types of projects, from small businesses to independent workers, I&apos;m here to help you bring your website vision to life so you can free up your time to do what you do best - running your awesome business, of course!",
-          "When I&apos;m not busy making website dreams come true, you can find me relaxing at home in Lisbon, with my partner or unique friends, laughing with silly jokes, taking a walk, making something fun, or eating an amazing croissant accompained by jazz oldies."
-        ]
-      },
-
-      education_title: {
-        pt: ["Formação"],
-        en: ["Education"]
-      },
-      courses: {
-        pt: [
-          "Front-End Libraries Certification",
-          "Back-End Development and APIs Certification",
-          "Algorithms and Data Structures Certification",
-          "Responsive Web Design Certification",
-          "Design Thinking Certification",
-          "UX/UI Fundamentals Certification"
-        ]
-      }
-    },
-    testimonials: {
-      heading: {
-        pt: ["Testemunhos que nos enchem o coração"],
-        en: ["Sweet testimonials from warming people"]
-      },
-      question: {
-        pt: ["Gostaria de ver o seu feedback aqui?", "Vamos conversar"],
-        en: ["Would you like to be next?", "Let&apos;s talk!"]
-      }
-    },
-    work_category_page: {
-      heading: {
-        pt: [""],
-        en: [""]
-      },
-      description: {
-        pt: [""],
-        en: [""]
-      }
-    }
-  },
-
-  gettext(component, content) {
-    return translator.components[component][content][translator.language];
-  }
-};
-
-export { social_media, articles, translator };
+export { social_media, articles };

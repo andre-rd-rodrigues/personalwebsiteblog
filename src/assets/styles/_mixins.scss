@@ -5,6 +5,7 @@ $light-grey: #f3f3f3;
 $white: #ffffff;
 $yellow: #ffca6c;
 $grey-yellow: #edeee9;
+$salmon: #f18073;
 
 //Sizes
 $breaking-point-xxl: 1400px;
@@ -64,7 +65,7 @@ $breaking-point-xxs: 330px;
 
 //page
 @mixin page_container {
-  padding: 140px var(--padding-y) 100px;
+  padding: 130px var(--padding-y) 100px;
   min-height: 96vh;
 
   //Responsive
