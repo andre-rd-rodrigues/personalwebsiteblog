@@ -20,7 +20,7 @@ const BlogArticlePage = () => {
     if (articleId) {
       setArticle(getArticlesById(articleId));
     }
-  }, []);
+  }, [params.id]);
 
   return (
     <>
