@@ -84,6 +84,17 @@ const getArticlesByCategory = (category) => {
 };
 
 /**
+ * Function to get the article according to title
+ * @param title title string
+ */
+
+const getArticleByTitle = (title) => {
+  return articles.filter(
+    (item) => item.title.toLowerCase().trim() === title.toLowerCase().trim()
+  )[0];
+};
+
+/**
  * Function to help validate articles array
  *  @param {Object[]} articles
  */
@@ -99,5 +110,6 @@ export {
   getArticlesByInput,
   getArticlesById,
   getWeeklyArticles,
-  getTopArticles
+  getTopArticles,
+  getArticleByTitle
 };

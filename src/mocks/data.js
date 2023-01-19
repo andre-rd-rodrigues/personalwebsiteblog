@@ -1,3 +1,4 @@
+import ArticleLink from "components/Articles/ArticleLink/ArticleLink";
 import ContactMe from "components/ContactMe/ContactMe";
 import GoogleAd from "components/GoogleAd/GoogleAd";
 import { Link } from "react-router-dom";
@@ -885,10 +886,10 @@ const articles = [
           There are many online resources available, such as Freecodecamp,
           Codecademy, Udemy, Coursera, edX and others, that offer free or
           low-cost courses in programming. Check this article about{" "}
-          <Link to={`/article?id=0998fghj124da482-532-2397hsfgh`}>
-            &quote;Start Your Journey to Becoming a Web Developer: Free Online
-            Resources to Learn From&quote;
-          </Link>
+          <ArticleLink
+            title="Start Your Journey to Becoming a Web Developer: Free Online
+            Resources to Learn From"
+          />
           , if you are interested in following a structured study plan at your
           own pace. <br />
           You can also find many free resources online such as tutorials, blogs,
@@ -991,7 +992,7 @@ const articles = [
     date: "2023-01-19",
     isTopArticle: true,
     image_src:
-      "https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1472&q=80",
+      "https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1472&q=80",
     writer: "Andre Rodrigues",
     content: (
       <div>
@@ -1011,9 +1012,9 @@ const articles = [
           define a clear roadmap for your development journey.
           <br />
           Specifically for web development you can follow this amazing
-          interactive roadmap:
+          interactive roadmap:{" "}
           <a href="https://roadmap.sh/" target="_">
-            https://roadmap.sh/
+            Web developer Roadmap
           </a>
           . It helped me keeping track of my evolution and setting up the next
           topics to learn. It was so effective that I still to this day follow
@@ -1025,10 +1026,11 @@ const articles = [
           <br />
           If you want to learn on how to properly structure your learning path,
           check this article:
-          <Link to="/article?id=0998fghj124da482-532-2398kasd35">
-            Defining Your Web Development Roadmap: How to Structure Your
-            Learning Path
-          </Link>
+          <ArticleLink
+            title=" Defining Your Web Development Roadmap: How to Structure Your
+            Learning Path"
+          />
+          .
         </p>
 
         <h2>Coding tutorials and exercises</h2>
@@ -1180,16 +1182,17 @@ const articles = [
           skills that you need to learn, and set achievable milestones for
           yourself. It&apos;s also good idea to set a schedule and stick to it,
           so you can make steady progress. Specifically for web development you
-          can follow this amazing interactive roadmap:
+          can follow this amazing interactive{" "}
           <a href="https://roadmap.sh/" target="_">
-            Web Development Roadmap
+            roadmap for web development
           </a>
+          .
           <br /> Check this article to learn some of the best free online
           resources out there:{" "}
-          <Link to="/article?id=0998fghj124da482-532-2397hsfgh">
-            Start Your Journey to Becoming a Web Developer: Free Online
-            Resources to Learn From
-          </Link>
+          <ArticleLink
+            title=" Start Your Journey to Becoming a Web Developer: Free Online
+            Resources to Learn From"
+          />
           .
         </p>
         <h2>Practice, practice and practice</h2>
@@ -1256,7 +1259,7 @@ const articles = [
     date: "2023-01-15",
     isTopArticle: true,
     image_src:
-      "https://images.unsplash.com/photo-1633158829875-e5316a358c6f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80",
+      "https://images.unsplash.com/photo-1579621970590-9d624316904b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80",
     writer: "Andre Rodrigues",
     content: (
       <div>
@@ -1795,6 +1798,183 @@ const articles = [
     ),
     image_src:
       "https://images.unsplash.com/photo-1637594439872-44d1b1fe0a0b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80",
+    writer: "Andre Rodrigues"
+  },
+  {
+    id: "d509s286ahsda482-532-k924",
+    title: "From Fun to Fundamentals: The Educational Benefits of Gaming",
+    description:
+      "Discover how video games are revolutionizing the way we learn. From improving problem-solving skills to enhancing engagement, learn about the fundamentals of gaming in education in this comprehensive article.",
+    category: CATEGORIES_TYPE.games,
+    date: "2023-01-10",
+    isTopArticle: false,
+
+    content: (
+      <div>
+        <p>
+          Video games have come a long way since the days of Pong and Pac-Man.
+          Today, games are more immersive, interactive and even educational.
+          But, can playing video games really be beneficial for students? The
+          answer is a resounding yes! In this article, we&apos;ll explore the
+          ways in which gaming can enhance learning and development, and help
+          students level up in the classroom.
+        </p>
+        <h2>Improving Problem-Solving Skills</h2>
+        <p>
+          One of the key benefits of gaming is that it helps to improve
+          problem-solving skills. Many games require players to think
+          strategically and make quick decisions, which can help to develop
+          critical thinking and logic skills. For example, in puzzle games like
+          Tetris, players have to think ahead to fit the falling blocks into the
+          right spaces, while in strategy games like Civilization, players have
+          to make decisions about how to allocate resources and build their
+          civilizations.
+        </p>
+        <p>
+          In the classroom, these skills can be translated to real-life
+          problem-solving scenarios. Students who are skilled at solving
+          problems in video games may be more likely to come up with creative
+          solutions to real-world problems. So, if your students are struggling
+          with problem-solving, give them a controller and let them play some
+          games - it&apos;s a lot more fun than traditional problem-solving
+          exercises!
+        </p>
+        <h2>Enhancing Engagement</h2>
+        <p>
+          Another benefit of gaming is that it can enhance engagement in the
+          classroom. Let&apos;s face it, lectures can be boring, but games are
+          interactive and engaging. By incorporating gaming into the classroom,
+          teachers can make learning more fun and exciting for students. For
+          example, teachers can use game-based learning activities to make
+          lessons more interactive, or even create their own games to teach
+          specific concepts.
+        </p>
+        <p>
+          Additionally, games can also be used as a form of assessment. Instead
+          of traditional tests and quizzes, teachers can create games that
+          assess student&apos;s knowledge and understanding of a topic. This not
+          only makes the assessment process more fun, but also allows students
+          to demonstrate their understanding in a more interactive and engaging
+          way.
+        </p>
+        <h2>Developing 21st Century Skills</h2>
+        <p>
+          In today&apos;s fast-paced world, it&apos;s important for students to
+          develop 21st century skills such as collaboration, communication,
+          creativity and critical thinking. Thankfully, games can help to
+          develop these skills. Many games require players to work together and
+          communicate effectively in order to achieve a common goal.
+          Additionally, games also encourage creativity as players have to come
+          up with new strategies and solutions.
+        </p>
+        <p>
+          By incorporating gaming into the classroom, teachers can help students
+          develop these important skills. For example, students can work in
+          teams to complete a game-based project or use games to practice
+          communication and collaboration skills. With the help of games,
+          students will be better equipped to navigate the ever-changing
+          landscape of the 21st century.
+        </p>
+        <h2>Conclusion</h2>
+        <p>
+          As you can see, gaming isn&apos;t just a form of entertainment, it can
+          also be a valuable tool in the classroom. From improving
+          problem-solving skills to enhancing engagement, the benefits of gaming
+          in education are undeniable. So, next time you think about gaming as a
+          waste of time, remember that it can help students level up in the
+          classroom and beyond.
+        </p>
+      </div>
+    ),
+    image_src:
+      "https://images.unsplash.com/photo-1504275107627-0c2ba7a43dba?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1374&q=80",
+    writer: "Andre Rodrigues"
+  },
+  {
+    id: "d509s286a987aksdsdbv182-532-k924",
+    title: "Mind Games: How Video Games Affect Mental Health and Well-being",
+    description: "",
+    category: CATEGORIES_TYPE.games,
+    date: "2023-01-14",
+    isTopArticle: false,
+
+    content: (
+      <div>
+        <p>
+          Video games have been a source of entertainment and joy for people of
+          all ages. However, some people may be concerned about the impact of
+          gaming on mental health and well-being. In this article, we&apos;ll
+          explore the research on the topic and clear up some of the
+          misconceptions about the relationship between gaming and mental
+          health.
+        </p>
+        <h2>The Good</h2>
+        <p>
+          Contrary to popular belief, video games can actually have a positive
+          impact on mental health and well-being. Studies have shown that gaming
+          can help to reduce stress, anxiety and depression. For example, a
+          study by the University of Utah found that playing video games can
+          increase the release of feel-good chemicals in the brain, such as
+          dopamine and serotonin. This can lead to improved mood, reduced
+          anxiety and increased overall well-being.{" "}
+        </p>
+        <p>
+          Additionally, games can also serve as a form of escapism, allowing
+          people to take a break from the stressors of everyday life and immerse
+          themselves in a different world. So, if you&apos;re feeling down or
+          stressed, don&apos;t be afraid to grab your controller and play a few
+          rounds of your favorite game, it might just be the mental health boost
+          you need.
+        </p>
+        <h2>The Bad</h2>
+        <p>
+          Like anything else, too much of a good thing can be bad. And the same
+          goes for video games. While moderate gaming can have positive effects
+          on mental health, excessive gaming can lead to negative consequences.
+          For example, excessive gaming can lead to addiction, which can have a
+          negative impact on relationships, work and school. Additionally,
+          excessive gaming can also lead to poor sleep and sedentary lifestyle,
+          which can have negative effects on physical health and mental
+          well-being.{" "}
+        </p>
+        <p>
+          It&apos;s important to remember that moderation is key. Set limits on
+          how much time you spend playing video games, and make sure to take
+          breaks and engage in other activities as well. Your mind and body will
+          thank you.
+        </p>
+        <h2>The Ugly</h2>
+        <p>
+          Despite the research showing the positive effects of gaming on mental
+          health, there are still some misconceptions about the relationship
+          between gaming and mental health. One of the biggest misconceptions is
+          that video games are a cause of violence. However, multiple studies
+          have shown that there is no clear link between playing video games and
+          acts of violence. In fact, some research suggests that violent video
+          games can serve as a form of catharsis, allowing people to release
+          pent-up aggression and frustration in a safe and controlled
+          environment.
+        </p>
+        <p>
+          Another misconception is that video games are only for children and
+          teenagers. However, the average age of a gamer is 35 and the number of
+          adult gamers is on the rise. So, whether you&apos;re a teenager or a
+          grandparent, it&apos;s never too late (or early) to enjoy a good game.
+        </p>
+        <h2>Conclusion</h2>
+        <p>
+          Video games can be a source of entertainment, stress relief and even
+          mental health benefits. However, as with anything, moderation is key.
+          Set limits on your gaming time and make sure to engage in other
+          activities as well. And, remember, the research shows that video games
+          are not the root cause of violence or negative mental health outcomes,
+          so don&apos;t be afraid to pick up that controller and enjoy a game or
+          two.
+        </p>
+      </div>
+    ),
+    image_src:
+      "https://images.unsplash.com/photo-1577741314755-048d8525d31e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80",
     writer: "Andre Rodrigues"
   }
 ];
