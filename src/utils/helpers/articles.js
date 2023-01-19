@@ -2,9 +2,9 @@ import { articles } from "mocks/data";
 import { isDateInThisWeek } from "./date";
 
 /**
- *  Function that sorts articles by date and returns the first 5 articles
+ *  Function that sorts articles by date
  */
-const getRecentArticles = () => {
+const sortArticlesByDate = () => {
   const articlesSorted = [...articles];
 
   articlesSorted.sort((a, b) => {
@@ -18,7 +18,7 @@ const getRecentArticles = () => {
  *  Function that filters this week articles
  */
 const getWeeklyArticles = () => {
-  const recentArticles = getRecentArticles();
+  const recentArticles = sortArticlesByDate();
 
   const weekArticles = recentArticles.filter((article) =>
     isDateInThisWeek(article.date)
@@ -71,7 +71,7 @@ const getArticlesByCategory = (category) => {
       return articles;
 
     case "recent":
-      return getRecentArticles();
+      return sortArticlesByDate();
 
     default: {
       const filteredArticles = articles.filter(
@@ -105,7 +105,7 @@ const validateSearch = (articles) => {
 };
 
 export {
-  getRecentArticles,
+  sortArticlesByDate as getRecentArticles,
   getArticlesByCategory,
   getArticlesByInput,
   getArticlesById,

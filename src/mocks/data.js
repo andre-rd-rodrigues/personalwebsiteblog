@@ -1,7 +1,6 @@
 import ArticleLink from "components/Articles/ArticleLink/ArticleLink";
 import ContactMe from "components/ContactMe/ContactMe";
 import GoogleAd from "components/GoogleAd/GoogleAd";
-import { Link } from "react-router-dom";
 import { CATEGORIES_TYPE } from "utils";
 import { IN_ARTICLE_SLOT } from "utils/googleAds";
 
@@ -1190,7 +1189,7 @@ const articles = [
           <br /> Check this article to learn some of the best free online
           resources out there:{" "}
           <ArticleLink
-            title=" Start Your Journey to Becoming a Web Developer: Free Online
+            title="Start Your Journey to Becoming a Web Developer: Free Online
             Resources to Learn From"
           />
           .
@@ -1370,7 +1369,6 @@ const articles = [
           depression, and other mental health issues. Fortunately there&apos;re
           effective strategies we can use to prevent this negative impact.
         </p>
-        <GoogleAd slot={IN_ARTICLE_SLOT} />
         <h2 className="section-title">
           Strategies for Mitigating the Effects of Prolonged Screen Time
         </h2>
@@ -1893,7 +1891,8 @@ const articles = [
   {
     id: "d509s286a987aksdsdbv182-532-k924",
     title: "Mind Games: How Video Games Affect Mental Health and Well-being",
-    description: "",
+    description:
+      "Uncover the truth about the relationship between video games and mental health. From reducing stress to improving mood, discover the good, the bad, and the ugly of gaming's impact on well-being in this informative and engaging article.",
     category: CATEGORIES_TYPE.games,
     date: "2023-01-14",
     isTopArticle: false,
