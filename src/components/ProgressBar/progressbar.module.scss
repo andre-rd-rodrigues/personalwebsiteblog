@@ -1,0 +1,14 @@
+@import "assets/styles/mixins";
+
+.container {
+  position: fixed;
+  top: 90px;
+  left: 0;
+  background-color: $toast-yellow;
+  height: 7px;
+  width: 100%;
+  left: 0;
+  right: 0;
+  transform-origin: 0%;
+  z-index: 100;
+}

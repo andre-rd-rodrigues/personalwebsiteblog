@@ -8,6 +8,7 @@ import { useSearchParams } from "react-router-dom";
 import "./blogarticlepage.scss";
 import { getArticlesById } from "utils";
 import { convertDate } from "utils/helpers/date";
+import ProgressBar from "components/ProgressBar/ProgressBar";
 
 const BlogArticlePage = () => {
   const [article, setArticle] = useState(undefined);
@@ -29,6 +30,7 @@ const BlogArticlePage = () => {
         description={article?.description}
         image={article?.image_src}
       />
+      <ProgressBar />
       <PageContainer color="dark" bgColor="grey-yellow">
         <div className="article-container">
           <Icon
