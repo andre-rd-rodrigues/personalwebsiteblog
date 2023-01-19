@@ -4,11 +4,11 @@ import Icon from "components/AppIcon/AppIcon";
 import Image from "components/AppImage/AppImage";
 import MetaTags from "components/MetaTags/MetaTags";
 import PageContainer from "components/PageContainer/PageContainer";
+import ProgressBar from "components/ProgressBar/ProgressBar";
 import { useSearchParams } from "react-router-dom";
 import "./blogarticlepage.scss";
 import { getArticlesById } from "utils";
 import { convertDate } from "utils/helpers/date";
-import ProgressBar from "components/ProgressBar/ProgressBar";
 
 const BlogArticlePage = () => {
   const [article, setArticle] = useState(undefined);
