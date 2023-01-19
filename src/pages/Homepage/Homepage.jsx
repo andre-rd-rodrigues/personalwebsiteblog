@@ -5,6 +5,7 @@ import PageContainer from "components/PageContainer/PageContainer";
 import { CATEGORIES_TYPE, getWeeklyArticles } from "utils";
 import CategorySection from "./CategorySection";
 import styles from "./homepage.module.scss";
+import Introduction from "./Introduction";
 
 function Homepage() {
   //Lifecycle
@@ -17,6 +18,7 @@ function Homepage() {
       bgColor="grey-yellow"
       className={styles.container}
     >
+      <Introduction />
       <div className={styles.wrapper}>
         <CategorySection categoryType={CATEGORIES_TYPE.recent} />
         <CategorySection categoryType={CATEGORIES_TYPE.tech} />
