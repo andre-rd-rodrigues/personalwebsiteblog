@@ -4,10 +4,10 @@ import AppIcon from "components/AppIcon/AppIcon";
 import SearchBar from "components/AppSearchBar/AppSearchBar";
 import FeatherIcon from "feather-icons-react";
 import { Nav, Navbar, Offcanvas } from "react-bootstrap";
+import ReactGA from "react-ga4";
 import { Link } from "react-router-dom";
 import { CATEGORIES } from "utils";
 import styles from "./appnavbar.module.scss";
-import ReactGA from "react-ga4";
 
 const AppNavbar = () => {
   const [show, setShow] = useState(false);
