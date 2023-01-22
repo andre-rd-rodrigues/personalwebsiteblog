@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.bae32e2c.css",
-    "main.js": "/static/js/main.9c81fa68.js",
+    "main.css": "/static/css/main.56529bed.css",
+    "main.js": "/static/js/main.abded883.js",
     "static/media/rozha-one-regular.woff2": "/static/media/rozha-one-regular.48932e08df015e3899ec.woff2",
     "static/media/blacker-sans.light.woff2": "/static/media/blacker-sans.light.b6698ff8d48826ba8b3b.woff2",
     "static/media/moniqa-italic.woff2": "/static/media/moniqa-italic.abcff3844afe9e8fb412.woff2",
@@ -12,11 +12,11 @@
     "static/media/slick.eot": "/static/media/slick.a4e97f5a2a64f0ab1323.eot",
     "static/media/slick.ttf": "/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
-    "main.bae32e2c.css.map": "/static/css/main.bae32e2c.css.map",
-    "main.9c81fa68.js.map": "/static/js/main.9c81fa68.js.map"
+    "main.56529bed.css.map": "/static/css/main.56529bed.css.map",
+    "main.abded883.js.map": "/static/js/main.abded883.js.map"
   },
   "entrypoints": [
-    "static/css/main.bae32e2c.css",
-    "static/js/main.9c81fa68.js"
+    "static/css/main.56529bed.css",
+    "static/js/main.abded883.js"
   ]
 }
