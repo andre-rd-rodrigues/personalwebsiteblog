@@ -7,7 +7,7 @@ import BlogArticlePage from "pages/ArticlePage/ArticlePage";
 import Homepage from "pages/Homepage/Homepage";
 import PageNotFound from "pages/PageNotFound/PageNotFound";
 import ResultsPage from "pages/ResultsPage/ResultsPage";
-import ReactGA from "react-ga";
+import ReactGA from "react-ga4";
 import { Routes, Route, useLocation } from "react-router-dom";
 
 const App = () => {
@@ -20,7 +20,6 @@ const App = () => {
 
   useEffect(() => {
     window.scrollTo(0, 0);
-    ReactGA.pageview(location.pathname + location.search);
   }, [location.pathname, location.search]);
 
   return (

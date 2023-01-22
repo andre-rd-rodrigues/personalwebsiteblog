@@ -9,6 +9,7 @@ import { useSearchParams } from "react-router-dom";
 import "./articlepage.scss";
 import { getArticlesById } from "utils";
 import { convertDate } from "utils/helpers/date";
+import ReactGA from "react-ga4";
 
 const BlogArticlePage = () => {
   const [article, setArticle] = useState(undefined);
@@ -22,6 +23,15 @@ const BlogArticlePage = () => {
       setArticle(getArticlesById(articleId));
     }
   }, [articleId]);
+
+  useEffect(() => {
+    if (article) {
+      ReactGA.send({
+        hitType: "pageview",
+        page: "/article"
+      });
+    }
+  }, [article]);
 
   return (
     <>

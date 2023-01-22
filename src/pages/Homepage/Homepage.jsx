@@ -1,8 +1,6 @@
 import React, { useEffect } from "react";
-import AnimatedHeading from "components/AnimatedHeading/AnimatedHeading";
-import ArticlesSlider from "components/Articles/ArticlesSlider/ArticlesSlider";
 import PageContainer from "components/PageContainer/PageContainer";
-import { CATEGORIES_TYPE, getWeeklyArticles } from "utils";
+import { CATEGORIES_TYPE } from "utils";
 import CategorySection from "./CategorySection";
 import styles from "./homepage.module.scss";
 import Introduction from "./Introduction";
