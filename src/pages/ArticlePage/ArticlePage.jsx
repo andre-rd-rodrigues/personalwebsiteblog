@@ -28,7 +28,8 @@ const BlogArticlePage = () => {
     if (article) {
       ReactGA.send({
         hitType: "pageview",
-        page: "/article"
+        page: "/article",
+        article_title: article.title
       });
     }
   }, [article]);
