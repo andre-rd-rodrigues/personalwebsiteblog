@@ -2,19 +2,6 @@ import { articles } from "mocks/data";
 import { isDateInThisWeek } from "./date";
 
 /**
- *  Function that sorts articles by date
- */
-const sortArticlesByDate = () => {
-  const articlesSorted = [...articles];
-
-  articlesSorted.sort((a, b) => {
-    return new Date(b.date) - new Date(a.date);
-  });
-
-  return articlesSorted;
-};
-
-/**
  *  Function that filters this week articles
  */
 const getWeeklyArticles = () => {
@@ -63,6 +50,8 @@ const getArticlesById = (id) => {
  */
 
 const getArticlesByCategory = (category) => {
+  const sortedArticles = sortArticlesByDate();
+
   switch (category) {
     case "top":
       return getTopArticles();
@@ -74,7 +63,7 @@ const getArticlesByCategory = (category) => {
       return sortArticlesByDate();
 
     default: {
-      const filteredArticles = articles.filter(
+      const filteredArticles = sortedArticles.filter(
         (article) => article.category.toLowerCase() === category.toLowerCase()
       );
 
@@ -102,6 +91,19 @@ const validateSearch = (articles) => {
   if (!articles.length) return null;
 
   return articles;
+};
+
+/**
+ *  Function that sorts articles by date
+ */
+const sortArticlesByDate = () => {
+  const articlesSorted = [...articles];
+
+  articlesSorted.sort((a, b) => {
+    return new Date(b.date) - new Date(a.date);
+  });
+
+  return articlesSorted;
 };
 
 export {

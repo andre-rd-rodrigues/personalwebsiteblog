@@ -6,7 +6,7 @@ import MetaTags from "components/MetaTags/MetaTags";
 import PageContainer from "components/PageContainer/PageContainer";
 import ProgressBar from "components/ProgressBar/ProgressBar";
 import { useSearchParams } from "react-router-dom";
-import "./blogarticlepage.scss";
+import "./articlepage.scss";
 import { getArticlesById } from "utils";
 import { convertDate } from "utils/helpers/date";
 

@@ -2,7 +2,6 @@ import ArticleLink from "components/Articles/ArticleLink/ArticleLink";
 import ContactMe from "components/ContactMe/ContactMe";
 import GoogleAd from "components/GoogleAd/GoogleAd";
 import { CATEGORIES_TYPE } from "utils";
-import { IN_ARTICLE_SLOT } from "utils/googleAds";
 
 const social_media = [
   { label: "facebook", ref: "https://www.facebook.com/andrerodrigoweb" },
@@ -36,52 +35,68 @@ const articles = [
           Are you tired of constantly forgetting to turn off the lights or
           adjust the thermostat when you leave the house? It might be time to
           consider automating your home.
-        </p>
-        <br />
-        <p>
-          Home automation refers to the use of technology to control and manage
-          the various systems and devices in your home, such as lighting,
+          <br /> Home automation refers to the use of technology to control and
+          manage the various systems and devices in your home, such as lighting,
           heating and cooling, and appliances. Not only can home automation make
           your life easier and more convenient, it can also help you save energy
-          and money.
+          and money. Here are 5 ways to automate your home!
         </p>
-        <br />
-        <p>Here are five ways to automate your home:</p>
+
         <h2 className="section-title">1. Smart thermostats</h2>
         <p>
-          A smart thermostat allows you to control the temperature in your home
-          remotely using a smartphone app. Some models can even learn your
-          schedule and adjust the temperature accordingly, helping you save
-          energy and money on your heating and cooling bills.
+          A smart thermostat allows you to control the <b>temperature</b> in
+          your home remotely using a <b>smartphone app</b>. Some models can even
+          learn your schedule and adjust the temperature accordingly, helping
+          you save energy and money on your heating and cooling bills.
         </p>
         <h2 className="section-title">2. Smart lighting</h2>
         <p>
-          With smart lighting, you can control your lights using a smartphone
-          app or voice commands. This allows you to turn lights on and off, dim
-          them, or change their color from anywhere in your home. Smart lighting
-          can also be programmed to turn off when you leave the house, helping
-          you save energy.
+          With smart lighting, you can <b>control your lights</b> using a
+          smartphone app or voice commands. This allows you to turn lights on
+          and off, dim them, or change their color from anywhere in your home.
+          Smart lighting can also be programmed to turn off when you leave the
+          house, helping you save energy. It&apos;s perfect, I have it all over
+          my house and the difference is huge!
         </p>
         <h2 className="section-title">3. Smart appliances</h2>
         <p>
-          There are now a variety of smart appliances available, such as
-          refrigerators, washing machines, and dryers, that can be controlled
-          and monitored using a smartphone app. This can be especially helpful
-          for managing your household chores when you&apos;re away from home.
+          There are now a variety of smart appliances available, such as{" "}
+          <b>refrigerators, washing machines, and dryers</b>, that can be
+          controlled and monitored using a smartphone app. This can be
+          especially helpful for managing your household chores when you&apos;re
+          away from home.
         </p>
         <h2 className="section-title">4. Smart security</h2>
         <p>
-          Smart security systems can include door and window sensors, motion
-          detectors, and cameras that can be monitored and controlled using a
-          smartphone app. This can give you peace of mind when you&apos;re away
-          from home and alert you to any potential threats.
+          Smart security systems can include <b>door</b> and{" "}
+          <b>window sensors, motion detectors, and cameras </b> that can be
+          monitored and controlled using a smartphone app. This can give you
+          peace of mind when you&apos;re away from home and alert you to any
+          potential threats. Remember to properly configure these, otherwise
+          you&apos;ll be waking up in the middle of the night with your doors
+          and windows unlocked.
         </p>
         <h2 className="section-title">5. Smart home hubs</h2>
         <p>
-          If you want to integrate multiple smart home devices, you may want to
-          consider using a smart home hub. These devices allow you to control
-          and manage all of your smart home devices using a single app or voice
-          commands.
+          This is the downside of automating your house with multiple devices,
+          from different brands. If you want to integrate multiple smart home
+          devices, you need to consider using a <b>smart home hub</b>. These
+          devices allow you to control and manage all of your smart home devices
+          using a single app or voice commands.
+        </p>
+
+        <h2>Conclusion</h2>
+        <p>
+          There are many ways to turn your home into a smart home and automate
+          various aspects of your daily life. From controlling your lights and
+          thermostat with your voice, to automating your appliances, to
+          monitoring your home security, the possibilities are endless. By
+          implementing just a few of these automation options, you can greatly
+          increase the convenience and functionality of your home. Whether
+          you&apos;re looking to save energy, increase security, or just make
+          your life a little bit easier, there&apos;s a smart home solution out
+          there for you. Take the time to research and explore the options
+          available, and start creating your own smart home today!
         </p>
       </div>
     ),
@@ -89,9 +104,9 @@ const articles = [
   },
   {
     id: "c5d2a482",
-    title: "The Top 5 Cybersecurity Threats of 2022: What You Need to Know",
+    title: "The Top 5 Cybersecurity Threats of 2023: What You Need to Know",
     description:
-      "Stay ahead of the curve and protect yourself and your business from the latest cybersecurity threats. In this blog post, we'll outline the top five threats to watch out for in 2022, including ransomware, cloud security breaches, Internet of Things vulnerabilities, supply chain attacks, and artificial intelligence and machine learning attacks. Stay informed and follow best practices to reduce the risk of a cybersecurity incident.",
+      "Stay ahead of the curve and protect yourself and your business from the latest cybersecurity threats. In this blog post, we'll outline the top five threats to watch out for in 2023, including ransomware, cloud security breaches, Internet of Things vulnerabilities, supply chain attacks, and artificial intelligence and machine learning attacks. Stay informed and follow best practices to reduce the risk of a cybersecurity incident.",
     category: CATEGORIES_TYPE.tech,
     date: "01/03/2023",
     isTopArticle: true,
@@ -111,7 +126,7 @@ const articles = [
           about the latest cybersecurity threats and take steps to protect
           yourself and your business. In this article, we&apos;ll provide an
           overview of the top five cybersecurity threats to watch out for in
-          2022, so you can be prepared and stay one step ahead of the bad guys.
+          2023, so you can be prepared and stay one step ahead of the bad guys.
         </p>
         <h2 className="section-title">1. Ransomware</h2>
         <p>
@@ -171,7 +186,7 @@ const articles = [
         </p>
         <h2 className="section-title">Conclution</h2>
         <p>
-          By understanding the top cybersecurity threats of 2022, you can take
+          By understanding the top cybersecurity threats of 2023, you can take
           steps to protect yourself and your business. Stay vigilant, keep your
           software and systems up to date, and be cautious about opening
           suspicious emails or links. By following these best practices, you can
@@ -296,14 +311,6 @@ const articles = [
           antivirus and firewall software, you can help prevent malware
           infections and unauthorized access to your device and network.
         </p>
-        <br />
-        <p>
-          It&apos;s also a good idea to keep your internet router and other
-          internet-connected devices, such as smart home devices, up to date.
-          These devices may have security vulnerabilities that can be exploited
-          by hackers, so it&apos;s important to ensure they are running the
-          latest software and firmware.
-        </p>
         <h2 className="section-title">Use secure networks and connections</h2>
         <p>
           When accessing your personal information online, it&apos;s important
@@ -342,37 +349,38 @@ const articles = [
       <div>
         <p>
           Traveling abroad can be an exciting and rewarding experience, but
-          it&apos;s important to remember that your devices and data may be at
-          risk when you&apos;re in a foreign country. From public Wi-Fi networks
-          to unfamiliar SIM cards, there are many potential threats to your
-          cybersecurity when you&apos;re on the go. In this article, we&apos;ll
-          provide some tips on how to secure your devices and protect your
-          personal information before you set off on your next vacation.
+          it&apos;s important to remember that your devices and{" "}
+          <b>data may be at risk</b> when you&apos;re in a foreign country. From
+          public Wi-Fi networks to unfamiliar SIM cards, there are many
+          potential threats to your cybersecurity when you&apos;re on the go. In
+          this article, we&apos;ll provide some tips on how to secure your
+          devices and protect your personal information before you set off on
+          your next vacation.
         </p>
 
         <h2 className="section-title">Update your software and systems</h2>
         <p>
-          Before you leave, make sure to update your operating system, web
-          browsers, and other software to the latest versions. Software updates
-          often include security fixes and patches that can help protect against
-          vulnerabilities and threats. It&apos;s also a good idea to use
-          reputable and up-to-date antivirus and firewall software to help
-          protect your device and network. Don&apos;t forget to update your
-          internet router and other internet-connected devices, such as smart
-          home devices, as well.
+          Before you leave, make sure to{" "}
+          <b>update your operating system, web browsers, and other software</b>{" "}
+          to the latest versions. Software updates often include security fixes
+          and patches that can help protect against vulnerabilities and threats.
+          It&apos;s also a good idea to use reputable and up-to-date antivirus
+          and firewall software to help protect your device and network.
+          Don&apos;t forget to update your internet router and other
+          internet-connected devices, such as smart home devices, as well.
         </p>
 
         <h2 className="section-title">Use a virtual private network (VPN)</h2>
         <p>
-          A virtual private network (VPN) is a tool that encrypts your internet
-          connection and hides your IP address, making it more difficult for
-          hackers to track your online activities and steal your personal
-          information. When you&apos;re traveling abroad, a VPN can be
-          especially useful for protecting your data on public Wi-Fi networks,
-          which are often less secure than private networks. There are many VPN
-          providers to choose from, so be sure to research and select one that
-          offers strong encryption and a good track record of protecting user
-          privacy.
+          A virtual private network (VPN) is a tool that{" "}
+          <b>encrypts your internet connection</b> and hides your IP address,
+          making it more difficult for hackers to track your online activities
+          and steal your personal information. When you&apos;re traveling
+          abroad, a VPN can be especially useful for protecting your data on
+          <b>public Wi-Fi networks</b>, which are often less secure than private
+          networks. There are many VPN providers to choose from, so be sure to
+          research and select one that offers strong encryption and a good track
+          record of protecting user privacy.
         </p>
 
         <h2 className="section-title">
@@ -381,23 +389,24 @@ const articles = [
         <p>
           When traveling, you may come across open Wi-Fi networks, such as those
           in airports or coffee shops. While it can be tempting to connect to
-          these networks to save data on your phone plan, they can be less
-          secure and more vulnerable to threats. To protect your device and
-          data, turn off the automatic connection feature for open networks and
-          only connect to networks you trust. Consider using a virtual private
-          network (VPN) to encrypt your internet connection and protect your
-          data from prying eyes.
+          these networks to save data on your phone plan,
+          <b>they can be less secure and more vulnerable to threats</b>. To
+          protect your device and data, <b>turn off the automatic connection</b>
+          feature for open networks and{" "}
+          <b>only connect to networks you trust</b>. Consider using a virtual
+          private network (VPN) to encrypt your internet connection and protect
+          your data from prying eyes.
         </p>
 
         <h2 className="section-title">Use strong, unique passwords</h2>
         <p>
           I can&apos;t emphasize this enough: one of the most basic and
           important steps you can take to protect your personal information
-          online is to use strong, unique passwords for each of your online
-          accounts. A strong password should be at least 8 characters long and
-          include a combination of letters, numbers, and special characters.
-          Avoid using personal information, such as your name or birthdate, in
-          your passwords.
+          online is to <b>use strong, unique passwords</b> for each of your
+          online accounts. A strong password should be at least 8 characters
+          long and include a combination of letters, numbers, and special
+          characters. Avoid using personal information, such as your name or
+          birthdate, in your passwords.
           <br />
           Now, remembering all of them can be a problem, that&apos;s why
           it&apos;s also a good idea to use a password manager to store and
@@ -406,12 +415,13 @@ const articles = [
 
         <h2 className="section-title">Be aware of phishing scams</h2>
         <p>
-          Phishing scams are fraudulent emails or websites that aim to trick you
-          into divulging your personal information, such as your login
-          credentials or financial information. These scams often use fake or
-          misleading branding to appear legitimate, and they may ask you to
-          click on a link or download an attachment. To protect yourself from
-          phishing scams, be cautious about opening emails or links from
+          <b>Phishing scams are fraudulent emails</b> or websites that aim to
+          trick you into divulging your personal information, such as your login
+          credentials or financial information, and its the most common way that
+          hackers use to hack entire corporations. These scams often use fake or
+          misleading branding to<b> appear legitimate</b>, and they may ask you
+          to click on a link or download an attachment. To protect yourself from
+          phishing scams, <b>be cautious</b> about opening emails or links from
           unfamiliar sources, and be wary of emails or websites that ask for
           personal information or financial details. It&apos;s also a good idea
           to use a spam filter to block suspicious emails.
@@ -419,20 +429,21 @@ const articles = [
         <h2 className="section-title">Back up your data</h2>
         <p>
           Before you set off on your vacation, it&apos;s a good idea to back up
-          your data to ensure that you won&apos;t lose any important information
-          if something happens to your device. There are several options for
+          your data to{" "}
+          <b>ensure that you won&apos;t lose any important information</b> if
+          something happens to your device. There are several options for
           backing up your data, including using an external hard drive, cloud
           storage services, or backing up to another device. Choose a method
           that works best for you and your needs, and make sure to regularly
           back up your data to keep it safe and secure.
         </p>
         <p>
-          In addition to backing up your data, it&apos;s also a good idea to
-          create copies of important documents, such as your passport, travel
-          itinerary, and insurance information. You can store these copies
-          digitally, or bring physical copies with you on your trip. This can be
-          especially useful in the event that you lose your passport or other
-          documents while you&apos;re abroad.
+          In addition to this, it&apos;s also a good idea to{" "}
+          <b>create copies of important documents</b>, such as your passport,
+          travel itinerary, and insurance information. You can store these
+          copies digitally, or bring physical copies with you on your trip. This
+          can be especially useful in the event that you lose your passport or
+          other documents while you&apos;re abroad.
         </p>
 
         <h2 className="section-title">Conclusion</h2>
@@ -457,7 +468,7 @@ const articles = [
       "Discover how the Internet of Things (IoT) is revolutionizing healthcare through the use of Smart Hospitals. Learn about the different ways in which this technology is being used, the potential benefits it offers, and how it can improve patient outcomes and streamline operations in this easy-to-read and engaging article.",
     category: CATEGORIES_TYPE.tech,
     date: "2023-01-20",
-    isTopArticle: true,
+    isTopArticle: false,
     content: (
       <div>
         <p>
@@ -542,6 +553,175 @@ const articles = [
     ),
     image_src:
       "https://images.unsplash.com/photo-1533042789716-e9a9c97cf4ee?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1769&q=80",
+    writer: "Andre Rodrigues"
+  },
+  {
+    id: "53485jksfk934589-487593j",
+    title:
+      "Build Your Own PC from Scratch: A Step-by-Step Guide to Building Your Own PC",
+    description:
+      "Unleash your inner tech-savvy and build the PC of your dreams from scratch! Our step-by-step guide makes it easy for anyone to build their own custom PC. From picking out the perfect components to assembling and optimizing your new machine, we've got you covered. Get ready for an exciting journey of discovery and creativity as you take control of your computing experience with our guide to building your own PC.",
+    category: CATEGORIES_TYPE.tech,
+    date: "2023-01-21",
+    isTopArticle: false,
+
+    content: (
+      <div>
+        <p>
+          Ready to take the plunge and build your own PC? Whether you&apos;re a
+          first-time builder or a seasoned pro, the process can be daunting. But
+          don&apos;t worry, we&apos;re here to guide you through it. In this
+          article, we&apos;ll take you step-by-step through the process of
+          building your own PC from scratch, providing tips, tricks and
+          recommendations along the way.
+        </p>
+        <h2>Step 1: Choose Your Components</h2>
+        <p>
+          The first step in building your own PC is to choose your components,
+          but what are components? PC components are the individual parts that
+          make up a personal computer. These include the central processing unit{" "}
+          <b>
+            (CPU), memory (RAM), storage (hard drive or SSD), motherboard, power
+            supply
+          </b>
+          , and other peripheral devices such as a{" "}
+          <b>graphics card, sound card, and network card</b>. All of these
+          components work together to allow a computer to function and perform
+          tasks. I know, its overwhelming, but stick with me.
+        </p>
+        <p>
+          The components you choose may vary according to the purpose of
+          building your own setup. For example, if your new PC is specifically
+          for gaming you&apos;ll need a good graphic card and processor to
+          handle the heavy work of rendering graphics. It really depends on your
+          ultimate goal for building your own setup. I recommend you to do a
+          little research about the different options available so you can make
+          your decision based on your budget and desired specifications.
+        </p>
+        <p>
+          Overall it&apos;s important to choose components that are compatible
+          with each other and that will meet your needs.
+        </p>
+        <h2>Step 2: Assemble Your PC</h2>
+        <p>
+          Once you have all your components, it&apos;s time to assemble your PC.
+          Again, the process can vary depending on the components you&apos;ve
+          chosen and the case you&apos;re using, but there are a few general
+          steps you&apos;ll need to follow. Now I won&apos;t list all of the
+          steps here, cause I believe its not as clear as following a video
+          yourself. This is more of a guide to give you an overall view of the
+          steps you need to make.
+        </p>
+        <ul className="section-points">
+          <li>
+            <h5>Install the processor</h5>
+            <img
+              className="horizontal-img"
+              alt="PC processor"
+              src="https://images.unsplash.com/photo-1591799264318-7e6ef8ddb7ea?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80"
+            />
+            Installing a processor, also known as a central processing unit
+            (CPU), is a crucial step in building or upgrading a computer.
+            It&apos;s the brain of the computer, responsible for processing all
+            of the information that goes in and out of your computer. If
+            you&apos;re planning to upgrade your computer or build your own,
+            you&apos;ll want to be sure that you&apos;re installing the
+            processor correctly.
+            <br />
+            Once you have the right processor, you&apos;ll want to handle it
+            carefully. Ground yourself by touching a metal surface before
+            handling the processor to avoid static electricity damage.
+          </li>
+          <li>
+            <h5>Install the memory</h5>
+            <img
+              className="horizontal-img"
+              alt="PC memory"
+              src="https://images.unsplash.com/photo-1541029071515-84cc54f84dc5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
+            />
+            Installing memory, also known as RAM, is an easy and straightforward
+            process that can greatly improve the performance of your computer.
+            RAM is the short-term memory of your computer and it&apos;s
+            responsible for storing the information that the computer is
+            currently using or processing. The more RAM you have, the more
+            information your computer can store, and the faster it can work.
+          </li>
+          <li>
+            <h5>Install the storage</h5>
+            <img
+              className="horizontal-img"
+              alt="PC storage"
+              src=" https://images.unsplash.com/photo-1672923491001-3e58a608e418?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1674&q=80"
+            />
+            Also known as a hard drive or solid-state drive (SSD), the storage
+            is where all of your files, documents, photos, music, and other data
+            are stored permanently. Hard drives and SSDs come in different
+            capacities, and the more storage you have, the more files you can
+            store on your computer. This is where your PC stores all your files
+            and programs, and it needs to be installed in the appropriate slots
+            on the motherboard.
+          </li>
+          <li>
+            <h5>Connect the power supply</h5> This is the easiest part, just
+            power your PC and it needs to be plugged into the motherboard.
+          </li>
+          <li>
+            <h5>Connect the case</h5> This is the final step, and it&apos;s
+            where you&apos;ll install your components into the case, connect all
+            the cables, and plug in your peripherals.
+          </li>
+        </ul>
+        <h2>Step 3: Install the Operating System</h2>
+        <img
+          alt="Operating system"
+          className="horizontal-img"
+          src="https://images.unsplash.com/photo-1602763288580-927cfda37a72?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2072&q=80"
+        />
+        <p>
+          Once your PC is assembled, you&apos;ll need to install an operating
+          system. This is the software that your PC uses to run, and it can be
+          either Windows, Linux or MacOS. Again, really depends on your goal, if
+          its for gaming I would suggest Windows, for design and overall
+          interactions definitely MacOs, and for last if you&apos;re planning to
+          study cybersecurity or mess around with the computer, you should go
+          with Linux, gives you more freedom.
+        </p>
+        <h2>Step 4: Install Drivers and Updates</h2>
+        <p>
+          After installing the operating system, you&apos;ll need to install the
+          necessary drivers and updates for your components. Drivers are
+          software that allow your operating system to communicate with your
+          hardware, and updates ensure that your PC is running the latest
+          version of the software. You can download these from the
+          manufacturer&apos;s website, or you can use a tool like Windows Update
+          to automatically download and install them.
+        </p>
+        <h2>Step 5: Test and Optimize</h2>
+        <img
+          alt="Computer"
+          className="horizontal-img"
+          src="https://images.unsplash.com/photo-1603481546238-487240415921?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"
+        />
+        <p>
+          Congrats! You&apos;ve build your PC setup! The final step is to test
+          and optimize your new PC. Make sure to run some benchmark tests to
+          check the performance of your components, and troubleshoot any issues
+          that may arise. Once everything is running smoothly, you can start
+          customizing your settings and installing your favorite programs and
+          games!
+        </p>
+        <h2>Conclusion</h2>
+        <p>
+          Building your own PC from scratch can be a rewarding and satisfying
+          experience. By following these steps provided, you&apos;ll be able to
+          create a custom PC that meets your needs and budget. Remember to take
+          your time and enjoy the process, and you&apos;ll end up with a new
+          computer that you can call your own.
+        </p>
+      </div>
+    ),
+    image_src:
+      "https://images.unsplash.com/photo-1603732551681-2e91159b9dc2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80",
     writer: "Andre Rodrigues"
   },
   {
@@ -664,7 +844,7 @@ const articles = [
       "Discover effective strategies for navigating conflicts within a programming team while maintaining mental well-being. Learn the impact of conflicts on mental health and how to overcome it through open communication, active listening, compromise, team building and seeking help when needed.",
     category: CATEGORIES_TYPE.career,
     date: "2022-11-20",
-    isTopArticle: true,
+    isTopArticle: false,
     image_src:
       "https://images.unsplash.com/photo-1523240795612-9a054b0db644?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80",
     writer: "Andre Rodrigues",
@@ -821,9 +1001,9 @@ const articles = [
       "Imposter syndrome is a common experience among programmers. Learn about the impact it can have on mental health and strategies for overcoming it, such as challenging negative thoughts, embracing failure, seeking feedback and seeking support.",
     category: CATEGORIES_TYPE.career,
     date: "2023-01-13",
-    isTopArticle: true,
+    isTopArticle: false,
     image_src:
-      "https://images.unsplash.com/photo-1647752598980-df7157e20d8c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80",
+      "https://images.unsplash.com/photo-1670272506173-0b0be082a52f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80",
     writer: "Andre Rodrigues",
     content: (
       <div>
@@ -852,27 +1032,26 @@ const articles = [
           Imposter syndrome can have a significant impact on programmers&apos;
           mental health. It can lead to:
         </p>
-        <ul>
+        <ul className="section-points">
           <li>
-            Self-doubt and lack of confidence: Imposter syndrome can lead to a
-            lack of confidence in one&apos;s abilities and an constant
-            self-doubt, which can affect a programmer&apos;s ability to take
-            risks and innovate.
+            <h5>Self-doubt and lack of confidence</h5>
+            Lack of confidence in one&apos;s abilities and an constant
+            self-doubt, which affect a programmer&apos;s ability to take risks
+            and innovate.
           </li>
           <li>
-            Anxiety and stress: Imposter syndrome can lead to feelings of
-            anxiety and stress, which can affect a programmer&apos;s ability to
-            focus and perform their job effectively.
+            <h5>Anxiety and stress</h5> Feelings of anxiety and stress, which
+            affect a programmer&apos;s ability to focus and perform their job
+            effectively.
           </li>
           <li>
-            Isolation: Imposter syndrome can lead to feelings of isolation, as
-            people may be afraid to share their insecurities with others for
-            fear of being exposed as a fraud.
+            <h5>Isolation</h5> Feelings of isolation, as people may be afraid to
+            share their insecurities with others for fear of being exposed as a
+            fraud.
           </li>
           <li>
-            Decreased job satisfaction: Imposter syndrome can lead to decreased
-            job satisfaction, which can ultimately lead to a higher turnover
-            rate.{" "}
+            <h5>Decreased job satisfaction</h5> Decreased job satisfaction,
+            which can ultimately lead to a higher turnover rate.{" "}
           </li>
         </ul>
         <h2 className="section-title">
@@ -882,29 +1061,30 @@ const articles = [
           Here are some strategies for overcoming imposter syndrome and
           improving mental well-being:
         </p>
-        <ul>
+        <ul className="section-points">
           <li>
-            Challenge negative thoughts: Be aware of negative thoughts and
-            challenge them by asking yourself if they are truly accurate. Try to
-            reframe them in a positive light.
+            <h5>Challenge negative thoughts</h5> Be aware of negative thoughts
+            and challenge them by asking yourself if they are truly accurate.
+            Try to reframe them in a positive light.
           </li>
           <li>
-            Embrace failure: Failure is a natural part of learning and growing.
-            Embrace it as a learning opportunity and remind yourself that
-            failure is not a reflection of your abilities.
+            <h5>Embrace failure Failure</h5> is a natural part of learning and
+            growing. Embrace it as a learning opportunity and remind yourself
+            that failure is not a reflection of your abilities.
           </li>
           <li>
-            Seek feedback: Ask for constructive feedback from colleagues or
-            mentors and use it to improve your skills.
+            <h5>Seek feedback </h5>Ask for constructive feedback from colleagues
+            or mentors and use it to improve your skills.
           </li>
           <li>
-            Focus on the process, not the outcome: Instead of focusing on the
-            outcome, focus on the process of learning and growing as a
+            <h5>Focus on the process</h5>, not the outcome Instead of focusing
+            on the outcome, focus on the process of learning and growing as a
             programmer.
           </li>
           <li>
-            Seek support: Talk to friends, family, or a therapist if you&apos;re
-            feeling overwhelmed or struggling with imposter syndrome.
+            <h5>Seek support</h5> Talk to friends, family, or a therapist if
+            you&apos;re feeling overwhelmed or struggling with imposter
+            syndrome.
           </li>
         </ul>
         <h2 className="section-title">Conclusion</h2>
@@ -1344,13 +1524,314 @@ const articles = [
 
   // Finance
   {
+    id: "098f3gbhah482-532-27654gfjhd765",
+    title:
+      "Side Hustles for Stay-at-Home Parents: From Childcare to Online Tutoring",
+    description:
+      "Explore a variety of side hustle options for stay-at-home parents, including childcare and online tutoring. Learn how to make extra income while balancing family responsibilities.",
+    category: CATEGORIES_TYPE.finance,
+    date: "2023-01-23",
+    isTopArticle: true,
+    image_src:
+      "https://images.unsplash.com/photo-1637277040662-7261512caed8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1931&q=80",
+    writer: "Andre Rodrigues",
+    content: (
+      <div>
+        <p>
+          Being a stay-at-home parent is a rewarding but also challenging
+          experience. It can be hard to balance taking care of your children and
+          still having some extra income. Luckily, there are many side hustles
+          that can be done from home and that can fit a parent&apos;s schedule.
+          If you don&apos;t believe me, let me tell you a story of a great
+          woman: my grandmother. She was a full-house wife, and mother of 4 kids
+          (one of them died at an early age) and managed to pay for all of their
+          education and daily needs by baking cakes and making handmade gifts
+          and clothing. <br />
+          This article is <b>to honor my grandmother</b>, and to share some side
+          hustle ideas for stay-at-home <b>parents to thrive</b>!
+        </p>
+        <h2>1. Childcare Services</h2>
+        <p>
+          One of the most popular side hustles for stay-at-home parents is
+          providing <b>childcare services</b>. You can offer your services as a
+          <b>babysitter</b> or nanny for families in your area. This is a great
+          way to make extra money while also being able to take care of your own
+          children.
+        </p>
+        <h2>2. Online Tutoring</h2>
+        <p>
+          Online tutoring is a great side hustle for stay-at-home parents who
+          are experts in a particular subject or skill. You can offer your
+          <b>services to students</b> of all ages, from primary school to
+          college, and you can do it from the comfort of your own home. You can
+          use <b>online platforms</b> such as Zoom or Google Meet to conduct
+          your classes and you can find clients through online tutoring
+          platforms or by advertising your services on social media or local
+          classifieds. This is a great way to make extra money and help others
+          while also being able to take care of your children.
+        </p>
+        <h2>3. Online Selling</h2>
+        <p>
+          Another great side hustle for stay-at-home parents is online selling.
+          You can sell a wide variety of items, such as{" "}
+          <b>handmade crafts, vintage clothing,</b> or even <b>products</b> you
+          source from a supplier. Platforms like Amazon, Etsy, and your own
+          website can help you reach a wide audience and sell your products.
+          This also includes creating and selling <b>online courses</b> in
+          online platforms like <b>Udemy</b>, <b>Coursera</b> and many more.
+          This allows you to be at home with your kids while also earning extra
+          income.
+        </p>
+        <h2>4. Virtual Assistant</h2>
+        <p>
+          As a virtual assistant, you can offer a wide range of services, such
+          as scheduling appointments, managing email and social media accounts,
+          and handling administrative tasks for businesses and entrepreneurs.
+          This is a great side hustle for stay-at-home parents who have good
+          organizational and communication skills and can work independently
+          from home.
+        </p>
+        <h2>5. Blogging or Content Creation</h2>
+        <p>
+          Blogging or creating content for social media is also a great way for
+          you to share your passions and interests with the world and earn extra
+          money. You can <b>monetize</b> your blog or content through
+          <b>
+            advertising, sponsored posts, affiliate marketing, and digital
+            products
+          </b>{" "}
+          such as e-books and courses. This allows you to be at home with your
+          children while also earning extra income and sharing your creativity.
+        </p>
+        <h2>Conclusion</h2>
+        <p>
+          Being a stay-at-home parent doesn&apos;t mean you can&apos;t have
+          extra income. With the right side hustle, you can make money and take
+          care of your children at the same time. From childcare and online
+          tutoring to online selling and virtual assistance, there are many
+          options available. Like my grandmother, remember to choose something
+          that you are
+          <b>passionate about</b> and that <b>fits your schedule</b>, and
+          you&apos;ll be on your way to earning extra income while being a
+          stay-at-home parent.
+        </p>
+      </div>
+    )
+  },
+  {
+    id: "09876fh3zhah482-532-2397hsfgh98765",
+    title: "10 Side Hustles to Try in 2023: Opportunities for Extra Income",
+    description:
+      "Find the best ways to earn extra income in 2023 with our comprehensive guide. From online selling to freelancing, and from virtual assistant to podcasting, this article covers 10 side hustle ideas for 2023 that you can try to earn extra income while pursuing your passions and interests",
+    category: CATEGORIES_TYPE.finance,
+    date: "2023-01-22",
+    isTopArticle: true,
+    image_src:
+      "https://images.unsplash.com/photo-1589561253898-768105ca91a8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1738&q=80",
+    writer: "Andre Rodrigues",
+    content: (
+      <div>
+        <p>
+          Are you looking for ways to earn extra income in 2023? A side hustle
+          can be a great way to make money on the side, while also pursuing your
+          passions and interests. In this article, we&apos;ll share 10 side
+          hustle ideas for 2023 that you can try to earn extra income!
+        </p>
+        <h2>1. Online Selling</h2>
+        <p>
+          One of the most popular side hustles in recent years has been online
+          selling. Whether it&apos;s through a platform like Amazon, Etsy, or
+          your own website, you can sell a wide variety of items, from handmade
+          crafts to vintage clothing. With more and more people shopping online,
+          this can be a great way to make extra money in 2023.
+        </p>
+        <h2>2. Freelancing</h2>
+        <p>
+          Freelancing is another great side hustle that&apos;s becoming more and
+          more popular. Whether you&apos;re a writer, designer, or developer,
+          there&apos;s a wide range of freelancing opportunities available. By
+          offering your skills and services to a variety of clients, you can
+          earn extra money while also gaining valuable experience.
+        </p>
+        <h2>3. Virtual Assistant</h2>
+        <p>
+          As more and more companies adopt remote work, the demand for virtual
+          assistants is on the rise. Being a virtual assistant (VA) is a great
+          side hustle option in 2023. A VA is a self-employed professional who
+          offers administrative and technical support to clients remotely.
+          <br />
+          To become a virtual assistant, you will need to have certain skills
+          such as organizational skills, attention to detail, good communication
+          skills, and the ability to work independently. You will also need a
+          computer, internet access, and basic office software. Additionally, it
+          could be helpful to have some experience in the field you want to
+          offer your services to, for example, if you want to offer social media
+          management services, it would be helpful to have experience with
+          different social media platforms.
+        </p>
+        <h2>4. Blogging</h2>
+        <p>
+          Blogging is a great way to share your passions and interests with the
+          world, and it can also be a great source of extra income. You can
+          monetize your blog through advertising, sponsored posts, affiliate
+          marketing, and digital products such as e-books and courses.
+        </p>
+        <h2>5. Teaching or Tutoring</h2>
+        <p>
+          If you&apos;re an expert in a particular subject or skill, you can
+          make extra money by teaching or tutoring others. You can offer your
+          services online, in-person, or both. This is a great side hustle for
+          those who enjoy teaching and want to share their knowledge with
+          others.
+        </p>
+        <h2>6. Photography</h2>
+        <p>
+          Photography is a great side hustle for those who enjoy capturing
+          special moments and have an eye for composition. You can earn extra
+          income by taking photos for events, portraits, or stock photography.
+        </p>
+        <h2>7. Podcasting</h2>
+        <p>
+          Podcasting has become increasingly popular in recent years, and
+          it&apos;s a great way to share your thoughts, ideas, and stories with
+          others. You can monetize your podcast through advertising,
+          sponsorships, and merchandise!
+        </p>
+        <h2>8. Social Media Management</h2>
+        <p>
+          With the rise of social media, businesses and individuals are in need
+          of help to manage their online presence. You can offer your services
+          as a social media manager and help them create and manage their social
+          media accounts, content, and campaigns. This is a great side hustle
+          for those who have experience with social media platforms and a good
+          understanding of digital marketing.
+        </p>
+        <h2>9. Transcription</h2>
+        <p>
+          Transcription is a great side hustle for those who are detail-oriented
+          and have good listening and typing skills. You can transcribe audio
+          and video files for a variety of clients, such as researchers,
+          journalists, and medical professionals.
+        </p>
+        <h2>10. Event Planning</h2>
+        <p>
+          Event planning is a great side hustle for those who are organized,
+          creative, and enjoy bringing people together. You can offer your
+          services for a variety of events, such as parties, weddings, and
+          corporate events.
+        </p>
+        <h2>Conclusion</h2>
+        <p>
+          These are just a few of the many side hustles you can try in 2023 to
+          earn extra income. Whether you&apos;re looking to make a little extra
+          money or turn your side hustle into a full-time business, there are
+          plenty of opportunities out there. Remember to be persistent, stay
+          open-minded, and most importantly, have fun while doing it!
+        </p>
+      </div>
+    )
+  },
+  {
+    id: "098769s2a482-532-2397hsfgh98765",
+    title:
+      "From Side Hustles to Passive Income: The Ultimate Guide to Building Multiple Streams of Income",
+    description:
+      "Learn how to build multiple streams of income and achieve financial freedom with our step-by-step guide. From assessing your skills and interests to researching and exploring different opportunities, this article covers everything you need to know to diversify your income and reach your financial goals.",
+    category: CATEGORIES_TYPE.finance,
+    date: "2023-01-22",
+    isTopArticle: true,
+    image_src:
+      "https://images.unsplash.com/photo-1571771709966-cc773c80a9fe?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1674&q=80",
+    writer: "Andre Rodrigues",
+    content: (
+      <div>
+        <p>
+          Diversifying your income streams is one of the best ways to achieve
+          financial freedom. Having multiple streams of income can provide you
+          with a sense of security, reduce your dependence on one source of
+          income, and help you reach your financial goals faster. But where do
+          you start? In this guide, we&apos;ll show you how to assess your
+          skills and interests, research and explore different opportunities,
+          create a plan, and take action to build multiple streams of income.
+        </p>
+        <h2>Step 1: Assess Your Skills and Interests</h2>
+        <p>
+          The first step in building multiple streams of income is to take
+          inventory of your skills and interests. What are you good at? What do
+          you enjoy doing? These are the areas where you should focus on
+          building income streams. For example, if you&apos;re a graphic
+          designer and you enjoy painting, you could start offering your
+          services as a freelance designer and sell your artwork online.{" "}
+        </p>
+        <h2>Step 2: Research and Explore Different Opportunities</h2>
+        <p>
+          Once you have a clear idea of what you want to do, research and
+          explore different income-generating opportunities. There are many
+          different types of income streams, such as side hustles, freelancing,
+          investing, and rental properties. Each one has its own set of pros and
+          cons, so it&apos;s important to research them thoroughly and choose
+          the ones that align with your skills and interests.
+        </p>
+        <h2>Step 3: Start Small and Test the Waters</h2>
+        <p>
+          It can be tempting to try and do everything at once, but it&apos;s
+          important to start small and test the waters. Start with one or two
+          income streams and test them out. Once you&apos;ve found something
+          that works well for you, you can start expanding and diversifying your
+          income streams. This way, you won&apos;t be overwhelmed and
+          you&apos;ll have a better chance of success.
+        </p>
+        <h2>Step 4: Create a Plan and Set Goals</h2>
+        <p>
+          Once you&apos;ve identified potential income streams, create a plan
+          and set goals for each stream. Be specific and measurable, and set a
+          deadline for achieving them. This will help you stay on track and
+          achieve your goals.
+        </p>
+        <h2>Step 5: Take Action and Be Persistent</h2>
+        <p>
+          The most important step is to take action. Don&apos;t wait for the
+          perfect opportunity, start working on your income streams today.
+          Remember that building multiple streams of income takes time and
+          effort, but with persistence and hard work, you can achieve financial
+          freedom.
+        </p>
+        <p>
+          Building multiple streams of income is a powerful way to achieve
+          financial freedom, but it takes time and effort. By assessing your
+          skills and interests, researching and exploring different
+          opportunities, creating a plan, and taking action, you can start
+          building the income streams you need to achieve your financial goals.
+          Remember, don&apos;t be afraid to start small and test the waters.
+          With persistence and hard work, you can achieve financial freedom.
+        </p>
+        <h2>Conclusion</h2>
+        <p>
+          In conclusion, building multiple streams of income is a powerful way
+          to achieve financial freedom. It provides a sense of security, reduces
+          dependence on one source of income, and helps you reach your financial
+          goals faster. By assessing your skills and interests, researching and
+          exploring different opportunities, creating a plan, and taking action,
+          you can start building the income streams you need to achieve your
+          financial goals. Remember, don&apos;t be afraid to start small and
+          test the waters. With persistence and hard work, you can achieve
+          financial freedom. You have the power to take control of your
+          financial future and with the right mindset and effort, you will be on
+          your way to financial freedom in no time. So, don&apos;t wait any
+          longer, start working towards your multiple streams of income today
+          and enjoy the benefits of financial freedom in the near future.
+        </p>
+      </div>
+    )
+  },
+  {
     id: "098769s2a482-532-2397hsfgh",
     title: "Start Smart: The Essential Guide to Saving and Investing",
     description:
       "Learn how to start your journey towards financial stability with this essential guide to saving and investing. Discover the basics of setting financial goals, creating a budget, understanding different types of investments, and building a strong financial future.",
     category: CATEGORIES_TYPE.finance,
     date: "2023-01-15",
-    isTopArticle: true,
+    isTopArticle: false,
     image_src:
       "https://images.unsplash.com/photo-1579621970590-9d624316904b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80",
     writer: "Andre Rodrigues",
@@ -1359,59 +1840,63 @@ const articles = [
         <p>
           Saving and investing are essential components of building a strong
           financial future. However, for many people, the thought of saving and
-          investing can be overwhelming and confusing. In this guide, we&apos;ll
-          break down the basics of saving and investing, so you can start your
-          journey towards financial stability.
+          investing can be overwhelming and confusing. But don&apos;t worry, we
+          got you! In this guide, we&apos;ll break down the basics of saving and
+          investing, so you can start your journey towards financial stability.
         </p>
         <h2>Setting Financial Goals and Creating a Budget</h2>
         <p>
           The first step in saving and investing is setting financial goals and
           creating a budget. This will help you understand where your money is
-          going and where you want it to go. Start by setting short-term and
-          long-term goals, such as saving for a down payment on a house, or
-          saving for retirement. Then, create a budget that will help you
-          achieve those goals. Be sure to include all of your income and
-          expenses, and make sure that your expenses are less than your income.
+          going and where you want it to go. Start by setting{" "}
+          <b>short-term and long-term goals</b>, such as saving for a down
+          payment on a house, or saving for retirement. Then, create a budget
+          that will help you achieve those goals. Be sure to include all of your
+          income and expenses, and make sure that your expenses are less than
+          your income.
         </p>
         <h2>Understanding the Basics of Saving and Investing</h2>
         <p>
           Once you have your goals and budget in place, it&apos;s time to start
           saving and investing. When it comes to saving, it&apos;s important to
-          have an emergency fund in place. This fund should have enough money to
-          cover at least three to six months of living expenses in case of an
+          have an emergency fund in place. This fund should have enough money to{" "}
+          <b>cover at least 3 to 6 months of living expenses </b> in case of an
           emergency. Investing is the process of putting your money into assets
           that have the potential to grow in value over time. These assets can
-          include stocks, bonds, mutual funds, and real estate.
+          include <b>stocks, bonds, mutual funds, and real estate</b>.
         </p>
         <h2>Building a Diversified Portfolio</h2>
         <p>
-          When it comes to investing, it&apos;s important to diversify your
-          portfolio. This means investing in a variety of different assets to
-          spread out the risk. A diversified portfolio can help protect you in
-          case one particular investment doesn&apos;t perform well. A good rule
-          of thumb is to have a mix of stocks and bonds, with a larger
-          percentage of bonds as you get closer to retirement.
+          When it comes to investing, it&apos;s important to{" "}
+          <b>diversify your portfolio</b>. This means investing in a variety of
+          different assets to spread out the risk. A diversified portfolio can
+          help protect you in case one particular investment doesn&apos;t
+          perform well. A good rule of thumb is to have a mix of{" "}
+          <b>stocks and bonds</b>, with a larger percentage of bonds as you get
+          closer to retirement.
         </p>
         <h2>Seeking Professional Advice</h2>
         <p>
           Saving and investing can be a complex and confusing process,
-          especially for beginners. Seeking professional advice from a financial
-          advisor or a financial planner can help you understand the process and
-          make informed decisions. They can also help you create a financial
-          plan that is tailored to your specific needs and goals.
+          especially for beginners. <b>Seeking professional advice</b> from a
+          financial advisor or a financial planner can help you understand the
+          process and make informed decisions. They can also help you create a
+          financial plan that is tailored to your specific needs and goals.
         </p>
         <h2>Conclusion</h2>
         <p>
           Saving and investing can be a complex and confusing process,
-          especially for beginners, but its essential for building a strong
-          financial future. By setting financial goals, creating a budget,
-          understanding the basics of saving and investing, building a
-          diversified portfolio, and seeking professional advice, you can start
-          your journey towards financial stability. Remember that the key to
-          success is consistency and discipline, it&apos;s important to start
-          small and make it a habit. The earlier you start, the more time your
-          money has to grow. It&apos;s never too late to start, so take the
-          first step today, and start building a strong financial foundation.
+          especially for beginners, but{" "}
+          <b>its essential for building a strong financial future</b>. By
+          setting financial goals, creating a budget, understanding the basics
+          of saving and investing, building a diversified portfolio, and seeking
+          professional advice, you can start your journey towards financial
+          stability. Remember that the key to success is consistency and
+          discipline, it&apos;s important to start small and make it a habit.
+          The <b>earlier you start</b>, the more time{" "}
+          <b>your money has to grow</b>. It&apos;s never too late to start, so
+          take the first step today, and start building a strong financial
+          foundation.
         </p>
       </div>
     )
@@ -1702,24 +2187,33 @@ const articles = [
         <p>
           Feeling overwhelmed by the stresses of life? You&apos;re not alone! We
           all experience stress from time to time, and it&apos;s important to
-          know how to manage it effectively. But let&apos;s face it, reading
-          through a dry list of stress management techniques can be about as
-          exciting as watching paint dry. So, I&apos;ve decided to liven things
-          up and present you with a list of simple, yet effective techniques
-          that will have you feeling like a stress-busting ninja in no time!
+          know how to <b>manage it effectively</b>. But let&apos;s face it,
+          reading through a dry list of stress management techniques can be
+          about as exciting as watching paint dry. So, I&apos;ve decided to
+          liven things up and present you with a list of simple, yet{" "}
+          <b>effective techniques</b> that will have you feeling like a
+          stress-busting ninja in no time!
+        </p>
+        <p>
+          {" "}
+          <b>IMPORTANT NOTE:</b> These techniques are meant for people with
+          reasonable levels of stress, not for clinical or agravated mental
+          health symptoms. If you&apos;re suffering from depression, anxiety or
+          any form of severe mental illness, you can apply this techniques but
+          they are not as effective, please <b>seek professional help</b>.
         </p>
         <h2>Laugh it off!</h2>
         <p>
-          Laughter is the best medicine, and it&apos;s true! Laughing has been
-          shown to reduce stress by releasing endorphins, which are the
-          body&apos;s natural feel-good chemicals. So, next time you&apos;re
-          feeling stressed, try watching a funny video or going to a comedy
-          show. It might seem silly, but it works!
+          Laughter is the best medicine, and it&apos;s true!{" "}
+          <b>Laughing has been shown to reduce stress</b> by releasing
+          endorphins, which are the body&apos;s natural feel-good chemicals. So,
+          next time you&apos;re feeling stressed, try watching a funny video or
+          going to a comedy show. It might seem silly, but it works!
           <br />
-          But, who needs YouTube when you have friends and family? Call up your
-          funny friend, the one who always makes you laugh and tell them to
-          bring their A-game. Or, if you&apos;re feeling adventurous, try to
-          make someone laugh. It could be a stranger, a co-worker, or even
+          But, who needs YouTube when you have <b>friends and family</b>? Call
+          up your funny friend, the one who always makes you laugh and tell them
+          to bring their A-game. Or, if you&apos;re feeling adventurous, try to
+          make someone laugh! It could be a stranger, a co-worker, or even
           yourself. Just try not to get kicked out of the office for doing
           stand-up during a meeting.
           <br />
@@ -1733,48 +2227,49 @@ const articles = [
         </p>
         <h2>Write it down</h2>
         <p>
-          Many of us hold onto stress because we bottle it up inside. One way to
-          release that bottled up stress is to write it down. It can be a
-          journal entry, a letter to yourself, or even a tweet. Just put it into
-          words and get it out of your head. Trust me, it&apos;s therapeutic.
+          Many of us hold onto stress because we <b>bottle it up inside</b>. One
+          way to release that bottled up stress is to <b>write it down</b>. It
+          can be a journal entry, a letter to yourself, or even a tweet. Just
+          put it into words and get it out of your head. Trust me, it&apos;s
+          therapeutic.
           <br />
-          But, let&apos;s be real, journaling can be a little boring. So, we
-          suggest spicing things up with a little creative writing. Imagine your
-          stress as a monster, and then write a story about how you defeated it.
-          Or, write a letter to your stress, telling it exactly how you feel.
-          The possibilities are endless. But, whatever you do, just make sure to
-          keep it fun and creative.
+          But, let&apos;s be real, journaling can be a little boring so, we
+          suggest spicing things up with a little <b>creative writing</b>.
+          Imagine your stress as a monster, and then write a story about how you
+          defeated it. Or, write a letter to your stress, telling it exactly how
+          you feel. The possibilities are endless. But, whatever you do, just
+          make sure to keep it fun and creative.
         </p>
         <h2>Sweat it out</h2>
         <p>
-          Exercise is one of the most effective ways to reduce stress. Not only
-          does it release endorphins (those feel-good chemicals we talked about
-          earlier), but it also helps to clear your mind and improve your
-          overall mood. Plus, you&apos;ll be getting in shape and impressing
-          everyone at the beach. But, who are we kidding? We know the real
-          reason you&apos;re going to start exercising is so you can eat that
-          extra slice of pizza guilt-free. <br />
-          Now, we know what you&apos;re thinking: &quot;But I hate
-          exercise.&quot; I hear you, trust me. But the good news is, you
-          don&apos;t have to run a marathon or lift weights to reap the
-          benefits. Even a simple walk or yoga session can do wonders for your
+          <b>Exercise</b> is one of the most effective ways to{" "}
+          <b>reduce stress</b>. Not only does it release endorphins (those
+          feel-good chemicals we talked about earlier), but it also helps to
+          clear your mind and improve your overall mood. Plus, you&apos;ll be
+          getting in shape and impressing everyone at the beach. But, who are we
+          kidding? We know the real reason you&apos;re going to start exercising
+          is so you can eat that extra slice of pizza guilt-free. <br />
+          Now, I know what you&apos;re thinking: &quot;But I hate
+          exercise.&quot; I hear you,but the good news is, you don&apos;t have
+          to run a marathon or lift weights to reap the benefits. Even a{" "}
+          <b>simple walk</b> or <b>yoga</b> session can do wonders for your
           stress levels. So, put on those sneakers (or that yoga mat) and get
           moving, your body and your meantal health will thank you.
         </p>
 
         <h2>Take a walk</h2>
         <p>
-          Sometimes all you need is a change of scenery. Going for a walk, even
-          if it&apos;s just around the block, can help clear your head and
-          reduce stress. Plus, you get to enjoy some fresh air and sunshine.
-          Bonus!
+          Sometimes all you need is a change of scenery. Going for a <b>walk</b>
+          , even if it&apos;s just around the block, can help clear your head
+          and reduce stress. Plus, you get to enjoy some fresh air and sunshine
+          as a bonus!
           <br />
-          Or, if you&apos;re feeling adventurous, try a walking meditation. This
-          is a great way to clear your mind and focus on the present moment. You
-          can listen to a guided meditation or simply focus on your breath and
-          the sensation of your feet hitting the ground. Just make sure to watch
-          out for obstacles like squirrels, cracks in the pavement, or other
-          pedestrians.
+          Or, if you&apos;re feeling adventurous, try a
+          <b> walking meditation</b>. This is a great way to clear your mind and
+          focus on the present moment. You can listen to a guided meditation or
+          simply focus on your breath and the sensation of your feet hitting the
+          ground. Just make sure to watch out for obstacles like squirrels,
+          cracks in the pavement, or other pedestrians.
           <br />
           Whatever you choose to do, just remember to enjoy the walk and not to
           rush it. Take your time and soak in the scenery, you might be
@@ -1783,23 +2278,24 @@ const articles = [
         </p>
         <h2>Listen to music</h2>
         <p>
-          Music has a powerful ability to affect our mood. Next time you&apos;re
-          feeling stressed, put on your favorite tunes and let the music wash
-          over you. It can be a great way to relax and unwind, and certain types
-          of music, such as classical or nature sounds, have been shown to have
-          a calming effect on the mind and body.
+          Music has a powerful ability to <b>affect our mood.</b> Next time
+          you&apos;re feeling stressed, put on your favorite tunes and let the
+          music wash over you. It can be a great way to <b>relax and unwind</b>,
+          and certain types of music, such as classical or nature sounds, have
+          been shown to have a <b>calming effect</b> on the mind and body.
         </p>
         <h2>Pratice your passions</h2>
         <p>
-          It can be anything from gardening, to painting, whatever that makes
-          you feel alive and happy, you should find time to do it. Investing in
-          your self should be just as important as investing in your career and
-          family.
+          It can be anything from <b>gardening, to painting</b>, whatever that
+          makes you feel alive and happy, you should find time to do it.
+          Investing in your self should be just as important as investing in
+          your career and family.
           <br />
           These are just a few examples of simple stress management techniques
           that can have a big impact on your well-being. Remember, it&apos;s
           important to find what works for you and make it a part of your daily
-          routine. And don&apos;t forget to have fun with it, you are in control
+          routine. And don&apos;t forget to have fun with it,{" "}
+          <b>you are in control</b>
           of your stress and your happiness.
         </p>
       </div>
@@ -1980,6 +2476,88 @@ const articles = [
     ),
     image_src:
       "https://images.unsplash.com/photo-1504275107627-0c2ba7a43dba?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1374&q=80",
+    writer: "Andre Rodrigues"
+  },
+  {
+    id: "d509s286a987aksdsdbv182-532-k924-97hajsd",
+    title: "Top 5 Picks for Virtual Reality Headsets in 2023",
+    description:
+      "Stay ahead of the game with the latest virtual reality technology. Discover the top 5 virtual reality headsets of 2023 and find the perfect one for your needs, whether you're a gamer, a professional or a VR enthusiast. With a wide range of options, from the Oculus Quest 2 to the Lenovo Mirage Solo with Daydream, this article will guide you through the latest virtual reality options available in 2023.",
+    category: CATEGORIES_TYPE.games,
+    date: "2023-01-17",
+    isTopArticle: true,
+
+    content: (
+      <div>
+        <p>
+          Are you ready to step into another world? With the advancements in
+          virtual reality technology, 2023 is shaping up to be an exciting year
+          for VR enthusiasts. But with so many options on the market, it can be
+          hard to know which headset to choose. That&apos;s where we come in! In
+          this article, we&apos;ll take a look at some of the top virtual
+          reality headsets of 2023 and help you find the perfect one for your
+          needs.
+        </p>
+        <h2>1. Oculus Quest 2</h2>
+        <p>
+          The Oculus Quest 2 is a standalone VR headset, which means you
+          don&apos;t need a PC or console to use it. It offers a high-resolution
+          display, a comfortable design, and a wide selection of games and apps.
+          Plus, it&apos;s lightweight and easy to set up, making it perfect for
+          VR newbies. With the introduction of the quest 2, you can say goodbye
+          to the cords and cables that tethers you to your PC, and hello to a
+          truly wireless experience.{" "}
+        </p>
+        <h2>2. PlayStation VR</h2>
+        <p>
+          For gamers, the PlayStation VR is a great option. It offers a
+          high-resolution display, a comfortable design, and a wide selection of
+          games. Plus, it&apos;s compatible with the PlayStation 4 and 5, so you
+          don&apos;t need a PC to use it. It&apos;s a great way to experience
+          the future of gaming, and it&apos;s perfect for those who love to play
+          games in a more immersive way.
+        </p>
+        <h2>3. HP Reverb G2</h2>
+        <p>
+          The HP Reverb G2 is a great option for professionals and enthusiasts
+          looking for a high-resolution, high-fidelity VR experience. It offers
+          a 4K resolution display, a comfortable design, and a wide selection of
+          apps and games. Plus, it&apos;s lightweight and easy to set up, making
+          it perfect for those who want the best VR experience without breaking
+          the bank.{" "}
+        </p>
+        <h2>4. HTC Vive Cosmos Elite</h2>
+        <p>
+          The HTC Vive Cosmos Elite is a high-end VR headset that offers a
+          high-resolution display, a comfortable design, and a wide selection of
+          games and apps. Plus, it&apos;s compatible with PC, so you can use it
+          for gaming, education, and more. It&apos;s perfect for those who want
+          the best VR experience and have the budget for it.
+        </p>
+        <h2>5. Lenovo Mirage Solo with Daydream</h2>
+        <p>
+          The Lenovo Mirage Solo with Daydream is a standalone VR headset that
+          offers a high-resolution display, a comfortable design, and a wide
+          selection of games and apps. Plus, it&apos;s lightweight and easy to
+          set up, making it perfect for those who want a VR experience on the
+          go. It&apos;s a great option for those who want to experience VR
+          without the need of a PC or console.
+        </p>
+        <h2>Conclusion</h2>
+        <p>
+          Virtual reality technology is advancing at a rapid pace, and 2023 is
+          shaping up to be an exciting year for VR enthusiasts. Whether
+          you&apos;re a gamer, a professional, or just someone who wants to
+          experience the future of technology, there&apos;s a VR headset out
+          there for you. From the Oculus Quest 2 to the Lenovo Mirage Solo with
+          Daydream, these are some of the top virtual reality headsets of 2023
+          that you should keep an eye out for. So, go ahead, take the plunge and
+          immerse yourself into a world of possibilities.
+        </p>
+      </div>
+    ),
+    image_src:
+      "https://images.unsplash.com/photo-1622979135225-d2ba269cf1ac?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80",
     writer: "Andre Rodrigues"
   },
   {
