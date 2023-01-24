@@ -6,16 +6,14 @@ import MetaTags from "components/MetaTags/MetaTags";
 import PageContainer from "components/PageContainer/PageContainer";
 import ProgressBar from "components/ProgressBar/ProgressBar";
 import ReactGA from "react-ga4";
-import { useSearchParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import "./articlepage.scss";
 import { getArticlesById } from "utils";
 import { convertDate } from "utils/helpers/date";
 
 const BlogArticlePage = () => {
   const [article, setArticle] = useState(undefined);
-  const [searchParams] = useSearchParams();
-
-  const articleId = searchParams.get("id");
+  const { id: articleId } = useParams();
 
   //Lifecycle
   useEffect(() => {

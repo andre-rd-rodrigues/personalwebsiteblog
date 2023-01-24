@@ -11,7 +11,7 @@ const ArticleCard = ({ article }) => {
   return (
     <motion.div variants={fadeInVariant} className={styles.container}>
       <div className={styles.wrapper}>
-        <Link to={`/article?id=${article.id}`}>
+        <Link to={`/article/${article.id}`}>
           <AppImage src={article.image_src} className={styles.image} />
           <div className={styles.subtitle}>
             <p>{article.category}</p>

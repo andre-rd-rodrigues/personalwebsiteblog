@@ -11,8 +11,7 @@ module.exports = {
     "plugin:react/recommended",
     "plugin:jsx-a11y/recommended",
     "plugin:react-hooks/recommended",
-    "plugin:jest/recommended",
-    "plugin:testing-library/react"
+    "plugin:cypress/recommended"
   ],
 
   parserOptions: {
@@ -22,15 +21,17 @@ module.exports = {
     ecmaVersion: "latest", // Allows for the parsing of modern ECMAScript features
     sourceType: "module" // Allows for the use of imports
   },
-  plugins: ["react", "testing-library", "import"],
+  plugins: ["react", "import", "cypress"],
   root: true, // For configuration cascading.
   rules: {
     "react/react-in-jsx-scope": "off",
     "react/prop-types": 0,
-    "testing-library/await-async-query": "error",
-    "testing-library/no-await-sync-query": "error",
-    "testing-library/no-debugging-utils": "warn",
-    "testing-library/no-dom-import": "off",
+    "cypress/no-assigning-return-values": "error",
+    "cypress/no-unnecessary-waiting": "error",
+    "cypress/assertion-before-screenshot": "warn",
+    "cypress/no-force": "warn",
+    "cypress/no-async-tests": "error",
+    "cypress/no-pause": "error",
     "no-unused-vars": "warn",
     "import/order": [
       "warn",

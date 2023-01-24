@@ -8,7 +8,7 @@ const ArticleLink = ({ title }) => {
 
   if (!article) return "";
 
-  return <Link to={`/article?id=${article.id}`}>{title}</Link>;
+  return <Link to={`/article/${article.id}`}>{title}</Link>;
 };
 
 ArticleLink.propTypes = {

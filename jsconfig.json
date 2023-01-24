@@ -1,6 +1,13 @@
 {
   "compilerOptions": {
-    "baseUrl": "src"
+    "baseUrl": "src",
+    "target": "es6",
+    "lib": ["dom", "es6"]
   },
-  "include": ["src"]
+  "include": [
+    "src",
+    "./node_modules/cypress",
+    "cypress/e2e/*.cy.js",
+    "cypress/e2e/article.cy.js"
+  ]
 }

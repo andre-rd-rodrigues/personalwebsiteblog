@@ -3,7 +3,7 @@ import { useEffect } from "react";
 import Navbar from "components/AppNavbar/AppNavbar";
 import Footer from "components/Footer/Footer";
 import SideBar from "components/SideBar/SideBar";
-import BlogArticlePage from "pages/ArticlePage/ArticlePage";
+import ArticlePage from "pages/ArticlePage/ArticlePage";
 import Homepage from "pages/Homepage/Homepage";
 import PageNotFound from "pages/PageNotFound/PageNotFound";
 import ResultsPage from "pages/ResultsPage/ResultsPage";
@@ -31,7 +31,7 @@ const App = () => {
         <Navbar />
         <Routes>
           <Route path="/" element={<Homepage />} />
-          <Route path="/article" element={<BlogArticlePage />} />
+          <Route path="/article/:id" element={<ArticlePage />} />
           <Route path="/article/search" element={<ResultsPage />} />
           <Route path="*" element={<PageNotFound />} />
         </Routes>
