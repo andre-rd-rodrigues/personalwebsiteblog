@@ -31,9 +31,9 @@ const App = () => {
         <Navbar />
         <Routes>
           <Route path="/" element={<Homepage />} />
-          <Route path="/article/:id" element={<ArticlePage />} />
-          <Route path="/article/search" element={<ResultsPage />} />
-          <Route path="*" element={<PageNotFound />} />
+          <Route path="article/search" element={<ResultsPage />} />
+          <Route path="article/:id" element={<ArticlePage />} />
+          <Route element={<PageNotFound />} />
         </Routes>
         <Footer />
       </main>
