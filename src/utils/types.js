@@ -3,6 +3,18 @@ const SEARCH_TYPE = {
   input: "input"
 };
 
+const SOCIAL_MEDIA = [
+  { label: "facebook", ref: "https://www.facebook.com/andrerodrigoweb" },
+  {
+    label: "instagram",
+    ref: "https://www.instagram.com/andre.creativedesign/"
+  },
+  {
+    label: "linkedin",
+    ref: "https://www.linkedin.com/in/andr%C3%A9-rodrigues-4b4a9b188/"
+  }
+];
+
 const CATEGORIES_TYPE = {
   tech: "technology",
   games: "gaming",
@@ -25,4 +37,4 @@ const CATEGORIES = [
   { name: "All", type: CATEGORIES_TYPE.all }
 ];
 
-export { SEARCH_TYPE, CATEGORIES, CATEGORIES_TYPE };
+export { SEARCH_TYPE, CATEGORIES, CATEGORIES_TYPE, SOCIAL_MEDIA };

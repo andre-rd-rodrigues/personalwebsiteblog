@@ -1,4 +1,4 @@
-import { articles } from "mocks/data";
+import articles from "data/articles";
 import { isDateInThisWeek } from "./date";
 
 /**

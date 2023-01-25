@@ -3,7 +3,9 @@ describe("Homepage", () => {
     cy.visit("/");
 
     // Renders title
-    cy.findByText(/curiosity gem/i).should("be.visible");
+    cy.get("h1")
+      .contains(/curiosity gem/i)
+      .should("be.visible");
 
     // Renders subtitle
     cy.findByText(/Uncover hidden gems of knowledge. Stay curious./i).should(

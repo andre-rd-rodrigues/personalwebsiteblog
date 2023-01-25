@@ -1,13 +1,13 @@
 import React from "react";
 import AppIcon from "components/AppIcon/AppIcon";
-import { social_media } from "mocks/data";
 import styles from "./footer.module.scss";
+import { SOCIAL_MEDIA } from "utils/types";
 
 const Footer = () => {
   return (
     <footer className={styles.container}>
       <div id="footer-social-media">
-        {social_media.map(({ label, ref }, index) => (
+        {SOCIAL_MEDIA.map(({ label, ref }, index) => (
           <AppIcon key={index} href={ref} icon={label} />
         ))}
       </div>

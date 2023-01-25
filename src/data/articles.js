@@ -3,18 +3,6 @@ import ContactMe from "components/ContactMe/ContactMe";
 import GoogleAd from "components/GoogleAd/GoogleAd";
 import { CATEGORIES_TYPE } from "utils";
 
-const social_media = [
-  { label: "facebook", ref: "https://www.facebook.com/andrerodrigoweb" },
-  {
-    label: "instagram",
-    ref: "https://www.instagram.com/andre.creativedesign/"
-  },
-  {
-    label: "linkedin",
-    ref: "https://www.linkedin.com/in/andr%C3%A9-rodrigues-4b4a9b188/"
-  }
-];
-
 const articles = [
   // Tech
   {
@@ -2849,4 +2837,4 @@ const articles = [
   }
 ];
 
-export { social_media, articles };
+export default articles;
