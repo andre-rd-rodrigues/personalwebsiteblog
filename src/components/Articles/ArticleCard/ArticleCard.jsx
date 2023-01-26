@@ -22,7 +22,7 @@ const ArticleCard = ({ article }) => {
             <p>{article.description}</p>
           </div>
           <div className={styles.footer}>
-            <AppLink label={READ_MORE_LABEL} to={`/article?id=${article.id}`} />
+            <AppLink label={READ_MORE_LABEL} to={`/article/${article.id}`} />
           </div>
         </Link>
       </div>
