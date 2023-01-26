@@ -2,14 +2,17 @@ import React from "react";
 import PropTypes from "prop-types";
 import { Helmet } from "react-helmet";
 
-const MetaTags = ({ title, description, imageUrl }) => {
+const MetaTags = ({ title, description, imageUrl, id }) => {
   return (
     <Helmet>
       <meta charset="utf-8" />
       <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <meta name="theme-color" content="#000000" />
-      <meta property="og:url" content="https://www.blog.andrerodrigo.com" />
+      <meta
+        property="og:url"
+        content={`https://www.curiositygem.com/#/article/${id}`}
+      />
       <meta property="og:type" content="website" />
       <meta property="og:image" content={imageUrl} />
       <meta property="og:image:alt" content={title} />
@@ -33,6 +36,8 @@ const MetaTags = ({ title, description, imageUrl }) => {
 
 MetaTags.propTypes = {
   description: PropTypes.string,
+  id: PropTypes.string,
+  imageUrl: PropTypes.string,
   title: PropTypes.string
 };
 

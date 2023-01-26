@@ -1,5 +1,4 @@
-import React from "react";
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import Icon from "components/AppIcon/AppIcon";
 import Image from "components/AppImage/AppImage";
 import MetaTags from "components/MetaTags/MetaTags";

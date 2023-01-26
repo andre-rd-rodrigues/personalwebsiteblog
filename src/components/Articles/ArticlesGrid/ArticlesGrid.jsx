@@ -1,6 +1,4 @@
-import React from "react";
-import { useState } from "react";
-import { useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { containerVariant, motion } from "assets/motion/motionVariants";
 import AppButton from "components/AppButton/AppButton";
 import { ARTICLES_VISIBLE_LIMIT } from "utils";
