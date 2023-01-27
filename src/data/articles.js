@@ -1783,7 +1783,7 @@ const articles = [
         <p>
           Blogging or creating content for social media is also a great way for
           you to share your passions and interests with the world and earn extra
-          money. You can <b>monetize</b> your blog or content through
+          money. You can <b>monetize</b> your blog or content through{" "}
           <b>
             advertising, sponsored posts, affiliate marketing, and digital
             products

@@ -14,10 +14,10 @@
   }
   h5 {
     text-align: start;
+    letter-spacing: 0.5px;
   }
   &:hover {
-    & .wrapper {
-      display: inline-block;
+    & .image {
       transform: scale(0.95);
     }
   }
@@ -28,6 +28,8 @@
 .image {
   min-height: 220px;
   max-height: 300px;
+  border-radius: 6px;
+  transition: 0.2s ease;
 }
 
 .subtitle {
