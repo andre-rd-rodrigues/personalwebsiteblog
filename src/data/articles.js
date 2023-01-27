@@ -1555,7 +1555,7 @@ const articles = [
           Investing in dividend-paying stocks or index funds is a way of making
           money through the <b>stock market</b>. It&apos;s a popular passive
           income strategy because once you&apos;ve made the investment, you can
-          sit back and collect the <b>dividends</b> (which are like a paycheck)
+          sit back and collect the <b>dividends</b> (which are like a paycheck){" "}
           <b>without having to actively trade stocks</b>.
         </p>
         <p>

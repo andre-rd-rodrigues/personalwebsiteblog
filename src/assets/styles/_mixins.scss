@@ -1,6 +1,8 @@
 //Colors
 $dark: #2f333a;
 $grey: #a6a6a6;
+$green-light: #63c4a78d;
+$green: #63c4a7;
 $light-grey: #f3f3f3;
 $white: #ffffff;
 $yellow: #ffca6c;
@@ -67,13 +69,8 @@ $breaking-point-xxs: 330px;
 
 //page
 @mixin page_container {
-  padding: 130px var(--padding-y) 100px;
+  padding: 90px var(--padding-y) 100px;
   min-height: 96vh;
-
-  //Responsive
-  @media only screen and (max-width: $breaking-point-md) {
-    padding: 120px var(--padding-y);
-  }
 }
 
 @mixin date_category_container {

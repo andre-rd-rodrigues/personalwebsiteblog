@@ -12,13 +12,30 @@
     font-size: var(--fs-m-s);
     text-align: justify;
   }
+
   h5 {
+    display: initial;
     text-align: start;
     letter-spacing: 0.5px;
+    background-image: linear-gradient(
+      to right,
+      $green-light,
+      $green-light 100%
+    );
+    background-position: 0px 15px;
+    background-size: 0 100%;
+    background-repeat: no-repeat;
+    transition: background 0.5s;
   }
+
+  // create a class with display:initial and with margin:15px 0;
+
   &:hover {
     & .image {
       transform: scale(0.95);
+    }
+    & h5 {
+      background-size: 100% 100%;
     }
   }
 }
@@ -36,6 +53,7 @@
   display: flex;
   font-weight: lighter;
   justify-content: space-between;
+  margin-bottom: 5px;
   p {
     font-size: var(--fs-s);
     font-weight: 400;
@@ -49,8 +67,8 @@
 }
 
 .body {
-  h5 {
-    margin: 18px 0;
+  p {
+    margin-top: 15px;
   }
 }
 
