@@ -106,6 +106,9 @@ const sortArticlesByDate = () => {
   return articlesSorted;
 };
 
+//Generate article routes for pre-render
+/* console.log(articles.map((article) => `/article/${article.id}`)); */
+
 export {
   sortArticlesByDate as getRecentArticles,
   getArticlesByCategory,
